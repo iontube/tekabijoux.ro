@@ -259,6 +259,19 @@ async function generateImage(titleRo, slug, categorySlug) {
 
   console.log(`  Generating image for: ${titleRo}`);
 
+  const MAX_IMAGE_RETRIES = 3;
+
+  for (let attempt = 1; attempt <= MAX_IMAGE_RETRIES; attempt++) {
+
+    if (attempt > 1) {
+
+      console.log(`  Image retry attempt ${attempt}/${MAX_IMAGE_RETRIES}...`);
+
+      await new Promise(r => setTimeout(r, 3000 * attempt));
+
+    }
+
+
   try {
     const titleEn = await translateToEnglish(titleRo);
     console.log(`  Translated title: ${titleEn}`);
@@ -312,6 +325,13 @@ async function generateImage(titleRo, slug, categorySlug) {
     console.error(`  Image generation error: ${error.message}`);
     return false;
   }
+
+
+  }
+
+  console.error('  Image generation failed after all retries');
+
+  return null;
 }
 
 // --- Markdown/HTML Processing ---
