@@ -1,0 +1,21 @@
+<div class="ck-bar" id="cookieBanner">
+  <p>
+    Acest site foloseste cookie-uri pentru a-ti imbunatati experienta. Prin continuarea navigarii, esti de acord cu
+    <a href="/cookies/">Politica de Cookies</a>.
+  </p>
+  <button id="cookieAccept">Accept</button>
+</div>
+
+<script>
+  const banner = document.getElementById('cookieBanner');
+  const acceptBtn = document.getElementById('cookieAccept');
+
+  if (!localStorage.getItem('cookies_accepted')) {
+    banner?.classList.add('vis');
+  }
+
+  acceptBtn?.addEventListener('click', () => {
+    localStorage.setItem('cookies_accepted', 'true');
+    banner?.classList.remove('vis');
+  });
+</script>

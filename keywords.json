@@ -1,0 +1,788 @@
+{
+  "categories": [
+    {
+      "name": "Ceasuri de Mana",
+      "slug": "ceasuri-de-mana",
+      "icon": "⌚",
+      "description": "Ceasurile de mana raman unul dintre cele mai apreciate accesorii, atat pentru barbati cat si pentru femei. Fie ca vrei un ceas automat elvetian, un cronograf sportiv sau un smartwatch cu functii avansate, pretul conteaza enorm cand faci alegerea. In aceasta categorie analizam modele de la branduri consacrate precum Casio, Seiko, Tissot sau Fossil, comparam specificatii tehnice si te ajutam sa gasesti raportul calitate-pret potrivit bugetului tau. Fiecare articol contine preturi actualizate din magazinele online din Romania.",
+      "author": {
+        "name": "Marina Alexandrescu",
+        "role": "Expert Ceasuri si Accesorii",
+        "bio": "Marina lucreaza in industria ceasurilor de peste 8 ani. A testat personal sute de modele si colaboreaza cu magazine de profil din Romania. Scrie recenzii bazate pe experienta directa si pe feedback-ul celor care au cumparat produsele respective."
+      }
+    },
+    {
+      "name": "Bijuterii din Aur",
+      "slug": "bijuterii-din-aur",
+      "icon": "💎",
+      "description": "Bijuteriile din aur sunt investitii pe termen lung si cadouri care nu isi pierd niciodata valoarea. Pretul aurului fluctueaza constant, iar diferenta de pret intre magazine poate fi semnificativa. Aici gasesti comparatii detaliate de preturi pentru inele, lanturi, cercei si bratari din aur de 14K si 18K. Analizam puritatea metalului, calitatea finisajelor si raportam preturile din cele mai mari magazine online din Romania, de la bijuterii artizanale la branduri premium.",
+      "author": {
+        "name": "Alexandra Dumitrescu",
+        "role": "Specialist Bijuterii Pretioase",
+        "bio": "Alexandra e gemolog certificat si scrie despre bijuterii din aur de peste 6 ani. A vizitat ateliere de bijutieri din Romania si Europa, si testeaza personal fiecare piesa inainte de a o recomanda. Pune accent pe autenticitate si valoare reala."
+      }
+    },
+    {
+      "name": "Bijuterii din Argint",
+      "slug": "bijuterii-din-argint",
+      "icon": "✨",
+      "description": "Argintul 925 este cel mai popular metal pentru bijuterii accesibile dar elegante. Bratarile, pandantivele, inelele si cerceii din argint sunt alegeri excelente atat pentru uz personal cat si pentru cadouri. Preturile variaza mult in functie de brand, gramaj si complexitatea designului. In aceasta sectiune comparam bijuterii din argint de la producatori romani si internationali, verificam certificarile de calitate si iti aratam unde gasesti cele mai bune oferte fara compromisuri la puritate.",
+      "author": {
+        "name": "Ioana Stanescu",
+        "role": "Expert Bijuterii Argint",
+        "bio": "Ioana colectioneaza si recenzeaza bijuterii din argint de peste 5 ani. Colaboreaza cu ateliere romanesti de bijuterii si cunoaste piata locala in detaliu. Articolele ei se bazeaza pe teste practice si pe experienta reala de purtare."
+      }
+    },
+    {
+      "name": "Verighete si Logodna",
+      "slug": "verighete-si-logodna",
+      "icon": "💍",
+      "description": "Alegerea verighetelor si a inelului de logodna este una dintre cele mai importante decizii cand vine vorba de bijuterii. Preturile pot varia de la cateva sute de lei la mii de euro, in functie de metalul ales, piatra pretioasa si brandul producatorului. Aici analizam ofertele de verighete din aur, aur alb si platina, comparam diamantele certificate cu alternativele moissanite si zirconia, si te ghidam prin procesul de alegere pas cu pas. Fiecare articol include intervale de preturi reale din magazinele romanesti.",
+      "author": {
+        "name": "Stefan Marinescu",
+        "role": "Specialist Verighete si Bijuterii Nunta",
+        "bio": "Stefan are experienta de peste 10 ani in domeniul bijuteriilor de nunta. A lucrat ca consultant in mai multe bijuterii din Bucuresti si Cluj, si ajuta saptamanal cupluri sa aleaga verighetele potrivite. Scrie din perspectiva cuiva care a vazut mii de alegeri reale."
+      }
+    },
+    {
+      "name": "Accesorii Fashion",
+      "slug": "accesorii-fashion",
+      "icon": "👜",
+      "description": "Accesoriile fac diferenta intre o tinuta obisnuita si una remarcabila. De la ochelari de soare si genti de dama pana la curele din piele si portofele premium, preturile pot varia enorm intre branduri si magazine. In aceasta categorie comparam accesorii fashion de la branduri populare, analizam materialele folosite si verificam daca pretul cerut corespunde calitatii reale. Te ajutam sa faci achizitii inteligente fara sa platesti mai mult decat trebuie pentru accesorii care chiar merita.",
+      "author": {
+        "name": "Diana Popescu",
+        "role": "Expert Accesorii si Moda",
+        "bio": "Diana scrie despre moda si accesorii de peste 7 ani. A lucrat ca stilist personal si acum se concentreaza pe comparatii de preturi pentru accesorii fashion. Testeaza produsele in conditii reale si ofera recomandari bazate pe experienta directa."
+      }
+    }
+  ],
+  "pending": [
+    {
+      "keyword": "Portofele din piele naturala pentru barbati",
+      "category": "Accesorii Fashion",
+      "categorySlug": "accesorii-fashion",
+      "pubDate": "2024-02-12T08:31:00.000Z"
+    },
+    {
+      "keyword": "Cum alegi marimea potrivita pentru verighete",
+      "category": "Verighete si Logodna",
+      "categorySlug": "verighete-si-logodna",
+      "pubDate": "2024-02-24T07:19:00.000Z"
+    },
+    {
+      "keyword": "Top curele din piele pentru barbati sub 200 lei",
+      "category": "Accesorii Fashion",
+      "categorySlug": "accesorii-fashion",
+      "pubDate": "2024-02-27T06:15:00.000Z"
+    },
+    {
+      "keyword": "Bratari din aur pentru femei sub 1000 lei",
+      "category": "Bijuterii din Aur",
+      "categorySlug": "bijuterii-din-aur",
+      "pubDate": "2024-03-04T08:02:00.000Z"
+    },
+    {
+      "keyword": "Bijuterii din argint Pandora vs Thomas Sabo",
+      "category": "Bijuterii din Argint",
+      "categorySlug": "bijuterii-din-argint",
+      "pubDate": "2024-03-08T06:05:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune inele de logodna cu diamant sub 3000 lei",
+      "category": "Verighete si Logodna",
+      "categorySlug": "verighete-si-logodna",
+      "pubDate": "2024-03-11T09:38:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune esarfe si fulare pentru iarna",
+      "category": "Accesorii Fashion",
+      "categorySlug": "accesorii-fashion",
+      "pubDate": "2024-03-12T08:52:00.000Z"
+    },
+    {
+      "keyword": "Cum verifici daca o bijuterie din aur e autentica",
+      "category": "Bijuterii din Aur",
+      "categorySlug": "bijuterii-din-aur",
+      "pubDate": "2024-03-19T07:02:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune lanturi din argint pentru barbati",
+      "category": "Bijuterii din Argint",
+      "categorySlug": "bijuterii-din-argint",
+      "pubDate": "2024-03-21T05:02:00.000Z"
+    },
+    {
+      "keyword": "Verighete clasice vs moderne: modele si preturi",
+      "category": "Verighete si Logodna",
+      "categorySlug": "verighete-si-logodna",
+      "pubDate": "2024-03-24T09:33:00.000Z"
+    },
+    {
+      "keyword": "Genti crossbody de dama: modele si preturi",
+      "category": "Accesorii Fashion",
+      "categorySlug": "accesorii-fashion",
+      "pubDate": "2024-03-27T06:58:00.000Z"
+    },
+    {
+      "keyword": "Top ceasuri sport barbatesti rezistente la apa",
+      "category": "Ceasuri de Mana",
+      "categorySlug": "ceasuri-de-mana",
+      "pubDate": "2024-03-31T07:06:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune pandantive din aur pentru cadou",
+      "category": "Bijuterii din Aur",
+      "categorySlug": "bijuterii-din-aur",
+      "pubDate": "2024-04-04T07:03:00.000Z"
+    },
+    {
+      "keyword": "Cum cureți bijuteriile din argint acasa",
+      "category": "Bijuterii din Argint",
+      "categorySlug": "bijuterii-din-argint",
+      "pubDate": "2024-04-05T04:38:00.000Z"
+    },
+    {
+      "keyword": "Moissanite vs diamant: merita alternativa",
+      "category": "Verighete si Logodna",
+      "categorySlug": "verighete-si-logodna",
+      "pubDate": "2024-04-09T04:24:00.000Z"
+    },
+    {
+      "keyword": "Ochelari de soare Ray-Ban vs Polaroid: comparatie",
+      "category": "Accesorii Fashion",
+      "categorySlug": "accesorii-fashion",
+      "pubDate": "2024-04-11T06:13:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune ceasuri Tissot pentru barbati",
+      "category": "Ceasuri de Mana",
+      "categorySlug": "ceasuri-de-mana",
+      "pubDate": "2024-04-15T08:09:00.000Z"
+    },
+    {
+      "keyword": "Cercei din aur alb vs aur galben: care arata mai bine",
+      "category": "Bijuterii din Aur",
+      "categorySlug": "bijuterii-din-aur",
+      "pubDate": "2024-04-17T04:32:00.000Z"
+    },
+    {
+      "keyword": "Seturi de bijuterii din argint sub 300 lei",
+      "category": "Bijuterii din Argint",
+      "categorySlug": "bijuterii-din-argint",
+      "pubDate": "2024-04-20T07:34:00.000Z"
+    },
+    {
+      "keyword": "Cele mai frumoase verighete gravate",
+      "category": "Verighete si Logodna",
+      "categorySlug": "verighete-si-logodna",
+      "pubDate": "2024-04-23T07:55:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune rucsacuri din piele pentru femei",
+      "category": "Accesorii Fashion",
+      "categorySlug": "accesorii-fashion",
+      "pubDate": "2024-04-27T08:05:00.000Z"
+    },
+    {
+      "keyword": "Ceasuri Fossil pentru femei: merita pretul",
+      "category": "Ceasuri de Mana",
+      "categorySlug": "ceasuri-de-mana",
+      "pubDate": "2024-04-30T07:24:00.000Z"
+    },
+    {
+      "keyword": "Top bijuterii din aur sub 500 lei care merita",
+      "category": "Bijuterii din Aur",
+      "categorySlug": "bijuterii-din-aur",
+      "pubDate": "2024-05-04T07:12:00.000Z"
+    },
+    {
+      "keyword": "Bijuterii din argint cu zirconia: merita pretul",
+      "category": "Bijuterii din Argint",
+      "categorySlug": "bijuterii-din-argint",
+      "pubDate": "2024-05-05T07:36:00.000Z"
+    },
+    {
+      "keyword": "Ghid complet preturi verighete in Romania",
+      "category": "Verighete si Logodna",
+      "categorySlug": "verighete-si-logodna",
+      "pubDate": "2024-05-09T06:00:00.000Z"
+    },
+    {
+      "keyword": "Palarii si sepci de barbati: ghid de stil",
+      "category": "Accesorii Fashion",
+      "categorySlug": "accesorii-fashion",
+      "pubDate": "2024-05-11T08:58:00.000Z"
+    },
+    {
+      "keyword": "Ghid ceasuri cronograf barbatesti sub 700 lei",
+      "category": "Ceasuri de Mana",
+      "categorySlug": "ceasuri-de-mana",
+      "pubDate": "2024-05-14T05:18:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune seturi de bijuterii din aur",
+      "category": "Bijuterii din Aur",
+      "categorySlug": "bijuterii-din-aur",
+      "pubDate": "2024-05-17T07:08:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune bratari charm din argint",
+      "category": "Bijuterii din Argint",
+      "categorySlug": "bijuterii-din-argint",
+      "pubDate": "2024-05-21T05:57:00.000Z"
+    },
+    {
+      "keyword": "Inele de logodna cu piatra solitaire: top modele",
+      "category": "Verighete si Logodna",
+      "categorySlug": "verighete-si-logodna",
+      "pubDate": "2024-05-23T08:39:00.000Z"
+    },
+    {
+      "keyword": "Genti laptop din piele pentru barbati sub 500 lei",
+      "category": "Accesorii Fashion",
+      "categorySlug": "accesorii-fashion",
+      "pubDate": "2024-05-28T04:56:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune ceasuri de mana cadou pentru el",
+      "category": "Ceasuri de Mana",
+      "categorySlug": "ceasuri-de-mana",
+      "pubDate": "2024-05-31T05:54:00.000Z"
+    },
+    {
+      "keyword": "Ghid preturi bijuterii din aur in Romania",
+      "category": "Bijuterii din Aur",
+      "categorySlug": "bijuterii-din-aur",
+      "pubDate": "2024-06-01T08:59:00.000Z"
+    },
+    {
+      "keyword": "Inele din argint reglabile: modele la moda",
+      "category": "Bijuterii din Argint",
+      "categorySlug": "bijuterii-din-argint",
+      "pubDate": "2024-06-06T07:44:00.000Z"
+    },
+    {
+      "keyword": "Verighete din aur rose: tendinte si preturi",
+      "category": "Verighete si Logodna",
+      "categorySlug": "verighete-si-logodna",
+      "pubDate": "2024-06-09T05:15:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune portofele de dama din piele",
+      "category": "Accesorii Fashion",
+      "categorySlug": "accesorii-fashion",
+      "pubDate": "2024-06-10T08:04:00.000Z"
+    },
+    {
+      "keyword": "Ceasuri barbatesti din otel inoxidabil sub 600 lei",
+      "category": "Ceasuri de Mana",
+      "categorySlug": "ceasuri-de-mana",
+      "pubDate": "2024-06-13T05:02:00.000Z"
+    },
+    {
+      "keyword": "Cercei cu diamante mici din aur: pret si calitate",
+      "category": "Bijuterii din Aur",
+      "categorySlug": "bijuterii-din-aur",
+      "pubDate": "2024-06-18T08:54:00.000Z"
+    },
+    {
+      "keyword": "Bijuterii din argint pentru adolescente cadou",
+      "category": "Bijuterii din Argint",
+      "categorySlug": "bijuterii-din-argint",
+      "pubDate": "2024-06-20T07:49:00.000Z"
+    },
+    {
+      "keyword": "Cum alegi verighetele de nunta pe buget redus",
+      "category": "Verighete si Logodna",
+      "categorySlug": "verighete-si-logodna",
+      "pubDate": "2024-06-23T05:20:00.000Z"
+    },
+    {
+      "keyword": "Bijuterii fashion ieftine si bune sub 50 lei",
+      "category": "Accesorii Fashion",
+      "categorySlug": "accesorii-fashion",
+      "pubDate": "2024-06-27T05:32:00.000Z"
+    },
+    {
+      "keyword": "Cum alegi un ceas de mana potrivit pentru tine",
+      "category": "Ceasuri de Mana",
+      "categorySlug": "ceasuri-de-mana",
+      "pubDate": "2024-06-30T05:55:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune bratari tennis din aur",
+      "category": "Bijuterii din Aur",
+      "categorySlug": "bijuterii-din-aur",
+      "pubDate": "2024-07-02T07:02:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune cercei creole din argint 925",
+      "category": "Bijuterii din Argint",
+      "categorySlug": "bijuterii-din-argint",
+      "pubDate": "2024-07-06T05:13:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune inele de logodna cu safir",
+      "category": "Verighete si Logodna",
+      "categorySlug": "verighete-si-logodna",
+      "pubDate": "2024-07-08T05:03:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune cravate si papioane pentru barbati",
+      "category": "Accesorii Fashion",
+      "categorySlug": "accesorii-fashion",
+      "pubDate": "2024-07-12T07:39:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune ceasuri Citizen Eco-Drive",
+      "category": "Ceasuri de Mana",
+      "categorySlug": "ceasuri-de-mana",
+      "pubDate": "2024-07-14T04:30:00.000Z"
+    },
+    {
+      "keyword": "Bijuterii din aur roz: modele si preturi actuale",
+      "category": "Bijuterii din Aur",
+      "categorySlug": "bijuterii-din-aur",
+      "pubDate": "2024-07-17T08:08:00.000Z"
+    },
+    {
+      "keyword": "Bratari din argint pentru barbati: modele si preturi",
+      "category": "Bijuterii din Argint",
+      "categorySlug": "bijuterii-din-argint",
+      "pubDate": "2024-07-20T06:46:00.000Z"
+    },
+    {
+      "keyword": "Verighete cu diamante: modele si preturi reale",
+      "category": "Verighete si Logodna",
+      "categorySlug": "verighete-si-logodna",
+      "pubDate": "2024-07-23T06:51:00.000Z"
+    },
+    {
+      "keyword": "Genti de voiaj din piele naturala: top modele",
+      "category": "Accesorii Fashion",
+      "categorySlug": "accesorii-fashion",
+      "pubDate": "2024-07-26T07:02:00.000Z"
+    },
+    {
+      "keyword": "Ceasuri militare barbatesti ieftine si bune",
+      "category": "Ceasuri de Mana",
+      "categorySlug": "ceasuri-de-mana",
+      "pubDate": "2024-07-29T04:09:00.000Z"
+    },
+    {
+      "keyword": "Cum intretii bijuteriile din aur ca sa straluceasca",
+      "category": "Bijuterii din Aur",
+      "categorySlug": "bijuterii-din-aur",
+      "pubDate": "2024-08-02T07:57:00.000Z"
+    },
+    {
+      "keyword": "Ghid alegere bijuterii din argint cadou",
+      "category": "Bijuterii din Argint",
+      "categorySlug": "bijuterii-din-argint",
+      "pubDate": "2024-08-04T06:49:00.000Z"
+    },
+    {
+      "keyword": "Ce trebuie sa stii inainte sa cumperi verighete",
+      "category": "Verighete si Logodna",
+      "categorySlug": "verighete-si-logodna",
+      "pubDate": "2024-08-06T07:19:00.000Z"
+    },
+    {
+      "keyword": "Ochelari de vedere cu rama metalica: modele si preturi",
+      "category": "Accesorii Fashion",
+      "categorySlug": "accesorii-fashion",
+      "pubDate": "2024-08-09T08:19:00.000Z"
+    },
+    {
+      "keyword": "Top ceasuri de dama elegante sub 400 lei",
+      "category": "Ceasuri de Mana",
+      "categorySlug": "ceasuri-de-mana",
+      "pubDate": "2024-08-13T07:08:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune lanturi de aur pentru femei",
+      "category": "Bijuterii din Aur",
+      "categorySlug": "bijuterii-din-aur",
+      "pubDate": "2024-08-17T05:43:00.000Z"
+    },
+    {
+      "keyword": "Bijuterii argint rodiat vs argint simplu: diferente",
+      "category": "Bijuterii din Argint",
+      "categorySlug": "bijuterii-din-argint",
+      "pubDate": "2024-08-20T04:37:00.000Z"
+    },
+    {
+      "keyword": "Inele de logodna vintage: cele mai frumoase modele",
+      "category": "Verighete si Logodna",
+      "categorySlug": "verighete-si-logodna",
+      "pubDate": "2024-08-22T04:02:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune bretele pentru barbati eleganti",
+      "category": "Accesorii Fashion",
+      "categorySlug": "accesorii-fashion",
+      "pubDate": "2024-08-26T05:52:00.000Z"
+    },
+    {
+      "keyword": "Orient vs Seiko: comparatie modele automate",
+      "category": "Ceasuri de Mana",
+      "categorySlug": "ceasuri-de-mana",
+      "pubDate": "2024-08-29T06:46:00.000Z"
+    },
+    {
+      "keyword": "Inele de aur cu pietre pretioase sub 2000 lei",
+      "category": "Bijuterii din Aur",
+      "categorySlug": "bijuterii-din-aur",
+      "pubDate": "2024-09-01T08:07:00.000Z"
+    },
+    {
+      "keyword": "Cele mai frumoase pandantive din argint cu initiala",
+      "category": "Bijuterii din Argint",
+      "categorySlug": "bijuterii-din-argint",
+      "pubDate": "2024-09-04T04:18:00.000Z"
+    },
+    {
+      "keyword": "Verighete bicolore aur galben si alb: top alegeri",
+      "category": "Verighete si Logodna",
+      "categorySlug": "verighete-si-logodna",
+      "pubDate": "2024-09-07T05:28:00.000Z"
+    },
+    {
+      "keyword": "Mansete si butoni de camasa: ghid preturi",
+      "category": "Accesorii Fashion",
+      "categorySlug": "accesorii-fashion",
+      "pubDate": "2024-09-10T05:24:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune ceasuri digitale Casio G-Shock",
+      "category": "Ceasuri de Mana",
+      "categorySlug": "ceasuri-de-mana",
+      "pubDate": "2024-09-11T04:17:00.000Z"
+    },
+    {
+      "keyword": "Bijuterii din aur personalizate: unde comanzi in Romania",
+      "category": "Bijuterii din Aur",
+      "categorySlug": "bijuterii-din-aur",
+      "pubDate": "2024-09-14T04:57:00.000Z"
+    },
+    {
+      "keyword": "Top bijuterii din argint sub 100 lei",
+      "category": "Bijuterii din Argint",
+      "categorySlug": "bijuterii-din-argint",
+      "pubDate": "2024-09-17T06:09:00.000Z"
+    },
+    {
+      "keyword": "Cat costa verighetele de nunta in Romania",
+      "category": "Verighete si Logodna",
+      "categorySlug": "verighete-si-logodna",
+      "pubDate": "2024-09-22T04:50:00.000Z"
+    },
+    {
+      "keyword": "Top genti de plaja mari si rezistente",
+      "category": "Accesorii Fashion",
+      "categorySlug": "accesorii-fashion",
+      "pubDate": "2024-09-25T08:43:00.000Z"
+    },
+    {
+      "keyword": "Ceasuri cu bratara din piele naturala pentru barbati",
+      "category": "Ceasuri de Mana",
+      "categorySlug": "ceasuri-de-mana",
+      "pubDate": "2024-09-28T07:59:00.000Z"
+    },
+    {
+      "keyword": "Cele mai ieftine bijuterii din aur de calitate",
+      "category": "Bijuterii din Aur",
+      "categorySlug": "bijuterii-din-aur",
+      "pubDate": "2024-09-30T06:33:00.000Z"
+    },
+    {
+      "keyword": "Cercei lungi din argint pentru ocazii speciale",
+      "category": "Bijuterii din Argint",
+      "categorySlug": "bijuterii-din-argint",
+      "pubDate": "2024-10-03T07:30:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune bijuterii pentru cererea in casatorie",
+      "category": "Verighete si Logodna",
+      "categorySlug": "verighete-si-logodna",
+      "pubDate": "2024-10-06T05:30:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune serviete business din piele",
+      "category": "Accesorii Fashion",
+      "categorySlug": "accesorii-fashion",
+      "pubDate": "2024-10-09T06:09:00.000Z"
+    },
+    {
+      "keyword": "Smartwatch sau ceas clasic: ce sa alegi",
+      "category": "Ceasuri de Mana",
+      "categorySlug": "ceasuri-de-mana",
+      "pubDate": "2024-10-12T04:52:00.000Z"
+    },
+    {
+      "keyword": "Ghid gramaje lanturi de aur: cat sa cantareasca",
+      "category": "Bijuterii din Aur",
+      "categorySlug": "bijuterii-din-aur",
+      "pubDate": "2024-10-16T04:40:00.000Z"
+    },
+    {
+      "keyword": "Cum deosebesti argintul 925 de cel fals",
+      "category": "Bijuterii din Argint",
+      "categorySlug": "bijuterii-din-argint",
+      "pubDate": "2024-10-18T04:23:00.000Z"
+    },
+    {
+      "keyword": "Verighete din titan vs tungsten: comparatie preturi",
+      "category": "Verighete si Logodna",
+      "categorySlug": "verighete-si-logodna",
+      "pubDate": "2024-10-22T04:57:00.000Z"
+    },
+    {
+      "keyword": "Accesorii par femei: agrafe diademe si bentite",
+      "category": "Accesorii Fashion",
+      "categorySlug": "accesorii-fashion",
+      "pubDate": "2024-10-23T05:01:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune ceasuri sub 200 lei care merita",
+      "category": "Ceasuri de Mana",
+      "categorySlug": "ceasuri-de-mana",
+      "pubDate": "2024-10-26T05:41:00.000Z"
+    },
+    {
+      "keyword": "Medalii si pandantive din aur pentru botez",
+      "category": "Bijuterii din Aur",
+      "categorySlug": "bijuterii-din-aur",
+      "pubDate": "2024-10-30T09:01:00.000Z"
+    },
+    {
+      "keyword": "Bratari din argint cu charm personalizat",
+      "category": "Bijuterii din Argint",
+      "categorySlug": "bijuterii-din-argint",
+      "pubDate": "2024-11-03T09:24:00.000Z"
+    },
+    {
+      "keyword": "Inele de logodna cu zirconia: alternativa accesibila",
+      "category": "Verighete si Logodna",
+      "categorySlug": "verighete-si-logodna",
+      "pubDate": "2024-11-04T08:49:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune umbrele rezistente la vant",
+      "category": "Accesorii Fashion",
+      "categorySlug": "accesorii-fashion",
+      "pubDate": "2024-11-09T05:05:00.000Z"
+    }
+  ],
+  "completed": [
+    {
+      "keyword": "Cele mai bune ceasuri barbatesti sub 500 lei",
+      "category": "Ceasuri de Mana",
+      "categorySlug": "ceasuri-de-mana",
+      "pubDate": "2025-09-12T08:30:00.000Z",
+      "slug": "cele-mai-bune-ceasuri-barbatesti-sub-500-lei",
+      "modifiedDate": "2026-02-03T17:42:44.838Z",
+      "excerpt": "Daca vrei sa gasesti cele mai bune ceasuri barbatesti sub 500 lei, ai de unde alege fara sa spargi banca. Pe bune, nu trebuie sa dai o avere ca sa ai un ceas misto pe mana. Uite care-s cateva modele care merita atentia ta: Casio MTP-V300D-1A, Seiko 5 SNK789K1, Orient Bambino RA-AG0003S10B si Citizen BM8475-26E.",
+      "author": "Marina Alexandrescu",
+      "date": "2025-09-12T08:30:00.000Z"
+    },
+    {
+      "keyword": "Cele mai frumoase lanturi de aur pentru barbati",
+      "category": "Bijuterii din Aur",
+      "categorySlug": "bijuterii-din-aur",
+      "pubDate": "2025-10-05T10:15:00.000Z",
+      "slug": "cele-mai-frumoase-lanturi-de-aur-pentru-barbati",
+      "modifiedDate": "2026-02-02T00:50:50.284Z",
+      "excerpt": "Cand vine vorba de cele mai frumoase lanturi de aur pentru barbati, nu exista o singura varianta 'perfecta', ci depinde mult de stilul tau, buget si ce vrei sa obtii. Daca ar fi sa aleg una, as merge pe un lant clasic, tip Figaro sau Cuban, din aur galben de 14 karate, cam 4-5 mm latime. E un echilibru bun intre a fi vizibil, dar nu ostentativ, si rezistent. Dar stai, ca am multe de zis pe tema asta, hai sa vedem.",
+      "author": "Alexandra Dumitrescu",
+      "date": "2025-10-05T10:15:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune bratari din argint 925 pentru femei",
+      "category": "Bijuterii din Argint",
+      "categorySlug": "bijuterii-din-argint",
+      "pubDate": "2025-08-20T07:45:00.000Z",
+      "slug": "cele-mai-bune-bratari-din-argint-925-pentru-femei",
+      "modifiedDate": "2026-02-04T10:54:18.119Z",
+      "excerpt": "Daca vrei cele mai bune bratari din argint 925 pentru femei, uita-te dupa modele minimaliste, cu un design atemporal. Recomandarea mea clara ar fi o bratara fina, cu un charm discret sau o simpla lantisor din argint 925, lucrata cu atentie, fara pietre mari sau elemente complicate care se pot agata usor. Acestea sunt si cele mai versatile.",
+      "author": "Ioana Stanescu",
+      "date": "2025-08-20T07:45:00.000Z"
+    },
+    {
+      "keyword": "Cum alegi inelul de logodna perfect",
+      "category": "Verighete si Logodna",
+      "categorySlug": "verighete-si-logodna",
+      "pubDate": "2025-11-15T09:00:00.000Z",
+      "slug": "cum-alegi-inelul-de-logodna-perfect",
+      "modifiedDate": "2026-02-02T22:39:07.456Z",
+      "excerpt": "Vrei sa stii cum alegi inelul de logodna perfect? Simplu: concentreaza-te pe ce ii place ei, pe stilul ei. Nu te complica prea mult cu trenduri sau ce zic altii. Un inel dragut, bine ales, cu o piatra care ii straluceste in ochi, asta conteaza. Uite care-i treaba, am sa fiu direct: cauta sa ii reflecti personalitatea, nu sa bifezi niste casute.",
+      "author": "Stefan Marinescu",
+      "date": "2025-11-15T09:00:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune genti de dama din piele naturala",
+      "category": "Accesorii Fashion",
+      "categorySlug": "accesorii-fashion",
+      "pubDate": "2025-07-08T11:30:00.000Z",
+      "slug": "cele-mai-bune-genti-de-dama-din-piele-naturala",
+      "modifiedDate": "2026-02-04T11:22:24.683Z",
+      "excerpt": "Daca vrei cele mai bune genti de dama din piele naturala, sincer, nu exista un singur raspuns universal. Totusi, pentru un echilibru excelent intre calitate, stil si pret, iti recomand sa te uiti la branduri precum Coccinelle sau Furla. Sunt branduri italiene consacrate care ofera piele de calitate buna la preturi corecte.",
+      "author": "Diana Popescu",
+      "date": "2025-07-08T11:30:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune ceasuri pentru femei sub 300 lei",
+      "category": "Ceasuri de Mana",
+      "categorySlug": "ceasuri-de-mana",
+      "pubDate": "2024-01-15T05:29:00.000Z",
+      "slug": "cele-mai-bune-ceasuri-pentru-femei-sub-300-lei",
+      "modifiedDate": "2026-02-02T07:23:50.096Z",
+      "excerpt": "Daca vrei cele mai bune ceasuri pentru femei sub 300 lei, mergi direct la branduri precum Casio, Lorus, sau chiar unele modele de la Fossil si Michael Kors daca prinzi reduceri bune. Pentru bugetul asta, te poti uita la modele clasice, cu quartz, rezistente la apa macar 30m, si cu o bratara sau curea confortabila. Am vazut multe modele misto de la Casio, au o fiabilitate de necontestat la pretul asta.",
+      "author": "Marina Alexandrescu",
+      "date": "2024-01-15T05:29:00.000Z"
+    },
+    {
+      "keyword": "Ceasuri automate barbatesti sub 1000 lei",
+      "category": "Ceasuri de Mana",
+      "categorySlug": "ceasuri-de-mana",
+      "pubDate": "2024-01-30T06:32:00.000Z",
+      "slug": "ceasuri-automate-barbatesti-sub-1000-lei",
+      "modifiedDate": "2026-02-02T21:11:27.714Z",
+      "excerpt": "Daca vrei un ceas automat barbatesc sub 1000 lei, cel mai bun punct de plecare este sa te uiti la branduri ca Orient, Seiko (modele mai vechi sau din gamele de intrare) sau Citizen. Gasesti modele mecanice solide, cu mecanisme fiabile, care arata si se simt mult mai scump decat sunt. Un Orient Kamasu sau un Seiko 5 nou, daca prinzi o oferta buna, sunt variante excelente. Nu te astepta la finisaje de lux la acest pret, dar poti gasi ceasuri care sa te tina ani buni.",
+      "author": "Marina Alexandrescu",
+      "date": "2024-01-30T06:32:00.000Z"
+    },
+    {
+      "keyword": "Casio vs Seiko: care e mai bun la pret similar",
+      "category": "Ceasuri de Mana",
+      "categorySlug": "ceasuri-de-mana",
+      "pubDate": "2024-02-15T05:45:00.000Z",
+      "slug": "casio-vs-seiko-care-e-mai-bun-la-pret-similar",
+      "modifiedDate": "2026-02-04T16:46:28.831Z",
+      "excerpt": "Daca ma intrebi pe mine, la pret similar, un Casio vs Seiko: care e mai bun la pret similar depinde mult de ce cauti. In general, Casio exceleaza la functii, rezistenta si preturi imbatabile pentru ce ofera, mai ales pe partea de digital si ceasuri sport. Seiko, pe de alta parte, ofera adesea finisaje mai premium, mecanisme mecanice mai rafinate si un aer mai clasic, chiar si la preturi accesibile.",
+      "author": "Marina Alexandrescu",
+      "date": "2024-02-15T05:45:00.000Z"
+    },
+    {
+      "keyword": "Cele mai frumoase cercei din aur pentru femei",
+      "category": "Bijuterii din Aur",
+      "categorySlug": "bijuterii-din-aur",
+      "pubDate": "2024-01-18T08:02:00.000Z",
+      "slug": "cele-mai-frumoase-cercei-din-aur-pentru-femei",
+      "modifiedDate": "2026-02-05T07:30:43.925Z",
+      "excerpt": "Stai sa-ti zic direct: cele mai frumoase cercei din aur pentru femei sunt cei care se potrivesc stilului tau si occasions-ului. Daca ar fi sa alegi ceva clasic, dar totusi special, m-as uita la unii mici, tip 'stud', din aur galben de 14k, cu o piatra naturala mica, gen zirconia sau topaz, ca sa nu ramanem fara buget dar sa arate fain. Sau, daca vrei ceva mai de efect, niste 'hoops' medii, poate cu un design putin mai elaborat, tot din aur galben sau alb. Depinde mult ce ai deja in cutia cu bijuterii si la ce ii vei purta. Nu exista o singura varianta \"cea mai frumoasa\", dar exista cea mai potrivita pentru tine.",
+      "author": "Alexandra Dumitrescu",
+      "date": "2024-01-18T08:02:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune inele din argint 925 pentru femei",
+      "category": "Bijuterii din Argint",
+      "categorySlug": "bijuterii-din-argint",
+      "pubDate": "2024-01-21T05:47:00.000Z",
+      "slug": "cele-mai-bune-inele-din-argint-925-pentru-femei",
+      "modifiedDate": "2026-02-06T07:30:52.155Z",
+      "excerpt": "Cand vine vorba de cele mai bune inele din argint 925 pentru femei, daca vrei ceva clasic si de efect, eu zic sa te uiti la modelele cu o singura piatra centrala, gen solitare subtile sau cu o piatra semipretioasa mica, cum ar fi un spinel negru sau o piatra lunii. Ele sunt versatile si arata fin pe orice mana.",
+      "author": "Ioana Stanescu",
+      "date": "2024-01-21T05:47:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune verighete din aur alb sub 2000 lei",
+      "category": "Verighete si Logodna",
+      "categorySlug": "verighete-si-logodna",
+      "pubDate": "2024-01-24T05:31:00.000Z",
+      "slug": "cele-mai-bune-verighete-din-aur-alb-sub-2000-lei",
+      "modifiedDate": "2026-02-07T07:31:05.743Z",
+      "excerpt": "Stai linistit, gasesti cele mai bune verighete din aur alb sub 2000 lei daca stii la ce sa te uiti. Pe bune, nu-i chiar asa greu cum pare. Am sa-ti arat exact unde sa cauti si ce modele sa nu ratezi, ca sa nu dai banii degeaba pe ceva ce nu-ti place sau nu rezista.",
+      "author": "Stefan Marinescu",
+      "date": "2024-01-24T05:31:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune ochelari de soare pentru femei sub 300 lei",
+      "category": "Accesorii Fashion",
+      "categorySlug": "accesorii-fashion",
+      "pubDate": "2024-01-28T05:26:00.000Z",
+      "slug": "cele-mai-bune-ochelari-de-soare-pentru-femei-sub-300-lei",
+      "modifiedDate": "2026-02-08T07:33:23.688Z",
+      "excerpt": "Ca sa gasesti cele mai bune ochelari de soare pentru femei sub 300 lei, uita-te la branduri ca Polaroid, Optică Romaneasca (daca au modele in oferta), sau cauta reduceri la nume mai cunoscute. Atenție la protecția UV 400. Nu te lăsa păcălită de branduri obscure care promit mult la preț mic.",
+      "author": "Diana Popescu",
+      "date": "2024-01-28T05:26:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune smartwatch-uri sub 500 lei",
+      "category": "Ceasuri de Mana",
+      "categorySlug": "ceasuri-de-mana",
+      "pubDate": "2024-02-29T05:46:00.000Z",
+      "slug": "cele-mai-bune-smartwatch-uri-sub-500-lei",
+      "modifiedDate": "2026-02-09T07:30:53.946Z",
+      "excerpt": "Daca vrei cele mai bune smartwatch-uri sub 500 lei, stai linistit, gasesti optiuni bune fara sa dai faliment. Recomandarea mea principala ar fi sa te uiti la modelele de la Amazfit sau Xiaomi, au cel mai bun raport calitate-pret in zona asta.",
+      "author": "Marina Alexandrescu",
+      "date": "2024-02-29T05:46:00.000Z"
+    },
+    {
+      "keyword": "Lant de aur 14K vs 18K: diferente si preturi",
+      "category": "Bijuterii din Aur",
+      "categorySlug": "bijuterii-din-aur",
+      "pubDate": "2024-02-02T06:21:00.000Z",
+      "slug": "lant-de-aur-14k-vs-18k-diferente-si-preturi",
+      "modifiedDate": "2026-02-10T07:30:51.239Z",
+      "excerpt": "Daca vrei un lant de aur pe care sa-l porti zilnic, fara griji, mergi pe 14K. E mai durabil, mai rezistent la zgarieturi si, sincer, mult mai accesibil. Un lant de aur 14K vs 18K, daca ma intrebi pe mine, pentru uz general, castiga 14K. Daca vrei stralucire maxima si nu te deranjeaza sa ai mai multa grija, atunci 18K e o optiune.",
+      "author": "Alexandra Dumitrescu",
+      "date": "2024-02-02T06:21:00.000Z"
+    },
+    {
+      "keyword": "Ceasuri de mana elegante pentru birou sub 800 lei",
+      "category": "Ceasuri de Mana",
+      "categorySlug": "ceasuri-de-mana",
+      "pubDate": "2024-03-17T05:18:00.000Z",
+      "slug": "ceasuri-de-mana-elegante-pentru-birou-sub-800-lei",
+      "modifiedDate": "2026-02-19T07:31:41.448Z",
+      "excerpt": "Daca vrei ceasuri de mana elegante pentru birou sub 800 lei, uite care-i treaba: cauta modele clasice, cu bratara metalica sau curea de piele, intr-o paleta de culori neutre ca negru, albastru inchis, gri sau maro. Orientarea pe mecanisme quartz e cea mai sigura pentru precizie si intretinere minima la acest buget. Modele de la Seiko, Citizen, Orient sau chiar anumite linii de la Fossil pot fi optiuni excelente.",
+      "author": "Marina Alexandrescu",
+      "date": "2024-03-17T05:18:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune inele din aur pentru barbati",
+      "category": "Bijuterii din Aur",
+      "categorySlug": "bijuterii-din-aur",
+      "pubDate": "2024-02-18T09:53:00.000Z",
+      "slug": "cele-mai-bune-inele-din-aur-pentru-barbati",
+      "modifiedDate": "2026-02-20T07:32:28.142Z",
+      "excerpt": "Daca ma intrebi pe mine, cele mai bune inele din aur pentru barbati sunt cele care imbina discretia cu un design masculin robust. Ma refer la modele clasice, simple, din aur galben sau alb de 14K sau 18K, fara prea multe pietre sau ornamente complicate. Un exemplu bun ar fi un inel lat, simplu, cu finisaj mat, care arata bine la orice tinuta. Nu uita, un inel barbatesc bun nu straluceste ostentativ, ci adauga un plus de stil si personalitate.",
+      "author": "Alexandra Dumitrescu",
+      "date": "2024-02-18T09:53:00.000Z"
+    },
+    {
+      "keyword": "Pandantive din argint cu pietre semipretioase",
+      "category": "Bijuterii din Argint",
+      "categorySlug": "bijuterii-din-argint",
+      "pubDate": "2024-02-06T05:15:00.000Z",
+      "slug": "pandantive-din-argint-cu-pietre-semipretioase",
+      "modifiedDate": "2026-02-21T07:30:53.190Z",
+      "excerpt": "Cand vine vorba de pandantive din argint cu pietre semipretioase, cauta-le pe cele care nu doar ca arata bine, dar sunt si realizate bine. Un pandantiv bun, din argint 925, cu o piatra autentica, nu ar trebui sa depaseasca 250-300 lei pentru modele mai simple, dar pentru cele cu design complex sau pietre mai rare, pretul poate urca spre 500-700 lei. Sfatul meu e sa te uiti la finisaje si la autenticitatea pietrei.",
+      "author": "Ioana Stanescu",
+      "date": "2024-02-06T05:15:00.000Z"
+    },
+    {
+      "keyword": "Verighete din platina vs aur alb: comparatie preturi",
+      "category": "Verighete si Logodna",
+      "categorySlug": "verighete-si-logodna",
+      "pubDate": "2024-02-08T07:55:00.000Z",
+      "slug": "verighete-din-platina-vs-aur-alb-comparatie-preturi",
+      "modifiedDate": "2026-02-22T07:31:05.256Z",
+      "excerpt": "Stai la o cumpana majora: verighete din platina sau aur alb? Daca ma intrebi pe mine, pentru o verighete din platina vs aur alb: comparatie preturi, raspunsul e simplu: platina e, in general, mai scumpa, dar ofera durabilitate si o stralucire unica. Aurul alb e o alternativa mai accesibila, arata similar si e la fel de elegant, dar necesita o mica atentie in plus pe termen lung.",
+      "author": "Stefan Marinescu",
+      "date": "2024-02-08T07:55:00.000Z"
+    },
+    {
+      "keyword": "Cercei din argint 925: modele si preturi",
+      "category": "Bijuterii din Argint",
+      "categorySlug": "bijuterii-din-argint",
+      "pubDate": "2024-02-21T08:43:00.000Z",
+      "slug": "cercei-din-argint-925-modele-si-preturi",
+      "modifiedDate": "2026-02-26T11:13:51.675Z",
+      "excerpt": "Daca vrei sa cumperi cercei din argint 925: modele si preturi, gandeste-te la stilul tau personal si la ocazia pentru care ii iei. Pentru zi de zi, ceva finut, gen surub, intre 80-150 lei. Pentru seri speciale, poti merge pe modele statement, cu pietre sau designuri elaborate, undeva intre 200-500 lei, sau chiar mai mult daca sunt gravati sau au detalii complexe.",
+      "author": "Ioana Stanescu",
+      "date": "2024-02-21T08:43:00.000Z"
+    }
+  ]
+}

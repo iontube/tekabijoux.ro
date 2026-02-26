@@ -1,0 +1,58 @@
+---
+import Layout from '../components/Layout.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+const rootDir = path.resolve(process.cwd());
+const kwData = JSON.parse(fs.readFileSync(path.join(rootDir, 'keywords.json'), 'utf-8'));
+const categories = kwData.categories || [];
+const completed = kwData.completed || [];
+
+const articlesByCategory = {};
+for (const cat of categories) {
+  articlesByCategory[cat.slug] = completed
+    .filter(a => a.categorySlug === cat.slug)
+    .sort((a, b) => new Date(b.modifiedDate || b.pubDate).getTime() - new Date(a.modifiedDate || a.pubDate).getTime());
+}
+---
+<Layout
+  title="Harta Site - TekaBijoux"
+  description="Harta completa a site-ului TekaBijoux.ro cu toate paginile si articolele."
+  noIndex={true}
+>
+  <div class="smap">
+    <h1>Harta Site</h1>
+
+    <h2>Pagini principale</h2>
+    <ul>
+      <li><a href="/">Acasa</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+
+    {categories.map(cat => (
+      <div>
+        <h2><a href={`/${cat.slug}/`}>{cat.name}</a></h2>
+        <ul>
+          {(articlesByCategory[cat.slug] || []).map(article => {
+            const slug = article.slug || article.keyword.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+            return (
+              <li><a href={`/${slug}/`}>{article.keyword}</a></li>
+            );
+          })}
+          {(!articlesByCategory[cat.slug] || articlesByCategory[cat.slug].length === 0) && (
+            <li style="color: var(--text-faint); font-style: italic;">Niciun articol momentan</li>
+          )}
+        </ul>
+      </div>
+    ))}
+
+    <h2>Informatii legale</h2>
+    <ul>
+      <li><a href="/privacy-policy/">Politica de Confidentialitate</a></li>
+      <li><a href="/terms/">Termeni si Conditii</a></li>
+      <li><a href="/cookies/">Politica de Cookies</a></li>
+      <li><a href="/gdpr/">GDPR</a></li>
+    </ul>
+  </div>
+</Layout>

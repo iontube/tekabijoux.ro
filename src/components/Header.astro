@@ -1,0 +1,78 @@
+---
+const categories = [
+  { name: 'Ceasuri de Mana', slug: 'ceasuri-de-mana' },
+  { name: 'Bijuterii din Aur', slug: 'bijuterii-din-aur' },
+  { name: 'Bijuterii din Argint', slug: 'bijuterii-din-argint' },
+  { name: 'Verighete si Logodna', slug: 'verighete-si-logodna' },
+  { name: 'Accesorii Fashion', slug: 'accesorii-fashion' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+<header class="hdr" id="siteHeader">
+  <div class="hdr-inner">
+    <a href="/" class="hdr-logo">Teka<b>Bijoux</b></a>
+
+    <nav class="hdr-nav">
+      <a href="/" class:list={[{ on: currentPath === '/' }]}>Acasa</a>
+      <a href="/blog/" class:list={[{ on: currentPath.startsWith('/blog') }]}>Blog</a>
+      {categories.map(cat => (
+        <a href={`/${cat.slug}/`} class:list={[{ on: currentPath.startsWith(`/${cat.slug}`) }]}>
+          {cat.name}
+        </a>
+      ))}
+    </nav>
+
+    <button class="hdr-mob" id="mobileToggle" aria-label="Meniu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<div class="mob-over" id="mobileOverlay"></div>
+<div class="mob-draw" id="mobileDrawer">
+  <div class="mob-draw-top">
+    <span class="hdr-logo" style="font-size:1.05rem;">Teka<b>Bijoux</b></span>
+    <button class="mob-draw-close" id="mobileClose" aria-label="Inchide meniu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+  </div>
+  <a href="/" class:list={["mob-link", { on: currentPath === '/' }]}>Acasa</a>
+  <a href="/blog/" class:list={["mob-link", { on: currentPath.startsWith('/blog') }]}>Blog</a>
+  {categories.map(cat => (
+    <a href={`/${cat.slug}/`} class:list={["mob-link", { on: currentPath.startsWith(`/${cat.slug}`) }]}>
+      {cat.name}
+    </a>
+  ))}
+  <a href="/contact/" class="mob-link">Contact</a>
+</div>
+
+<script>
+  const toggle = document.getElementById('mobileToggle');
+  const overlay = document.getElementById('mobileOverlay');
+  const drawer = document.getElementById('mobileDrawer');
+  const close = document.getElementById('mobileClose');
+
+  function openMenu() {
+    overlay?.classList.add('open');
+    drawer?.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    overlay?.classList.remove('open');
+    drawer?.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  toggle?.addEventListener('click', openMenu);
+  overlay?.addEventListener('click', closeMenu);
+  close?.addEventListener('click', closeMenu);
+</script>

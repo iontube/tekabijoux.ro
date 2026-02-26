@@ -1,0 +1,48 @@
+---
+interface Article {
+  title: string;
+  slug: string;
+  excerpt: string;
+  category: string;
+  categorySlug: string;
+  date: string;
+  author: string;
+}
+
+interface Props {
+  articles: Article[];
+  currentSlug: string;
+}
+
+const { articles, currentSlug } = Astro.props;
+const similar = articles.filter(a => a.slug !== currentSlug).slice(0, 4);
+---
+{similar.length > 0 && (
+  <div class="similar">
+    <h2 class="similar-title">Articole similare</h2>
+    <div class="similar-grid">
+      {similar.map(article => {
+        const formattedDate = new Date(article.date).toLocaleDateString('ro-RO', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+        });
+        return (
+          <a href={`/${article.slug}/`} class="card">
+            <div class="card-img">
+              <img src={`/images/articles/${article.slug}.webp`} alt={article.title} loading="lazy" width="400" height="300" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">{article.title}</h3>
+              <div class="card-foot">
+                <span>{article.author}</span>
+                <span class="dot"></span>
+                <time datetime={article.date}>{formattedDate}</time>
+              </div>
+            </div>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+)}

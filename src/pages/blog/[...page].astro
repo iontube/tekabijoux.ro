@@ -1,0 +1,100 @@
+---
+import Layout from '../../components/Layout.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+export function getStaticPaths() {
+  const rootDir = path.resolve(process.cwd());
+  const kwData = JSON.parse(fs.readFileSync(path.join(rootDir, 'keywords.json'), 'utf-8'));
+  const completed = kwData.completed || [];
+  const categories = kwData.categories || [];
+  const perPage = 12;
+
+  const sorted = completed.sort((a, b) =>
+    new Date(b.modifiedDate || b.pubDate).getTime() - new Date(a.modifiedDate || a.pubDate).getTime()
+  );
+
+  const totalPages = Math.max(1, Math.ceil(sorted.length / perPage));
+  const paths = [];
+
+  for (let i = 0; i < totalPages; i++) {
+    const pageArticles = sorted.slice(i * perPage, (i + 1) * perPage);
+    paths.push({
+      params: { page: i === 0 ? undefined : String(i + 1) },
+      props: {
+        articles: pageArticles,
+        categories,
+        currentPage: i + 1,
+        totalPages,
+        totalArticles: sorted.length,
+      },
+    });
+  }
+
+  return paths;
+}
+
+const { articles, categories, currentPage, totalPages, totalArticles } = Astro.props;
+---
+<Layout
+  title={currentPage === 1 ? 'Blog - TekaBijoux' : `Blog - Pagina ${currentPage} - TekaBijoux`}
+  description="Toate articolele si ghidurile de cumparaturi pentru bijuterii, ceasuri si accesorii. Comparatii de preturi actualizate."
+>
+  <section class="hero hero-sm">
+    <div class="hero-pip"></div>
+    <p class="hero-tag">Blog</p>
+    <h1>Toate articolele</h1>
+    <p class="hero-sub">{totalArticles} {totalArticles === 1 ? 'articol publicat' : 'articole publicate'}</p>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      {articles.length > 0 ? (
+        <div style="display:flex;flex-direction:column;gap:20px;">
+          {articles.map(article => {
+            const slug = article.slug || article.keyword.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+            const formattedDate = new Date(article.pubDate).toLocaleDateString('ro-RO', {
+              year: 'numeric', month: 'long', day: 'numeric'
+            });
+            const authorName = article.author || categories.find(c => c.slug === article.categorySlug)?.author?.name || 'Redactia';
+            return (
+              <a href={`/${slug}/`} class="card-h">
+                <div class="card-img">
+                  <img src={`/images/articles/${slug}.webp`} alt={article.keyword} loading="lazy" width="300" height="220" />
+                </div>
+                <div class="card-body">
+                  <div class="card-cat">{article.category}</div>
+                  <h2 class="card-title" style="font-size:1.3rem;">{article.keyword}</h2>
+                  <p class="card-excerpt">{article.excerpt}</p>
+                  <div class="card-foot">
+                    <span>{authorName}</span>
+                    <span class="dot"></span>
+                    <time datetime={article.pubDate}>{formattedDate}</time>
+                  </div>
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      ) : (
+        <p style="text-align:center; color: var(--text-faint); padding: 40px 0;">Niciun articol publicat momentan. Revino in curand.</p>
+      )}
+
+      {totalPages > 1 && (
+        <nav class="pag">
+          {currentPage > 1 && (
+            <a href={currentPage === 2 ? '/blog/' : `/blog/${currentPage - 1}/`}>&laquo;</a>
+          )}
+          {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+            page === currentPage
+              ? <span class="on">{page}</span>
+              : <a href={page === 1 ? '/blog/' : `/blog/${page}/`}>{page}</a>
+          ))}
+          {currentPage < totalPages && (
+            <a href={`/blog/${currentPage + 1}/`}>&raquo;</a>
+          )}
+        </nav>
+      )}
+    </div>
+  </section>
+</Layout>

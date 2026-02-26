@@ -1,0 +1,38 @@
+---
+interface Props {
+  title: string;
+  slug: string;
+  excerpt: string;
+  category: string;
+  categorySlug: string;
+  date: string;
+  author: string;
+  image?: string;
+}
+
+const { title, slug, excerpt, category, categorySlug, date, author, image } = Astro.props;
+const cleanExcerpt = excerpt?.replace(/<[^>]*>/g, '') || '';
+
+const formattedDate = new Date(date).toLocaleDateString('ro-RO', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+const imagePath = image || `/images/articles/${slug}.webp`;
+---
+<a href={`/${slug}/`} class="card">
+  <div class="card-img">
+    <img src={imagePath} alt={title} loading="lazy" width="400" height="300" />
+  </div>
+  <div class="card-body">
+    <div class="card-cat">{category}</div>
+    <h3 class="card-title">{title}</h3>
+    <p class="card-excerpt">{cleanExcerpt}</p>
+    <div class="card-foot">
+      <span>{author}</span>
+      <span class="dot"></span>
+      <time datetime={date}>{formattedDate}</time>
+    </div>
+  </div>
+</a>

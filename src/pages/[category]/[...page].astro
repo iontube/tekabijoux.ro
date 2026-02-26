@@ -1,0 +1,110 @@
+---
+import Layout from '../../components/Layout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+export function getStaticPaths() {
+  const rootDir = path.resolve(process.cwd());
+  const kwData = JSON.parse(fs.readFileSync(path.join(rootDir, 'keywords.json'), 'utf-8'));
+  const categories = kwData.categories || [];
+  const completed = kwData.completed || [];
+  const perPage = 12;
+  const paths = [];
+
+  for (const cat of categories) {
+    const catArticles = completed
+      .filter(a => a.categorySlug === cat.slug)
+      .sort((a, b) => new Date(b.modifiedDate || b.pubDate).getTime() - new Date(a.modifiedDate || a.pubDate).getTime());
+
+    const totalPages = Math.max(1, Math.ceil(catArticles.length / perPage));
+
+    for (let i = 0; i < totalPages; i++) {
+      paths.push({
+        params: {
+          category: cat.slug,
+          page: i === 0 ? undefined : String(i + 1),
+        },
+        props: {
+          category: cat,
+          articles: catArticles.slice(i * perPage, (i + 1) * perPage),
+          allCategories: categories,
+          currentPage: i + 1,
+          totalPages,
+          totalArticles: catArticles.length,
+        },
+      });
+    }
+  }
+
+  return paths;
+}
+
+const { category, articles, allCategories, currentPage, totalPages, totalArticles } = Astro.props;
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Acasa", "item": "https://tekabijoux.ro/" },
+    { "@type": "ListItem", "position": 2, "name": category.name, "item": `https://tekabijoux.ro/${category.slug}/` }
+  ]
+});
+---
+<Layout
+  title={currentPage === 1 ? `${category.name} - TekaBijoux` : `${category.name} - Pagina ${currentPage} - TekaBijoux`}
+  description={category.description.substring(0, 155) + '...'}
+  schema={breadcrumbSchema}
+>
+  <section class="hero hero-sm">
+    <div class="hero-pip"></div>
+    <p class="hero-tag">{category.icon} Categorie</p>
+    <h1>{category.name}</h1>
+    <p class="hero-sub">{category.description.substring(0, 160)}...</p>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      {articles.length > 0 ? (
+        <div class="grid-3">
+          {articles.map(article => {
+            const slug = article.slug || article.keyword.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+            const authorName = article.author || category.author?.name || 'Redactia';
+            return (
+              <ArticleCard
+                title={article.keyword}
+                slug={slug}
+                excerpt={article.excerpt || ''}
+                category={article.category}
+                categorySlug={article.categorySlug}
+                date={article.pubDate}
+                author={authorName}
+              />
+            );
+          })}
+        </div>
+      ) : (
+        <div style="text-align:center; padding: 48px 0;">
+          <p style="color: var(--text-faint); font-size: 1.05rem; margin-bottom: 16px;">Momentan nu avem articole in aceasta categorie.</p>
+          <a href="/blog/" class="btn btn-ghost">Vezi toate articolele</a>
+        </div>
+      )}
+
+      {totalPages > 1 && (
+        <nav class="pag">
+          {currentPage > 1 && (
+            <a href={currentPage === 2 ? `/${category.slug}/` : `/${category.slug}/${currentPage - 1}/`}>&laquo;</a>
+          )}
+          {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+            page === currentPage
+              ? <span class="on">{page}</span>
+              : <a href={page === 1 ? `/${category.slug}/` : `/${category.slug}/${page}/`}>{page}</a>
+          ))}
+          {currentPage < totalPages && (
+            <a href={`/${category.slug}/${currentPage + 1}/`}>&raquo;</a>
+          )}
+        </nav>
+      )}
+    </div>
+  </section>
+</Layout>

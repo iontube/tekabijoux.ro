@@ -1,0 +1,123 @@
+---
+import Layout from '../components/Layout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+const rootDir = path.resolve(process.cwd());
+const kwData = JSON.parse(fs.readFileSync(path.join(rootDir, 'keywords.json'), 'utf-8'));
+const categories = kwData.categories || [];
+const completed = kwData.completed || [];
+
+const latestArticles = completed
+  .sort((a, b) => new Date(b.modifiedDate || b.pubDate).getTime() - new Date(a.modifiedDate || a.pubDate).getTime());
+
+const featuredArticle = latestArticles[0];
+const recentArticles = latestArticles.slice(1, 4);
+
+const categoryArticleCounts = {};
+completed.forEach(a => {
+  categoryArticleCounts[a.categorySlug] = (categoryArticleCounts[a.categorySlug] || 0) + 1;
+});
+
+const siteSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "TekaBijoux",
+  "url": "https://tekabijoux.ro",
+  "description": "Comparam preturi si analizam bijuterii, ceasuri si accesorii. Ghiduri de cumparaturi bazate pe experienta reala.",
+  "inLanguage": "ro",
+  "publisher": {
+    "@type": "Organization",
+    "name": "TekaBijoux",
+    "url": "https://tekabijoux.ro"
+  }
+});
+---
+<Layout
+  title="TekaBijoux - Comparatii de Preturi pentru Bijuterii, Ceasuri si Accesorii"
+  description="Comparam preturi si analizam bijuterii, ceasuri si accesorii ca sa faci cea mai buna alegere. Informatii verificate si recenzii oneste."
+  schema={siteSchema}
+>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-pip"></div>
+    <p class="hero-tag">Bijuterii &middot; Ceasuri &middot; Accesorii</p>
+    <h1>Preturile <em>corecte</em> pentru alegerile potrivite</h1>
+    <p class="hero-sub">Comparatii de preturi, analize oneste si recomandari pentru bijuterii, ceasuri si accesorii din Romania.</p>
+  </section>
+
+  <!-- Featured Article -->
+  {featuredArticle && (() => {
+    const featSlug = featuredArticle.slug || featuredArticle.keyword.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+    const featAuthor = featuredArticle.author || categories.find(c => c.slug === featuredArticle.categorySlug)?.author?.name || 'Redactia';
+    const featDate = new Date(featuredArticle.pubDate).toLocaleDateString('ro-RO', { year: 'numeric', month: 'long', day: 'numeric' });
+    return (
+      <section class="sec" style="padding-top:0;">
+        <div class="wrap">
+          <a href={`/${featSlug}/`} class="feat">
+            <img src={`/images/articles/${featSlug}.webp`} alt={featuredArticle.keyword} width="1200" height="514" loading="eager" />
+            <div class="feat-overlay">
+              <div class="feat-badge">{featuredArticle.category}</div>
+              <div class="feat-title">{featuredArticle.keyword}</div>
+              <div class="feat-meta">
+                <span>{featAuthor}</span>
+                <span class="dot"></span>
+                <time datetime={featuredArticle.pubDate}>{featDate}</time>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    );
+  })()}
+
+  <!-- Categories -->
+  <section class="cats">
+    <div class="wrap">
+      <p class="cats-label">Exploreaza</p>
+      <h2 class="cats-title">Categorii</h2>
+      {categories.map((cat, i) => (
+        <a href={`/${cat.slug}/`} class="cat-row" style="text-decoration:none;">
+          <div class="cat-num">{String(i + 1).padStart(2, '0')}</div>
+          <div class="cat-body">
+            <div class="cat-name">{cat.name}</div>
+            <div class="cat-desc">{cat.description}</div>
+            <div class="cat-stat">{categoryArticleCounts[cat.slug] || 0} {(categoryArticleCounts[cat.slug] || 0) === 1 ? 'articol' : 'articole'}</div>
+          </div>
+          <span class="cat-go">Descopera</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Recent Articles -->
+  {recentArticles.length > 0 && (
+    <section class="sec" style="background: var(--cream);">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="gold-line"></div>
+          <p class="sec-label">Recent publicat</p>
+          <h2 class="sec-title">Ultimele articole</h2>
+          <p class="sec-sub">Ghiduri si comparatii proaspete de pe blog.</p>
+        </div>
+        <div class="grid-3">
+          {recentArticles.map(article => (
+            <ArticleCard
+              title={article.keyword}
+              slug={article.slug || article.keyword.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}
+              excerpt={article.excerpt || ''}
+              category={article.category}
+              categorySlug={article.categorySlug}
+              date={article.pubDate}
+              author={article.author || categories.find(c => c.slug === article.categorySlug)?.author?.name || 'Redactia'}
+            />
+          ))}
+        </div>
+        <div style="text-align: center; margin-top: 44px;">
+          <a href="/blog/" class="btn btn-ghost">Toate articolele &rarr;</a>
+        </div>
+      </div>
+    </section>
+  )}
+</Layout>
