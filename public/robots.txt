@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://tekabijoux.ro/sitemap-index.xml
-Sitemap: https://tekabijoux.ro/sitemap-images.xml
