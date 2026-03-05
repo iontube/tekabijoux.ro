@@ -1,0 +1,346 @@
+---
+import Layout from '../components/Layout.astro';
+import SimilarArticles from '../components/SimilarArticles.astro';
+import PrevNextNav from '../components/PrevNextNav.astro';
+
+const title = "Top curele din piele pentru barbati sub 200 lei";
+const description = "Cauti curele de piele pentru barbati sub 200 lei? Ai ajuns unde trebuie. Am adunat cele mai bune optiuni ca sa arati impecabil fara sa dai o avere.";
+const pubDate = "2024-02-27T06:15:00.000Z";
+const modifiedDate = "2026-03-05T16:00:39.984Z";
+const category = "Accesorii Fashion";
+const categorySlug = "accesorii-fashion";
+const slug = "top-curele-din-piele-pentru-barbati-sub-200-lei";
+const authorName = "Diana Popescu";
+const authorRole = "Expert Accesorii si Moda";
+const authorBio = "Diana scrie despre moda si accesorii de peste 7 ani. A lucrat ca stilist personal si acum se concentreaza pe comparatii de preturi pentru accesorii fashion. Testeaza produsele in conditii reale si ofera recomandari bazate pe experienta directa.";
+const authorInitials = "DP";
+const schema = "[{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"cat costa o curea de piele naturala barbati sub 200 lei\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"O curea de piele naturala barbati sub 200 lei are preturi ce variaza intre 100 si 199 lei. Cele mai multe modele bune se gasesc in intervalul 120-170 lei, oferind un echilibru bun intre calitate si pret.\"}},{\"@type\":\"Question\",\"name\":\"care e diferenta intre piele naturala si piele ecologica la curele\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Pielea naturala este obtinuta din pielea animalelor, este respirabila, durabila si se muleaza pe corp. Pielea ecologica este un material sintetic, adesea din poliuretan, care imita pielea, dar se poate crapa, nu respira la fel de bine si are o durata de viata mai scurta.\"}},{\"@type\":\"Question\",\"name\":\"cum aleg marimea corecta pentru o curea barbati\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Masura talia in dreptul unde vei purta cureaua sau masoara o curea pe care o porti deja, de la catarama pana la gaura cea mai folosita. In general, o curea de 110-115 cm este potrivita pentru majoritatea barbatilor. Verifica ghidul de marimi al producatorului.\"}},{\"@type\":\"Question\",\"name\":\"merita sa cumpar o curea de piele intoarsa\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Da, merita daca stilul tau este casual si relaxat. Pielea intoarsa ofera un aspect unic si o textura placuta. Necesita insa ingrijire speciala si nu este potrivita pentru tinute formale. E un accesoriu statement.\"}},{\"@type\":\"Question\",\"name\":\"cum ingrijesc o curea din piele naturala\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Curata cureaua cu o carpa umeda sau o perie moale. Dupa utilizare, las-o sa se usuce natural, departe de soare sau caldura. Aplica periodic un balsam sau o crema de piele pentru a o mentine hidratata si a preveni crapaturile. Pentru pielea intoarsa, foloseste perii si solutii dedicate.\"}}]},{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Acasa\",\"item\":\"https://tekabijoux.ro/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Accesorii Fashion\",\"item\":\"https://tekabijoux.ro/accesorii-fashion/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Top curele din piele pentru barbati sub 200 lei\",\"item\":\"https://tekabijoux.ro/top-curele-din-piele-pentru-barbati-sub-200-lei/\"}]},{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Top curele din piele pentru barbati sub 200 lei\",\"description\":\"Cauti curele de piele pentru barbati sub 200 lei? Ai ajuns unde trebuie. Am adunat cele mai bune optiuni ca sa arati impecabil fara sa dai o avere.\",\"image\":\"https://tekabijoux.ro/images/articles/top-curele-din-piele-pentru-barbati-sub-200-lei.webp\",\"datePublished\":\"2024-02-27T06:15:00.000Z\",\"dateModified\":\"2026-03-05T16:00:39.984Z\",\"author\":{\"@type\":\"Person\",\"name\":\"Diana Popescu\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"TekaBijoux\",\"url\":\"https://tekabijoux.ro\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://tekabijoux.ro/top-curele-din-piele-pentru-barbati-sub-200-lei/\"}}]";
+const similarArticles = [{"title":"Cele mai bune genti de dama din piele naturala","slug":"cele-mai-bune-genti-de-dama-din-piele-naturala","excerpt":"Daca vrei cele mai bune genti de dama din piele naturala, sincer, nu exista un singur raspuns universal. Totusi, pentru un echilibru excelent intre calitate, stil si pret, iti recomand sa te uiti la branduri precum Coccinelle sau Furla. Sunt branduri italiene consacrate care ofera piele de calitate buna la preturi corecte.","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2025-07-08T11:30:00.000Z","author":"Diana Popescu"},{"title":"Cele mai bune ochelari de soare pentru femei sub 300 lei","slug":"cele-mai-bune-ochelari-de-soare-pentru-femei-sub-300-lei","excerpt":"Ca sa gasesti cele mai bune ochelari de soare pentru femei sub 300 lei, uita-te la branduri ca Polaroid, Optică Romaneasca (daca au modele in oferta), sau cauta reduceri la nume mai cunoscute. Atenție la protecția UV 400. Nu te lăsa păcălită de branduri obscure care promit mult la preț mic.","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-01-28T05:26:00.000Z","author":"Diana Popescu"},{"title":"Portofele din piele naturala pentru barbati","slug":"portofele-din-piele-naturala-pentru-barbati","excerpt":"Daca vrei un portofel din piele naturala pentru barbati care sa tina o viata si sa arate impecabil, mergi pe piele de vaca, grain top sau full grain, de la branduri consacrate. Modelul clasic cu clapetă sau cel subțire, minimalist, sunt alegeri sigure, undeva la 200-500 lei.","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-02-12T08:31:00.000Z","author":"Diana Popescu"}];
+const allArticles = [{"title":"Cele mai bune ceasuri barbatesti sub 500 lei","slug":"cele-mai-bune-ceasuri-barbatesti-sub-500-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2025-09-12T08:30:00.000Z"},{"title":"Cele mai frumoase lanturi de aur pentru barbati","slug":"cele-mai-frumoase-lanturi-de-aur-pentru-barbati","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2025-10-05T10:15:00.000Z"},{"title":"Cele mai bune bratari din argint 925 pentru femei","slug":"cele-mai-bune-bratari-din-argint-925-pentru-femei","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2025-08-20T07:45:00.000Z"},{"title":"Cum alegi inelul de logodna perfect","slug":"cum-alegi-inelul-de-logodna-perfect","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2025-11-15T09:00:00.000Z"},{"title":"Cele mai bune genti de dama din piele naturala","slug":"cele-mai-bune-genti-de-dama-din-piele-naturala","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2025-07-08T11:30:00.000Z"},{"title":"Cele mai bune ceasuri pentru femei sub 300 lei","slug":"cele-mai-bune-ceasuri-pentru-femei-sub-300-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-01-15T05:29:00.000Z"},{"title":"Ceasuri automate barbatesti sub 1000 lei","slug":"ceasuri-automate-barbatesti-sub-1000-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-01-30T06:32:00.000Z"},{"title":"Casio vs Seiko: care e mai bun la pret similar","slug":"casio-vs-seiko-care-e-mai-bun-la-pret-similar","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-02-15T05:45:00.000Z"},{"title":"Cele mai frumoase cercei din aur pentru femei","slug":"cele-mai-frumoase-cercei-din-aur-pentru-femei","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-01-18T08:02:00.000Z"},{"title":"Cele mai bune inele din argint 925 pentru femei","slug":"cele-mai-bune-inele-din-argint-925-pentru-femei","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-01-21T05:47:00.000Z"},{"title":"Cele mai bune verighete din aur alb sub 2000 lei","slug":"cele-mai-bune-verighete-din-aur-alb-sub-2000-lei","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-01-24T05:31:00.000Z"},{"title":"Cele mai bune ochelari de soare pentru femei sub 300 lei","slug":"cele-mai-bune-ochelari-de-soare-pentru-femei-sub-300-lei","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-01-28T05:26:00.000Z"},{"title":"Cele mai bune smartwatch-uri sub 500 lei","slug":"cele-mai-bune-smartwatch-uri-sub-500-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-02-29T05:46:00.000Z"},{"title":"Lant de aur 14K vs 18K: diferente si preturi","slug":"lant-de-aur-14k-vs-18k-diferente-si-preturi","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-02-02T06:21:00.000Z"},{"title":"Ceasuri de mana elegante pentru birou sub 800 lei","slug":"ceasuri-de-mana-elegante-pentru-birou-sub-800-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-03-17T05:18:00.000Z"},{"title":"Cele mai bune inele din aur pentru barbati","slug":"cele-mai-bune-inele-din-aur-pentru-barbati","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-02-18T09:53:00.000Z"},{"title":"Pandantive din argint cu pietre semipretioase","slug":"pandantive-din-argint-cu-pietre-semipretioase","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-02-06T05:15:00.000Z"},{"title":"Verighete din platina vs aur alb: comparatie preturi","slug":"verighete-din-platina-vs-aur-alb-comparatie-preturi","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-02-08T07:55:00.000Z"},{"title":"Cercei din argint 925: modele si preturi","slug":"cercei-din-argint-925-modele-si-preturi","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-02-21T08:43:00.000Z"},{"title":"Bijuterii din argint Pandora vs Thomas Sabo","slug":"bijuterii-din-argint-pandora-vs-thomas-sabo","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-03-08T06:05:00.000Z"},{"title":"Cum alegi marimea potrivita pentru verighete","slug":"cum-alegi-marimea-potrivita-pentru-verighete","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-02-24T07:19:00.000Z"},{"title":"Portofele din piele naturala pentru barbati","slug":"portofele-din-piele-naturala-pentru-barbati","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-02-12T08:31:00.000Z"},{"title":"Top ceasuri sport barbatesti rezistente la apa","slug":"top-ceasuri-sport-barbatesti-rezistente-la-apa","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-03-31T07:06:00.000Z"},{"title":"Bratari din aur pentru femei sub 1000 lei","slug":"bratari-din-aur-pentru-femei-sub-1000-lei","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-03-04T08:02:00.000Z"},{"title":"Cele mai bune lanturi din argint pentru barbati","slug":"cele-mai-bune-lanturi-din-argint-pentru-barbati","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-03-21T05:02:00.000Z"},{"title":"Cele mai bune inele de logodna cu diamant sub 3000 lei","slug":"cele-mai-bune-inele-de-logodna-cu-diamant-sub-3000-lei","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-03-11T09:38:00.000Z"}];
+---
+<Layout
+  title={title + " - TekaBijoux"}
+  description={description}
+  canonical={"https://tekabijoux.ro/" + slug + "/"}
+  ogImage={"/images/articles/" + slug + ".webp"}
+  schema={schema}
+  article={true}
+  pubDate={pubDate}
+  modifiedDate={modifiedDate}
+>
+  <article>
+    <div class="art-hero">
+      <img src={"/images/articles/" + slug + ".webp"} alt={title} width="1200" height="514" loading="eager" />
+      <div class="art-hero-over">
+        <nav class="art-hero-bc" aria-label="breadcrumb">
+          <a href="/">Acasa</a>
+          <span class="sep">/</span>
+          <a href={"/" + categorySlug + "/"}>{category}</a>
+          <span class="sep">/</span>
+          <span>{title}</span>
+        </nav>
+        <h1>{title}</h1>
+        <div class="art-hero-meta">
+          <span>{authorName}</span>
+          <span class="dot"></span>
+          <time datetime={pubDate}>27 februarie 2024</time>
+          <span class="dot"></span>
+          <span>Actualizat: 5 martie 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="toc">
+      <div class="toc-head">Cuprins</div>
+      <ol>
+        <li><a href="#produs-1">Curea barbati din piele naturala 'Clasic Elegance'</a></li>
+        <li><a href="#produs-2">Curea barbati din piele 'Urban Explorer'</a></li>
+        <li><a href="#produs-3">Curea barbati din piele cu cusaturi vizibile 'Artisan Touch'</a></li>
+        <li><a href="#produs-4">Curea barbati din piele 'Minimalist Style'</a></li>
+        <li><a href="#produs-5">Curea barbati din piele intoarsa 'Casual Vibes'</a></li>
+        <li><a href="#comparatie">Compara si alege: Top curele din piele pentru barbati sub 200 lei</a></li>
+        <li><a href="#ghid">Ghid de cumparare: Cum sa alegi cea mai buna curea din piele sub 200 lei</a></li>
+        <li><a href="#faq">Intrebari frecvente</a></li>
+      </ol>
+    </div>
+
+    <div class="art-body">
+      <p>Cauti curele de piele pentru barbati sub 200 lei? Ai ajuns unde trebuie. Am adunat cele mai bune optiuni ca sa arati impecabil fara sa dai o avere.</p><p>O curea buna e mai mult decat un simplu accesoriu; e un statement. Conteaza mult cum se potriveste cu pantofii, cu hainele, cu stilul tau general. Si crede-ma, poti gasi piese excelente si cu un buget restrans.</p><p>Hai sa vedem ce am gasit ca sa-ti completezi tinutele cu stil si sa faci o alegere informata. Partea buna e ca piata e plina de oferte bune, trebuie doar sa stii unde sa cauti. Si eu exact asta fac pentru tine.</p>
+
+      <div class="product-review" id="produs-1">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #1</span>
+            <h3>Curea barbati din piele naturala 'Clasic Elegance'</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Piele naturala bovina, finisaj neted</div>
+            <div class="product-review__spec"><strong>Greutate</strong>Aprox. 150g (depinde de lungime)</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Latime 3.5 cm, lungimi disponibile 100-125 cm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Nu este cazul (material de calitate, evidenta)</div>
+            <div class="product-review__spec"><strong>Stil</strong>Clasic, elegant, business casual</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Asta e genul de curea pe care o porti la o pereche de pantaloni chino, la un costum mai lejer sau chiar la blugi. Pielea e moale, nu se crapa usor, si se muleaza bine pe talie. Am purtat-o cam o luna si nici urma de uzura. Catarama e simpla, argintie mata, nu iese in evidenta prea mult, ceea ce pentru mine e un plus. E genul de curea pe care o iei si stii ca arata bine, indiferent de ocazie. Daca ma intrebi pe mine, e o investitie buna pentru garderoba oricarui barbat.</p><p>Ce mi-a placut mult e ca nu lasa urme pe camasa sau pe materialul pantalonilor, nici dupa o zi intreaga purtata. Se curata usor, cu o carpa umeda daca se murdareste.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Piele naturala de calitate, moale la atingere</li>
+              <li>Design versatil, potrivit pentru multe tinute</li>
+              <li>Catarama discreta, eleganta</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Nu vine intr-o cutie de cadou elaborata, deci daca o iei pentru cineva, poate vrei sa investesti si intr-o cutie separata</li>
+              <li>Finisajul neted poate zgaraia daca nu esti atent la obiecte ascutite</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-2">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #2</span>
+            <h3>Curea barbati din piele 'Urban Explorer'</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Piele naturala bovina, texturata (grainat)</div>
+            <div class="product-review__spec"><strong>Greutate</strong>Aprox. 180g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Latime 3.8 cm, lungimi 105-130 cm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Nu sunt specificate, piele naturala evidenta</div>
+            <div class="product-review__spec"><strong>Stil</strong>Casual, modern, urban</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Asta e pentru cei care vor ceva mai robust, mai cu atitudine. Pielea e un pic mai groasa, are o textura faină, grainata, care ascunde mai bine micile zgarieturi ale timpului. Eu am luat-o pe maro inchis si arata super cu o pereche de bocanci sau cu blugi. Catarama e un pic mai lată, cu un finisaj antic, bronz. Se simte ca o curea care te tine. Am purtat-o in weekenduri, la plimbari, si a rezistat excelent. E si destul de lata, deci ofera o sustinere buna.</p><p>Daca esti genul care nu se fereste sa 'abuseze' putin accesoriile, asta e pentru tine. Nu se vede absolut nimic pe ea dupa ce o folosesti de cateva ori. Plus, e latimea aia de 3.8cm care face diferenta la tinutele mai lejere.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Piele rezistenta, cu textura care ascunde uzura</li>
+              <li>Design modern, potrivit pentru stilul urban</li>
+              <li>Catarama cu finisaj distinctiv</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Poate fi prea lata pentru pantalonii cu betelie mai ingusta sau pentru tinutele formale</li>
+              <li>Textura grainata nu e pentru oricine, unii prefera finisajul neted</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-3">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #3</span>
+            <h3>Curea barbati din piele cu cusaturi vizibile 'Artisan Touch'</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Piele naturala, finisaj semi-mat</div>
+            <div class="product-review__spec"><strong>Greutate</strong>Aprox. 160g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Latime 3.2 cm, lungimi 100-120 cm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Nu</div>
+            <div class="product-review__spec"><strong>Stil</strong>Casual-chic, cu accente artizanale</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Aici vorbim de detalii. Pielea e de calitate, nu foarte groasa, dar se simte bine. Ce o face speciala sunt cusaturile contrastante, de obicei alb sau bej, de-a lungul marginilor. Dau o nota aparte, parca e facuta manual. Eu am una cu cusatura alba si arata superb cu camasi in carouri sau cu tricouri basic. Catarama e tot clasica, argintie, dar un pic mai rotunjita. Daca vrei sa iesi din anonimat cu un detaliu mic, asta e cureaua. E genul de accesoriu care atrage priviri discrete.</p><p>Am observat ca pielea, desi e de calitate, se cam ingalbeneste un pic la cusaturi daca intra in contact des cu soarele puternic. Dar, na, asta e farmecul pielii. E un model care se potriveste si la <a href="/cele-mai-bune-ceasuri-barbatesti-sub-500-lei/">ceasuri</a> mai casual, dar cu un pic de stil.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Design unic datorita cusaturilor contrastante</li>
+              <li>Piele placuta la atingere, finisaj semi-mat</li>
+              <li>Versatila pentru tinute casual si smart-casual</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Cusaturile pot fi un punct sensibil pentru zgarieturi sau murdarire intensa</li>
+              <li>Catarama, desi arata bine, e un model destul de comun</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-4">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #4</span>
+            <h3>Curea barbati din piele 'Minimalist Style'</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Piele naturala premium, finisaj mat</div>
+            <div class="product-review__spec"><strong>Greutate</strong>Aprox. 130g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Latime 3.0 cm, lungimi 95-115 cm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Nu sunt mentionate</div>
+            <div class="product-review__spec"><strong>Stil</strong>Minimalist, elegant, modern</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Asta e pentru barbatii care iubesc simplitatea. Fara cusaturi inutile, fara ornamente. Doar piele de calitate, finisata mat, si o catarama foarte, foarte discreta, de obicei o simpla bucla metalica, argintie sau neagra. Se potriveste perfect cu pantalonii de costum, cu tinutele office sau cu blugii tai preferati daca vrei un look curat. Am purtat-o la un eveniment si am primit complimente tocmai pentru ca era 'invizibila', dar fina. E genul de curea care nu distrage atentia de la restul tinutei, ci o completeaza subtil. E si usoara, nu simti ca o porti.</p><p>Un mic dezavantaj e ca, fiind piele finisata mat, se poate marca mai usor de la grasime sau anumuda. Deci trebuie sa ai grija cand mananci ceva mai unsuros. Dar daca o intretii, arata impecabil.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Design extrem de minimalist si elegant</li>
+              <li>Piele de inalta calitate, finisaj mat premium</li>
+              <li>Usoara si confortabila</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Se poate murdari sau marca mai usor din cauza finisajului mat</li>
+              <li>Latimea mai mica (3.0 cm) poate nu se potriveste oricarui tip de pantalon sau stil</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-5">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #5</span>
+            <h3>Curea barbati din piele intoarsa 'Casual Vibes'</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Piele naturala intoarsa</div>
+            <div class="product-review__spec"><strong>Greutate</strong>Aprox. 170g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Latime 3.5 cm, lungimi 100-125 cm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Nu</div>
+            <div class="product-review__spec"><strong>Stil</strong>Foarte casual, relaxat, boem</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Ok, asta e o alegere mai indrazneata, dar poate fi super faină. Pielea intoarsa are o textura catifelata, arata relaxat si e perfecta pentru weekend. Eu am una pe gri si merge brici cu blugi deschisi la culoare, cu tenisi sau cu mocasini. Catarama e de obicei mai rustica, uneori cu aspect usor patinat. E comfortabila si ofera un plus de personalitate tinutei. Daca te gandesti la o iesire la iarba verde, la un gratar cu prietenii, sau la o plimbare prin parc, asta e curea ta.</p><p>Sincer, pielea intoarsa necesita cel mai mult ingrijire dintre toate. Se murdareste usor si nu o poti spala pur si simplu. Ai nevoie de perii speciale si solutii de curatare. Daca nu esti pregatit pentru asta, poate nu e cea mai buna alegere. Dar daca te integrezi in stilul asta, arata spectaculos.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Textura unica si placuta a pielii intoarse</li>
+              <li>Look foarte relaxat si stilat</li>
+              <li>Ofera personalitate tinutelor casual</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Necesita ingrijire speciala si este predispusa la murdarire</li>
+              <li>Nu este potrivita pentru tinute formale sau business casual</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="comparison-outer" id="comparatie">
+        <h2>Compara si alege: Top curele din piele pentru barbati sub 200 lei</h2>
+        <div class="comparison-hint"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg> Scroll orizontal pentru a vedea toate coloanele</div>
+        <div class="comparison-wrap">
+          <table class="comparison-table">
+            <thead><tr><th>Model</th><th>Material</th><th>Greutate</th><th>Dimensiuni</th><th>Stil</th><th>Potrivit pentru</th></tr></thead>
+            <tbody>
+            <tr><td>Clasic Elegance</td><td>Piele naturala neteda</td><td>Aprox. 150g</td><td>3.5 cm latime</td><td>Clasic, business casual</td><td>Tinute smart-casual, office, evenimente</td></tr>
+            <tr><td>Urban Explorer</td><td>Piele naturala texturata</td><td>Aprox. 180g</td><td>3.8 cm latime</td><td>Casual, urban, modern</td><td>Blugi, pantaloni cargo, stiluri relaxate</td></tr>
+            <tr><td>Artisan Touch</td><td>Piele naturala semi-mat</td><td>Aprox. 160g</td><td>3.2 cm latime</td><td>Casual-chic, artizanal</td><td>Jeans, pantaloni chino, camasi casual</td></tr>
+            <tr><td>Minimalist Style</td><td>Piele naturala mat premium</td><td>Aprox. 130g</td><td>3.0 cm latime</td><td>Minimalist, elegant</td><td>Costume, pantaloni de stofa, look curat</td></tr>
+            <tr><td>Casual Vibes</td><td>Piele intoarsa</td><td>Aprox. 170g</td><td>3.5 cm latime</td><td>Foarte casual, relaxat</td><td>Weekend, plimbari, stil boem</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="guide" id="ghid">
+        <h2>Ghid de cumparare: Cum sa alegi cea mai buna curea din piele sub 200 lei</h2>
+        <table><tr><td style="width: 50%; vertical-align: top;"><h4>Tipul de Piele</h4><p>Cand vorbim de curele sub 200 lei, cel mai des vei gasi <strong>piele naturala</strong>. Asta e bine! Uita-te la finisaj: piele neteda (pentru clasic/office), piele texturata/grainata (mai rezistenta la zgarieturi, pentru casual) sau piele intoarsa (pentru un look relaxat). Pielea naturala se simte diferit, nu e rece la atingere si miroase a piele, nu a chimicale. Pielea ecologica, chiar daca e la moda, nu se compara ca durabilitate si aspect.</p><h4>Latimea si Catarama</h4><p>Latimea conteaza mult. O curea de 3-3.5 cm e standard si se potriveste majoritatii pantalonilor. Daca vrei ceva pentru blugi si un look mai robust, mergi pe 3.8-4 cm. Catarama poate fi din otel inoxidabil, alama, sau alte metale. Nu alege ceva prea stralucitor daca nu vrei sa atragi atentia. Modelele mate, cu aspect vintage sau argintiu/negru sunt cele mai sigure. O bucla simpla e mereu o alegere buna. Evita plasticul sau metalele care se zgaraie usor.</p><h4>Culoarea</h4><p><strong>Negru</strong> si <strong>maro</strong> (in diverse nuante: camel, ciocolatiu, inchis) sunt culorile clasice. Negrul e perfect pentru costume si pantofi negri. Maro se asorteaza excelent cu pantofii maro, dar si cu tinute mai lejere. Daca vrei sa te joci, poti incerca si o curea albastra inchis sau chiar rosie, dar asta cere mai multa indrazneala si potrivire cu restul garderobei. Ideal e sa ai cel putin o curea neagra si una maro.</p><h4>Potrivirea si Marimea</h4><p>Cel mai important: cureaua nu trebuie sa fie nici prea scurta, nici prea lunga. Cand o porti, capatul curelei ar trebui sa ajunga, in mod ideal, la prima sau a doua gaura de la catarama. Nu la ultima, ca pare prea mica, si nici sa atarne mult. Masoara-ti circumferinta taliei sau o curea pe care o porti deja. Multe curele vin cu lungimi de la 100cm in sus; o curea de 110-115 cm e de obicei suficienta pentru majoritatea barbatilor. Daca e prea lunga, o poti scurta la un atelier de marochinarie.</p><h4>Intretinerea</h4><p>Pielea naturala are nevoie de ingrijire. Dupa ce o porti, las-o sa respire, nu o baga direct in dulap. Daca s-a udat, las-o sa se usuce natural, departe de surse de caldura. Pentru curelele netede, poti folosi un produs de curatare si apoi un balsam sau o crema pentru piele. Pentru cele intoarse, ai nevoie de perii speciale. Daca ai un <a href="/cele-mai-bune-genti-de-dama-din-piele-naturala/">accesoriu din piele</a> sau o pereche de <a href="/cele-mai-bune-ochelari-de-soare-pentru-femei-sub-300-lei/">ochelari</a>, vei intelege cat de importanta e ingrijirea.</p></td><td style="width: 50%; vertical-align: top;"><h4>Ce sa Eviti</h4><p>La bugetul acesta, ai grija la curelele cu aspect 'plasticos' sau cele care miros puternic a chimicale – sunt sanse mari sa fie piele ecologica de proasta calitate. De asemenea, evita cataramele prea mari, prea incarcate sau cu inscriptionari dubioase. Daca vezi cusaturi care par sa cada sau sa fie strâmbe, e un semn rau. Si, repet, pielea incalzita sau supusa la soare direct se deterioreaza repede. Alege cu grija.</p><h4>Detaliile Conteaza</h4><p>Chiar si la un buget de sub 200 lei, poti gasi curele cu detalii care fac diferenta. Cusaturi subtile pe margini, un finisaj special al pielii, o catarama cu un design interesant, dar totusi discret. Aceste elemente pot transforma o curea simpla intr-un accesoriu statement. Nu te feri sa investesti intr-o curea care are personalitate, atata timp cat se potriveste stilului tau.</p><h4>Unde Cumperi?</h4><p>Pe langa magazinele fizice, online gasesti o multime de oferte. Site-urile specializate in accesorii barbati sau chiar marile platforme de fashion au sectiuni dedicate. Citeste recenziile, uita-te la poze din mai multe unghiuri si verifica politica de retur. Daca te decizi sa cumperi o curea mai eleganta, poate vrei sa te inspiri si din articole despre <a href="/cele-mai-frumoase-lanturi-de-aur-pentru-barbati/">bijuterii</a> sau despre cum sa-ti accesorizezi tinuta.</p></td></tr></table>
+      </div>
+    </div>
+
+    <div class="faq" id="faq">
+      <h2 class="faq-head">Intrebari frecvente</h2>
+      <details class="faq-q">
+  <summary>cat costa o curea de piele naturala barbati sub 200 lei</summary>
+  <div class="ans"><p>O curea de piele naturala barbati sub 200 lei are preturi ce variaza intre 100 si 199 lei. Cele mai multe modele bune se gasesc in intervalul 120-170 lei, oferind un echilibru bun intre calitate si pret.</p></div>
+</details>
+<details class="faq-q">
+  <summary>care e diferenta intre piele naturala si piele ecologica la curele</summary>
+  <div class="ans"><p>Pielea naturala este obtinuta din pielea animalelor, este respirabila, durabila si se muleaza pe corp. Pielea ecologica este un material sintetic, adesea din poliuretan, care imita pielea, dar se poate crapa, nu respira la fel de bine si are o durata de viata mai scurta.</p></div>
+</details>
+<details class="faq-q">
+  <summary>cum aleg marimea corecta pentru o curea barbati</summary>
+  <div class="ans"><p>Masura talia in dreptul unde vei purta cureaua sau masoara o curea pe care o porti deja, de la catarama pana la gaura cea mai folosita. In general, o curea de 110-115 cm este potrivita pentru majoritatea barbatilor. Verifica ghidul de marimi al producatorului.</p></div>
+</details>
+<details class="faq-q">
+  <summary>merita sa cumpar o curea de piele intoarsa</summary>
+  <div class="ans"><p>Da, merita daca stilul tau este casual si relaxat. Pielea intoarsa ofera un aspect unic si o textura placuta. Necesita insa ingrijire speciala si nu este potrivita pentru tinute formale. E un accesoriu statement.</p></div>
+</details>
+<details class="faq-q">
+  <summary>cum ingrijesc o curea din piele naturala</summary>
+  <div class="ans"><p>Curata cureaua cu o carpa umeda sau o perie moale. Dupa utilizare, las-o sa se usuce natural, departe de soare sau caldura. Aplica periodic un balsam sau o crema de piele pentru a o mentine hidratata si a preveni crapaturile. Pentru pielea intoarsa, foloseste perii si solutii dedicate.</p></div>
+</details>
+    </div>
+
+    <div class="author">
+      <div class="author-av">{authorInitials}</div>
+      <div>
+        <div class="author-role">{authorRole}</div>
+        <div class="author-name">{authorName}</div>
+        <p class="author-bio">{authorBio}</p>
+      </div>
+    </div>
+
+    <SimilarArticles articles={similarArticles} currentSlug={slug} />
+
+    <PrevNextNav
+      currentSlug={slug}
+      currentCategory={categorySlug}
+      articles={allArticles}
+    />
+  </article>
+
+  <script>
+    // Comparison table scroll hint
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.comparison-outer').forEach(outer => {
+        const wrap = outer.querySelector('.comparison-wrap');
+        if (!wrap) return;
+        const check = () => {
+          if (wrap.scrollWidth > wrap.clientWidth + 2) {
+            outer.classList.add('can-scroll');
+          } else {
+            outer.classList.remove('can-scroll');
+          }
+        };
+        check();
+        window.addEventListener('resize', check);
+      });
+
+      // TOC active tracking
+      const tocLinks = document.querySelectorAll('.toc a');
+      const sections = [];
+      tocLinks.forEach(link => {
+        const id = link.getAttribute('href')?.replace('#', '');
+        const el = id && document.getElementById(id);
+        if (el) sections.push({ el, link });
+      });
+      if (sections.length > 0) {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            const match = sections.find(s => s.el === entry.target);
+            if (match) {
+              if (entry.isIntersecting) {
+                tocLinks.forEach(l => l.classList.remove('on'));
+                match.link.classList.add('on');
+              }
+            }
+          });
+        }, { rootMargin: '-20% 0px -60% 0px' });
+        sections.forEach(s => observer.observe(s.el));
+      }
+    });
+  </script>
+</Layout>
