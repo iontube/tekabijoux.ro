@@ -66,7 +66,7 @@ function shouldRunToday(keywordsPath) {
 function generateStats() {
   const pagesDir = path.join(rootDir, 'src', 'pages');
   const publicDir = path.join(rootDir, 'public');
-  const excludePages = new Set(['index', 'contact', 'cookies', 'privacy-policy', 'privacy', 'gdpr', 'sitemap', '404', 'about', 'terms']);
+  const excludePages = new Set(['index', 'contact', 'cookies', 'privacy-policy', 'privacy', 'gdpr', 'sitemap', '404', 'about', 'terms', 'disclaimer-afiliere', 'politica-cookies', 'politica-de-confidentialitate', 'politica-confidentialitate', 'termeni-si-conditii']);
 
   const files = fs.readdirSync(pagesDir);
   const articles = files.filter(f => {
