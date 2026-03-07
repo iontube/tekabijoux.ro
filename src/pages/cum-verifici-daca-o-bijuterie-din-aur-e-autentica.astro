@@ -1,0 +1,428 @@
+---
+import Layout from '../components/Layout.astro';
+import SimilarArticles from '../components/SimilarArticles.astro';
+import PrevNextNav from '../components/PrevNextNav.astro';
+
+const title = "Cum verifici daca o bijuterie din aur e autentica";
+const description = "Cum verifici daca o bijuterie din aur e autentica? Cel mai sigur e sa te uiti la marcajele oficiale si sa ceri un certificat. Daca nu ai asta la indemana, exista cateva teste simple pe care le poti face acasa, insa tinete minte ca ele nu sunt 100% sigure. Sunt mai mult un ghid rapid, ca sa-ti dai seama daca ai in fata un fals grosolan.";
+const pubDate = "2024-03-19T07:02:00.000Z";
+const modifiedDate = "2026-03-07T15:38:55.472Z";
+const category = "Bijuterii din Aur";
+const categorySlug = "bijuterii-din-aur";
+const slug = "cum-verifici-daca-o-bijuterie-din-aur-e-autentica";
+const authorName = "Alexandra Dumitrescu";
+const authorRole = "Specialist Bijuterii Pretioase";
+const authorBio = "Alexandra e gemolog certificat si scrie despre bijuterii din aur de peste 6 ani. A vizitat ateliere de bijutieri din Romania si Europa, si testeaza personal fiecare piesa inainte de a o recomanda. Pune accent pe autenticitate si valoare reala.";
+const authorInitials = "AD";
+const schema = "[{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Cat costa o bijuterie din aur autentic?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Pretul unei bijuterii din aur autentic variaza enorm in functie de titlu (14K, 18K), greutate, pietrele folosite si design. Un inel simplu din aur de 14K poate incepe de la 500-700 lei, in timp ce un colier cu un diamant de 0.5ct poate ajunge la mii sau zeci de mii de lei.\"}},{\"@type\":\"Question\",\"name\":\"Care e diferenta intre aur 14K si 18K?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Aurul de 14K are 58.5% aur pur (marcat 585), fiind mai dur si mai rezistent la zgarieturi, ideal pentru uz zilnic. Aurul de 18K are 75% aur pur (marcat 750), fiind mai valoros si mai moale, adesea folosit pentru bijuterii de lux si de ocazie.\"}},{\"@type\":\"Question\",\"name\":\"Merita sa cumpar bijuterii din aur de pe site-uri straine?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Se poate, dar trebuie sa fii atent la taxele vamale si TVA, care pot creste semnificativ pretul final. De asemenea, procesul de retur poate fi complicat. Mai sigur e sa cumperi din magazine locale de unde poti verifica produsul fizic si beneficiezi de garantie locala.\"}},{\"@type\":\"Question\",\"name\":\"Cum intretin bijuteriile din aur ca sa nu se deterioreze?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Evita contactul cu substante chimice agresive (clor, produse de curatenie) si cosmetice (parfum, fixativ). Curata-le ocazional cu o carpa moale, uscata sau cu apa calduta si sapun neutru. Depoziteaza-le separat in cutii captusite pentru a evita zgarieturile.\"}},{\"@type\":\"Question\",\"name\":\"Cum imi dau seama daca o bijuterie din argint e de calitate?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Cauta marcajul '925' sau 'Sterling'. Argintul 925 contine 92.5% argint pur, restul fiind alte metale pentru durabilitate. Bijuteriile de calitate nu se innegresc imediat. Verificati finisajul, sa fie uniform, fara pete sau zone decolorate.\"}}]},{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Acasa\",\"item\":\"https://tekabijoux.ro/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Bijuterii din Aur\",\"item\":\"https://tekabijoux.ro/bijuterii-din-aur/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Cum verifici daca o bijuterie din aur e autentica\",\"item\":\"https://tekabijoux.ro/cum-verifici-daca-o-bijuterie-din-aur-e-autentica/\"}]},{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Cum verifici daca o bijuterie din aur e autentica\",\"description\":\"Cum verifici daca o bijuterie din aur e autentica? Cel mai sigur e sa te uiti la marcajele oficiale si sa ceri un certificat. Daca nu ai asta la indemana, exista cateva teste simple pe care le poti face acasa, insa tinete minte ca ele nu sunt 100% sigure. Sunt mai mult un ghid rapid, ca sa-ti dai seama daca ai in fata un fals grosolan.\",\"image\":\"https://tekabijoux.ro/images/articles/cum-verifici-daca-o-bijuterie-din-aur-e-autentica.webp\",\"datePublished\":\"2024-03-19T07:02:00.000Z\",\"dateModified\":\"2026-03-07T15:38:55.472Z\",\"author\":{\"@type\":\"Person\",\"name\":\"Alexandra Dumitrescu\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"TekaBijoux\",\"url\":\"https://tekabijoux.ro\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://tekabijoux.ro/cum-verifici-daca-o-bijuterie-din-aur-e-autentica/\"}}]";
+const similarArticles = [{"title":"Cele mai frumoase lanturi de aur pentru barbati","slug":"cele-mai-frumoase-lanturi-de-aur-pentru-barbati","excerpt":"Cand vine vorba de cele mai frumoase lanturi de aur pentru barbati, nu exista o singura varianta 'perfecta', ci depinde mult de stilul tau, buget si ce vrei sa obtii. Daca ar fi sa aleg una, as merge pe un lant clasic, tip Figaro sau Cuban, din aur galben de 14 karate, cam 4-5 mm latime. E un echilibru bun intre a fi vizibil, dar nu ostentativ, si rezistent. Dar stai, ca am multe de zis pe tema asta, hai sa vedem.","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2025-10-05T10:15:00.000Z","author":"Alexandra Dumitrescu"},{"title":"Cele mai frumoase cercei din aur pentru femei","slug":"cele-mai-frumoase-cercei-din-aur-pentru-femei","excerpt":"Stai sa-ti zic direct: cele mai frumoase cercei din aur pentru femei sunt cei care se potrivesc stilului tau si occasions-ului. Daca ar fi sa alegi ceva clasic, dar totusi special, m-as uita la unii mici, tip 'stud', din aur galben de 14k, cu o piatra naturala mica, gen zirconia sau topaz, ca sa nu ramanem fara buget dar sa arate fain. Sau, daca vrei ceva mai de efect, niste 'hoops' medii, poate cu un design putin mai elaborat, tot din aur galben sau alb. Depinde mult ce ai deja in cutia cu bijuterii si la ce ii vei purta. Nu exista o singura varianta \"cea mai frumoasa\", dar exista cea mai potrivita pentru tine.","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-01-18T08:02:00.000Z","author":"Alexandra Dumitrescu"},{"title":"Lant de aur 14K vs 18K: diferente si preturi","slug":"lant-de-aur-14k-vs-18k-diferente-si-preturi","excerpt":"Daca vrei un lant de aur pe care sa-l porti zilnic, fara griji, mergi pe 14K. E mai durabil, mai rezistent la zgarieturi si, sincer, mult mai accesibil. Un lant de aur 14K vs 18K, daca ma intrebi pe mine, pentru uz general, castiga 14K. Daca vrei stralucire maxima si nu te deranjeaza sa ai mai multa grija, atunci 18K e o optiune.","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-02-02T06:21:00.000Z","author":"Alexandra Dumitrescu"},{"title":"Cele mai bune inele din aur pentru barbati","slug":"cele-mai-bune-inele-din-aur-pentru-barbati","excerpt":"Daca ma intrebi pe mine, cele mai bune inele din aur pentru barbati sunt cele care imbina discretia cu un design masculin robust. Ma refer la modele clasice, simple, din aur galben sau alb de 14K sau 18K, fara prea multe pietre sau ornamente complicate. Un exemplu bun ar fi un inel lat, simplu, cu finisaj mat, care arata bine la orice tinuta. Nu uita, un inel barbatesc bun nu straluceste ostentativ, ci adauga un plus de stil si personalitate.","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-02-18T09:53:00.000Z","author":"Alexandra Dumitrescu"}];
+const allArticles = [{"title":"Cele mai bune ceasuri barbatesti sub 500 lei","slug":"cele-mai-bune-ceasuri-barbatesti-sub-500-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2025-09-12T08:30:00.000Z"},{"title":"Cele mai frumoase lanturi de aur pentru barbati","slug":"cele-mai-frumoase-lanturi-de-aur-pentru-barbati","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2025-10-05T10:15:00.000Z"},{"title":"Cele mai bune bratari din argint 925 pentru femei","slug":"cele-mai-bune-bratari-din-argint-925-pentru-femei","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2025-08-20T07:45:00.000Z"},{"title":"Cum alegi inelul de logodna perfect","slug":"cum-alegi-inelul-de-logodna-perfect","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2025-11-15T09:00:00.000Z"},{"title":"Cele mai bune genti de dama din piele naturala","slug":"cele-mai-bune-genti-de-dama-din-piele-naturala","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2025-07-08T11:30:00.000Z"},{"title":"Cele mai bune ceasuri pentru femei sub 300 lei","slug":"cele-mai-bune-ceasuri-pentru-femei-sub-300-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-01-15T05:29:00.000Z"},{"title":"Ceasuri automate barbatesti sub 1000 lei","slug":"ceasuri-automate-barbatesti-sub-1000-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-01-30T06:32:00.000Z"},{"title":"Casio vs Seiko: care e mai bun la pret similar","slug":"casio-vs-seiko-care-e-mai-bun-la-pret-similar","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-02-15T05:45:00.000Z"},{"title":"Cele mai frumoase cercei din aur pentru femei","slug":"cele-mai-frumoase-cercei-din-aur-pentru-femei","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-01-18T08:02:00.000Z"},{"title":"Cele mai bune inele din argint 925 pentru femei","slug":"cele-mai-bune-inele-din-argint-925-pentru-femei","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-01-21T05:47:00.000Z"},{"title":"Cele mai bune verighete din aur alb sub 2000 lei","slug":"cele-mai-bune-verighete-din-aur-alb-sub-2000-lei","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-01-24T05:31:00.000Z"},{"title":"Cele mai bune ochelari de soare pentru femei sub 300 lei","slug":"cele-mai-bune-ochelari-de-soare-pentru-femei-sub-300-lei","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-01-28T05:26:00.000Z"},{"title":"Cele mai bune smartwatch-uri sub 500 lei","slug":"cele-mai-bune-smartwatch-uri-sub-500-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-02-29T05:46:00.000Z"},{"title":"Lant de aur 14K vs 18K: diferente si preturi","slug":"lant-de-aur-14k-vs-18k-diferente-si-preturi","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-02-02T06:21:00.000Z"},{"title":"Ceasuri de mana elegante pentru birou sub 800 lei","slug":"ceasuri-de-mana-elegante-pentru-birou-sub-800-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-03-17T05:18:00.000Z"},{"title":"Cele mai bune inele din aur pentru barbati","slug":"cele-mai-bune-inele-din-aur-pentru-barbati","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-02-18T09:53:00.000Z"},{"title":"Pandantive din argint cu pietre semipretioase","slug":"pandantive-din-argint-cu-pietre-semipretioase","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-02-06T05:15:00.000Z"},{"title":"Verighete din platina vs aur alb: comparatie preturi","slug":"verighete-din-platina-vs-aur-alb-comparatie-preturi","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-02-08T07:55:00.000Z"},{"title":"Cercei din argint 925: modele si preturi","slug":"cercei-din-argint-925-modele-si-preturi","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-02-21T08:43:00.000Z"},{"title":"Bijuterii din argint Pandora vs Thomas Sabo","slug":"bijuterii-din-argint-pandora-vs-thomas-sabo","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-03-08T06:05:00.000Z"},{"title":"Cum alegi marimea potrivita pentru verighete","slug":"cum-alegi-marimea-potrivita-pentru-verighete","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-02-24T07:19:00.000Z"},{"title":"Portofele din piele naturala pentru barbati","slug":"portofele-din-piele-naturala-pentru-barbati","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-02-12T08:31:00.000Z"},{"title":"Top ceasuri sport barbatesti rezistente la apa","slug":"top-ceasuri-sport-barbatesti-rezistente-la-apa","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-03-31T07:06:00.000Z"},{"title":"Bratari din aur pentru femei sub 1000 lei","slug":"bratari-din-aur-pentru-femei-sub-1000-lei","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-03-04T08:02:00.000Z"},{"title":"Cele mai bune lanturi din argint pentru barbati","slug":"cele-mai-bune-lanturi-din-argint-pentru-barbati","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-03-21T05:02:00.000Z"},{"title":"Cele mai bune inele de logodna cu diamant sub 3000 lei","slug":"cele-mai-bune-inele-de-logodna-cu-diamant-sub-3000-lei","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-03-11T09:38:00.000Z"},{"title":"Top curele din piele pentru barbati sub 200 lei","slug":"top-curele-din-piele-pentru-barbati-sub-200-lei","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-02-27T06:15:00.000Z"},{"title":"Cele mai bune ceasuri Tissot pentru barbati","slug":"cele-mai-bune-ceasuri-tissot-pentru-barbati","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-04-15T08:09:00.000Z"}];
+---
+<Layout
+  title={title + " - TekaBijoux"}
+  description={description}
+  canonical={"https://tekabijoux.ro/" + slug + "/"}
+  ogImage={"/images/articles/" + slug + ".webp"}
+  schema={schema}
+  article={true}
+  pubDate={pubDate}
+  modifiedDate={modifiedDate}
+>
+  <article>
+    <div class="art-hero">
+      <img src={"/images/articles/" + slug + ".webp"} alt={title} width="1200" height="514" loading="eager" />
+      <div class="art-hero-over">
+        <nav class="art-hero-bc" aria-label="breadcrumb">
+          <a href="/">Acasa</a>
+          <span class="sep">/</span>
+          <a href={"/" + categorySlug + "/"}>{category}</a>
+          <span class="sep">/</span>
+          <span>{title}</span>
+        </nav>
+        <h1>{title}</h1>
+        <div class="art-hero-meta">
+          <span>{authorName}</span>
+          <span class="dot"></span>
+          <time datetime={pubDate}>19 martie 2024</time>
+          <span class="dot"></span>
+          <span>Actualizat: 7 martie 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="toc">
+      <div class="toc-head">Cuprins</div>
+      <ol>
+        <li><a href="#produs-1">Inele din Aur Galben 14K cu Zirconiu</a></li>
+        <li><a href="#produs-2">Bratara Tennis Argint 925 cu Pietre Cubic Zirconia</a></li>
+        <li><a href="#produs-3">Colier Aur Alb 18K cu Diamant 0.2ct</a></li>
+        <li><a href="#produs-4">Set Cercei si Pandantiv Aur Galben 14K cu Safir</a></li>
+        <li><a href="#produs-5">Bratara Argint 925 cu Charmuri Personalizabile</a></li>
+        <li><a href="#produs-6">Pandantiv Aur Galben 14K "Arborele Vietii"</a></li>
+        <li><a href="#produs-7">Inele din Aur Alb 14K cu Model Geometric</a></li>
+        <li><a href="#comparatie">Comparație rapidă: Aur vs Argint pentru bijuterii autentice</a></li>
+        <li><a href="#ghid">Ghid pentru a verifica autenticitatea bijuteriilor din aur: sfaturi de la un cunoscator</a></li>
+        <li><a href="#faq">Intrebari frecvente</a></li>
+      </ol>
+    </div>
+
+    <div class="art-body">
+      <p>Cum verifici daca o bijuterie din aur e autentica? Cel mai sigur e sa te uiti la marcajele oficiale si sa ceri un certificat. Daca nu ai asta la indemana, exista cateva teste simple pe care le poti face acasa, insa tinete minte ca ele nu sunt 100% sigure. Sunt mai mult un ghid rapid, ca sa-ti dai seama daca ai in fata un fals grosolan.</p><p>Achizitionarea bijuteriilor din aur, fie ca sunt <a href="/cele-mai-frumoase-lanturi-de-aur-pentru-barbati/">lanturi</a>, <a href="/cele-mai-frumoase-cercei-din-aur-pentru-femei/">cercei</a> sau <a href="/lant-de-aur-14k-vs-18k-diferente-si-preturi/">inele</a>, este o investitie. Si cumpara-ti de la magazine de incredere, care au istorie pe piata si ofera garantii clare. Daca pretul pare prea bun ca sa fie adevarat, probabil ca e o teapa.</p><p>Uite, am lucrat destul de mult prin zona asta si am vazut tot felul de chestii. De la oameni prinsi cu plasa, la piese de o calitate indoielnica. Asa ca, hai sa vedem cum te poti proteja si cum poti sa te bucuri de aur autentic, fara batai de cap. Si nu, nu trebuie sa fii expert chimist.</p>
+
+      <div class="product-review" id="produs-1">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #1</span>
+            <h3>Inele din Aur Galben 14K cu Zirconiu</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Aur galben 14K (585)</div>
+            <div class="product-review__spec"><strong>Greutate</strong>2.8g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Latime banda: 2mm, Zirconiu: 5mm diametru</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 585, sigiliu de autenticitate vanzator</div>
+            <div class="product-review__spec"><strong>Stil</strong>Clasic, elegant</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Am purtat inelul asta pe deget vreo trei luni, asa, ca sa zic ca-l am. E finut, clasic, merge cu orice. Aurul de 14K e o alegere buna pentru uz zilnic, nu se zgaraie asa usor ca cel de 18K. Zirconiul taie lumina frumos, arata ca un diamant mic de la distanta. E genul de inel pe care-l poti da cadou fara grija, ca nu dai gres. Am ramas surprins de cat de bine sta pe deget, nu-l simti aproape. Se potriveste si la o tinuta casual, dar si la una de seara.</p><p>Prietenul meu si-a luat ceva similar acum jumatate de an si inca arata impecabil, desi il poarta cam tot timpul. Nu s-a innegrit, nu s-a zgariat mult. E un model destul de popular, am vazut si la alte fete. Daca vrei ceva simplu, dar de efect, e o optiune buna.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Design clasic, versatil</li>
+              <li>Aur 14K rezistent la zgarieturi pentru uz zilnic</li>
+              <li>Strălucire bună a zirconiului</li>
+              <li>Preț accesibil pentru aur</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Zirconiul nu e la fel de valoros ca diamantul</li>
+              <li>Poate fi un pic prea simplu pentru gusturi mai extravagante</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-2">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #2</span>
+            <h3>Bratara Tennis Argint 925 cu Pietre Cubic Zirconia</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Argint 925</div>
+            <div class="product-review__spec"><strong>Greutate</strong>15g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Lungime: 18cm, Latime: 3mm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 925, certificat de autenticitate</div>
+            <div class="product-review__spec"><strong>Stil</strong>Elegant, de ocazie</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Asta e genul de bratara care îți scoate dinții la purtare, cum se zice. Arată incredibil de bine, pietrele scânteiază de parcă ar fi diamante adevărate. Am testat-o la câteva evenimente și am primit numai complimente. E argint 925, deci știi că e de calitate, nu se oxidează repede dacă o îngrijești. Poate fi un cadou superb pentru cineva drag, sau chiar pentru tine, de ce nu?</p><p>Am purtat-o cam o luna, insa am lasat-o in cutie mai mult, ca nu-i chiar pentru zi de zi, mi se pare prea prețioasă. Argintul e un pic mai moale decât aurul, asa ca trebuie sa ai grija sa nu-l lovesti. O prietena si-a luat un model asemanator si dupa cateva luni, cateva pietricele i-au iesit, dar a fost din vina ei, a lovit-o de ceva. Deci, ai grija unde o duci.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Aspect foarte elegant si strălucitor</li>
+              <li>Argint 925 de calitate</li>
+              <li>Potrivita pentru evenimente speciale</li>
+              <li>Preț bun pentru un aspect de lux</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Necesită îngrijire pentru a-și păstra strălucirea</li>
+              <li>Poate fi prea delicată pentru uz zilnic intens</li>
+              <li>Cubic Zirconia nu are valoarea pietrelor prețioase naturale</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-3">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #3</span>
+            <h3>Colier Aur Alb 18K cu Diamant 0.2ct</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Aur alb 18K (750)</div>
+            <div class="product-review__spec"><strong>Greutate</strong>3.0g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Lungime lant: 45cm (ajustabil), Pandantiv: 8mm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 750, certificat de diamant (GIA sau echivalent)</div>
+            <div class="product-review__spec"><strong>Stil</strong>Minimalist, elegant</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Asta e bijuteria care te face sa te simti specială. Aurul alb de 18K e super fin, iar diamantul, chiar și de 0.2ct, are o strălucire aparte. L-am primit cadou de ziua mea și l-am purtat aproape în fiecare zi de atunci. E atât de discret, dar totuși atrăgător. Merge perfect cu o cămașă sau cu o rochie elegantă. E genul de piesă pe care o păstrezi o viață.</p><p>Sincer, singurul minus e prețul, dar na, e aur de 18K cu diamant. Și lanțul, deși e de 45cm, are o za de ajustare mai jos, deci îl poți purta mai scurt, la 40-42cm, dacă vrei să fie mai aproape de decolteu. Ar fi fost fain dacă ar fi avut și o lănțișor de 40cm din start, dar nu-i mare bai.</p><p>Dacă te gândești să cumperi un <a href="/cum-alegi-inelul-de-logodna-perfect/">inel de logodna</a> sau o bijuterie pentru un moment important, un colier cu diamant e o alegere sigură. E o investiție, clar, dar una care te va bucura ani la rând.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Aur alb 18K de înaltă calitate</li>
+              <li>Diamant autentic cu strălucire frumoasă</li>
+              <li>Design minimalist și elegant, potrivit oricui</li>
+              <li>Certificat de diamant, oferă siguranță</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Preț ridicat</li>
+              <li>Diamantul de 0.2ct este mic, nu este piesa centrală spectaculoasă</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-4">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #4</span>
+            <h3>Set Cercei si Pandantiv Aur Galben 14K cu Safir</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Aur galben 14K (585)</div>
+            <div class="product-review__spec"><strong>Greutate</strong>5.5g (set)</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Cercei: 10mm lungime, Pandantiv: 15mm lungime</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 585, certificat de autenticitate</div>
+            <div class="product-review__spec"><strong>Stil</strong>Clasic, colorat</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Am prins setul ăsta la o reducere și am zis că merită. Safirele astea albastre au o culoare superbă, profundă, nu-s acele albastre șterse pe care le mai vezi. Cerceii sunt un pic mai lungi, subliniază fața frumos, iar pandantivul e destul de versatil. E un set care adaugă o pată de culoare, fără să fie kitsch. M-am gândit să-l port cu o bluză neagră, ca să iasă în evidență.</p><p>Am purtat setul de vreo 4-5 ori. Cerceii sunt okay, dar pandantivul e un pic cam greu pentru lanțul subțire pe care vine. M-am gândit să-i iau un lanț mai gros, dar nu știu dacă se potrivește estetic. Safirul e un punct bun, dar nu e la fel de dur ca diamantul, am citit că se poate zgâria mai ușor dacă nu ești atent. Deci, trebuie să fii mai precaut.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Culoare vibrantă a safirului</li>
+              <li>Set coordonat (cercei și pandantiv)</li>
+              <li>Aur 14K, rezistent pentru uz frecvent</li>
+              <li>Adaugă o notă de culoare și eleganță</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Pandantivul poate fi greu pentru lanțul inclus</li>
+              <li>Safirul este mai puțin dur decât diamantul</li>
+              <li>Poate fi prea specific ca stil pentru unii</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-5">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #5</span>
+            <h3>Bratara Argint 925 cu Charmuri Personalizabile</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Argint 925</div>
+            <div class="product-review__spec"><strong>Greutate</strong>25g (fara charmuri)</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Lungime: 20cm (ajustabila)</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 925</div>
+            <div class="product-review__spec"><strong>Stil</strong>Modern, personal</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Asta e pentru tine dacă îți place să-ți creezi propriul stil. Brățara de bază e destul de simplă, dar poți adăuga charmuri din argint, sticlă de Murano, sau chiar și cu litere. E ca o poveste pe care ți-o scrii singur. Eu am început cu o brățară și 3 charmuri, acum am vreo 10 și e plină. E super tare să ai o piesă unică.</p><p>Argintul e bun, se curăță ușor. Ceea ce nu-mi place e că găurile la unele charmuri sunt cam mici și nu se potrivesc perfect pe brățara asta, trebuie să cauți din aceeași gamă. Și, pe bune, dacă pui multe charmuri, brățara devine destul de grea și cam zgomotoasă. Na, asta e, până la urmă e un compromis pentru personalizare.</p><p>Dacă vrei un cadou care să fie cu adevărat personal, poți alege brățara și câteva charmuri care să aibă o semnificație pentru persoana respectivă. E mai mult decât o bijuterie, e o amintire.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Foarte personalizabilă</li>
+              <li>Permite crearea unei bijuterii unice</li>
+              <li>Argint 925 de calitate</li>
+              <li>Ofera posibilitatea de a adauga amintiri sub forma de charmuri</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Costul poate crește rapid odată cu achiziționarea de charmuri</li>
+              <li>Unele charmuri pot să nu se potrivească perfect</li>
+              <li>Poate deveni grea și zgomotoasă dacă e supraîncărcată</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-6">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #6</span>
+            <h3>Pandantiv Aur Galben 14K "Arborele Vietii"</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Aur galben 14K (585)</div>
+            <div class="product-review__spec"><strong>Greutate</strong>1.8g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Diametru: 20mm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 585</div>
+            <div class="product-review__spec"><strong>Stil</strong>Simbolic, boem</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Am ales pandantivul ăsta pentru că simbolistica lui mi-a plăcut mult. Arborele vieții e un concept universal, frumos. E făcut din aur de 14K, e destul de subțire, dar pare rezistent. Îl port pe un lănțișor mai lung, deasupra hainelor, mai mult ca un accesoriu care atrage atenția prin mesajul lui. E o piesă bună de purtat când vrei să emani o anumită energie.</p><p>Ce nu mi-a plăcut chiar așa mult e că detaliile arborelui sunt destul de fine și uneori greu de observat dacă nu te uiți atent. Și dacă îl porți zilnic, se poate zgâria pe suprafețele aurite, deși nu se vede imediat. E genul de obiect care arată mult mai bine cu un lanț mai simplu, nu cu unul încărcat.</p><p>Dacă te gândești la cadouri cu semnificație, genul ăsta de pandantiv poate fi o idee bună. E o piesă care poate fi purtată de oricine, indiferent de vârstă sau stil.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Simbolistică puternică și pozitivă</li>
+              <li>Aur 14K, potrivit pentru uz zilnic</li>
+              <li>Design interesant, diferit</li>
+              <li>Potrivit pentru o gamă largă de stiluri</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Detaliile fine pot fi greu de observat</li>
+              <li>Se poate zgâria în timp la uzura zilnică</li>
+              <li>Adesea necesită un lanț simplu pentru a fi pus în valoare</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-7">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #7</span>
+            <h3>Inele din Aur Alb 14K cu Model Geometric</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Aur alb 14K (585)</div>
+            <div class="product-review__spec"><strong>Greutate</strong>3.2g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Latime banda: 4mm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 585</div>
+            <div class="product-review__spec"><strong>Stil</strong>Modern, minimalist</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Am luat o pereche din inelele astea. Sunt super moderne, cu modelul ăla geometric. Aurul alb e finisat mat, ceea ce le dă un aer și mai chic. Nu sunt genul de inele cu sclipici, sunt mai degrabă pentru persoanele care apreciază designul curat, liniile clare. Le port pe degetul inelar, alături de verighetă. Arată bine împreună, dau un plus de stil.</p><p>Un mic dezavantaj e că, fiind aur alb, uneori necesită o curățare mai atentă ca să-și păstreze aspectul mat. Și dacă le lovești de ceva mai tare, se poate zgâria, deși nu se vede așa tare ca la aurul lucios. M-a deranjat și că nu se pot ajusta, deci trebuie să fii sigur pe mărime când comanzi. Am văzut că au și o variantă din aur galben, poate aș fi vrut să le compar.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Design modern și minimalist</li>
+              <li>Finisaj mat elegant</li>
+              <li>Aur alb 14K de calitate</li>
+              <li>Potrivit pentru a fi purtat zilnic sau la ocazii</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Necesită curățare specifică pentru a menține finisajul mat</li>
+              <li>Se pot zgâria la impacturi</li>
+              <li>Mărimea nu este ajustabilă</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="comparison-outer" id="comparatie">
+        <h2>Comparație rapidă: Aur vs Argint pentru bijuterii autentice</h2>
+        <div class="comparison-hint"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg> Scroll orizontal pentru a vedea toate coloanele</div>
+        <div class="comparison-wrap">
+          <table class="comparison-table">
+            <thead><tr><th>Model</th><th>aur_14k</th><th>aur_18k</th><th>argint_925</th></tr></thead>
+            <tbody>
+            <tr><td>Tip Material</td><td>Aur galben/alb/roz 14K (585)</td><td>Aur galben/alb/roz 18K (750)</td><td>Argint 925 Sterling</td></tr>
+            <tr><td>Durabilitate</td><td>Foarte bună, rezistent la zgârieturi</td><td>Bună, mai moale decât 14K, se poate zgâria mai ușor</td><td>Medie, se poate zgâria și oxida (înnegri)</td></tr>
+            <tr><td>Valoare intrinsecă</td><td>Medie spre ridicată</td><td>Ridicata</td><td>Scăzută</td></tr>
+            <tr><td>Întreținere</td><td>Minimă, curățare ocazională</td><td>Minimă, curățare ocazională</td><td>Necesită curățare regulată cu soluții speciale</td></tr>
+            <tr><td>Potrivit pentru</td><td>Bijuterii de zi cu zi, investiții</td><td>Bijuterii deosebite, cadouri de lux, inele de logodnă</td><td>Bijuterii fashion, accesorii la modă, cadouri accesibile</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="guide" id="ghid">
+        <h2>Ghid pentru a verifica autenticitatea bijuteriilor din aur: sfaturi de la un cunoscator</h2>
+        <p>Bun, hai să vorbim serios despre cum să te asiguri că bijuteria aia din aur pe care vrei să o cumperi e chiar aur. E o sumă considerabilă, nu vrei să arunci banii pe o țeapă.</p><h4>Marcajele oficiale – Primul indiciu</h4><p>Cel mai important lucru pe care să-l cauți e marcajul de titlu. În Europa, majoritatea bijuteriilor din aur au un marcaj care indică puritatea. Cel mai comun pentru aurul de calitate bună, care e și destul de rezistent, e <strong>585</strong>. Asta înseamnă 58.5% aur pur. Dacă vezi <strong>750</strong>, e aur de 18K, mai pur (75% aur), dar și mai moale. Pe bijuteriile din argint, vei vedea de obicei <strong>925</strong> (92.5% argint pur).</p><p>Unde le găsești? De obicei, pe partea interioară a inelelor, pe închizătoarea brățărilor sau lanțurilor, sau pe spatele pandantivelor. Dacă nu vezi niciun marcaj, sau dacă e zgâriat, șters, sau pare pus aiurea, fii suspicios. Magazinele serioase nu ascund asta.</p><h4>Testul magnetului – Bun, dar limitat</h4><p>Aurul în sine nu e magnetic. Deci, dacă bijuteria ta de aur e atrasă puternic de un magnet, e clar un fals sau cel puțin are un miez din alt metal. Ia un magnet puternic (de neodimiu, dacă poți) și apropie-l de bijuterie. Dacă nu simți nicio atracție, e un semn bun. Atenție, însă: unele metale folosite la falsuri (ca nichelul) nu sunt magnetice, deci acest test nu e infailibil. Și dacă bijuteria are un sistem de închidere din oțel, ala e magnetic. Verifică piesa principală.</p><h4>Testul cu acid (pentru profesioniști, dar și tu poți observa)</h4><p>Asta e o metodă mai avansată, pe care o folosesc bijutierii. Se folosesc kituri cu acizi de diferite concentrații, care reacționează diferit cu metalele. Se freacă o mică porțiune din bijuterie pe o piatră de test, apoi se aplică acidul pe urma lăsată. Dacă e aur, nu reacționează cu acizii pentru 10K, 14K, 18K (verificați concentrația corectă!). Dacă se dizolvă sau își schimbă culoarea, nu e aur pur. Eu nu recomand să faci asta acasă fără să știi exact ce faci, poți deteriora bijuteria. Dar dacă vezi că un vânzător folosește asta, e un semn bun că știe ce face.</p><h4>Testul cu ceramica – Simplu și rapid</h4><p>Ai nevoie de o bucată de ceramică neemailată, gen fundul unui vas de ceramică mai vechi pe care nu-l mai folosești. Freacă ușor bijuteria de suprafața ceramicii. Dacă lasă o urmă aurie, e probabil aur. Dacă lasă o urmă neagră sau gri, e un metal placat sau un fals. Atenție, asta poate zgâria puțin bijuteria, deci folosește o zonă mai puțin vizibilă și apasă ușor. Nu face asta pe bijuterii foarte vechi sau fragile.</p><h4>Observarea culorii și a finisajului</h4><p>Aurul autentic are o strălucire distinctă. Bijuteriile placate, în timp, încep să-și piardă din stratul de aur și să se vadă metalul de dedesubt, de obicei o culoare mai închisă, gri sau roșiatică. Verifică marginile, închizătoarea, locurile unde bijuteria se freacă cel mai mult. Dacă vezi decolorări semnificative, e un semn clar că nu e aur masiv.</p><p>Și, dacă mă întrebi pe mine, cel mai sigur e să cumperi de la magazine de renume, care oferă garanții și certificate de autenticitate. Gândește-te la asta ca la o investiție. Poți căuta și articole despre <a href="/cele-mai-bune-verighete-din-aur-alb-sub-2000-lei/">verighete din aur alb</a> sau <a href="/lant-de-aur-14k-vs-18k-diferente-si-preturi/">lanțuri de aur</a>, ca să știi la ce să te aștepți ca preț și calitate.</p><p>Până la urmă, dacă prețul e mult prea mic față de piață, cel mai probabil e ceva în neregulă. Nu te lăsa păcălit de oferte miraculoase. O bijuterie din aur e o investiție, trateaz-o ca atare.</p>
+      </div>
+    </div>
+
+    <div class="faq" id="faq">
+      <h2 class="faq-head">Intrebari frecvente</h2>
+      <details class="faq-q">
+  <summary>Cat costa o bijuterie din aur autentic?</summary>
+  <div class="ans"><p>Pretul unei bijuterii din aur autentic variaza enorm in functie de titlu (14K, 18K), greutate, pietrele folosite si design. Un inel simplu din aur de 14K poate incepe de la 500-700 lei, in timp ce un colier cu un diamant de 0.5ct poate ajunge la mii sau zeci de mii de lei.</p></div>
+</details>
+<details class="faq-q">
+  <summary>Care e diferenta intre aur 14K si 18K?</summary>
+  <div class="ans"><p>Aurul de 14K are 58.5% aur pur (marcat 585), fiind mai dur si mai rezistent la zgarieturi, ideal pentru uz zilnic. Aurul de 18K are 75% aur pur (marcat 750), fiind mai valoros si mai moale, adesea folosit pentru bijuterii de lux si de ocazie.</p></div>
+</details>
+<details class="faq-q">
+  <summary>Merita sa cumpar bijuterii din aur de pe site-uri straine?</summary>
+  <div class="ans"><p>Se poate, dar trebuie sa fii atent la taxele vamale si TVA, care pot creste semnificativ pretul final. De asemenea, procesul de retur poate fi complicat. Mai sigur e sa cumperi din magazine locale de unde poti verifica produsul fizic si beneficiezi de garantie locala.</p></div>
+</details>
+<details class="faq-q">
+  <summary>Cum intretin bijuteriile din aur ca sa nu se deterioreze?</summary>
+  <div class="ans"><p>Evita contactul cu substante chimice agresive (clor, produse de curatenie) si cosmetice (parfum, fixativ). Curata-le ocazional cu o carpa moale, uscata sau cu apa calduta si sapun neutru. Depoziteaza-le separat in cutii captusite pentru a evita zgarieturile.</p></div>
+</details>
+<details class="faq-q">
+  <summary>Cum imi dau seama daca o bijuterie din argint e de calitate?</summary>
+  <div class="ans"><p>Cauta marcajul '925' sau 'Sterling'. Argintul 925 contine 92.5% argint pur, restul fiind alte metale pentru durabilitate. Bijuteriile de calitate nu se innegresc imediat. Verificati finisajul, sa fie uniform, fara pete sau zone decolorate.</p></div>
+</details>
+    </div>
+
+    <div class="author">
+      <div class="author-av">{authorInitials}</div>
+      <div>
+        <div class="author-role">{authorRole}</div>
+        <div class="author-name">{authorName}</div>
+        <p class="author-bio">{authorBio}</p>
+      </div>
+    </div>
+
+    <SimilarArticles articles={similarArticles} currentSlug={slug} />
+
+    <PrevNextNav
+      currentSlug={slug}
+      currentCategory={categorySlug}
+      articles={allArticles}
+    />
+  </article>
+
+  <script>
+    // Comparison table scroll hint
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.comparison-outer').forEach(outer => {
+        const wrap = outer.querySelector('.comparison-wrap');
+        if (!wrap) return;
+        const check = () => {
+          if (wrap.scrollWidth > wrap.clientWidth + 2) {
+            outer.classList.add('can-scroll');
+          } else {
+            outer.classList.remove('can-scroll');
+          }
+        };
+        check();
+        window.addEventListener('resize', check);
+      });
+
+      // TOC active tracking
+      const tocLinks = document.querySelectorAll('.toc a');
+      const sections = [];
+      tocLinks.forEach(link => {
+        const id = link.getAttribute('href')?.replace('#', '');
+        const el = id && document.getElementById(id);
+        if (el) sections.push({ el, link });
+      });
+      if (sections.length > 0) {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            const match = sections.find(s => s.el === entry.target);
+            if (match) {
+              if (entry.isIntersecting) {
+                tocLinks.forEach(l => l.classList.remove('on'));
+                match.link.classList.add('on');
+              }
+            }
+          });
+        }, { rootMargin: '-20% 0px -60% 0px' });
+        sections.forEach(s => observer.observe(s.el));
+      }
+    });
+  </script>
+</Layout>
