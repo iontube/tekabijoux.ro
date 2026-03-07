@@ -89,7 +89,7 @@ function sleep(ms) {
 async function translateToEnglish(text) {
   for (let attempt = 0; attempt < 3; attempt++) {
     const apiKey = getNextGeminiKey();
-    const url = `https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash-lite:generateContent?key=${apiKey}`;
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${apiKey}`;
     try {
       const response = await fetch(url, {
         method: 'POST',
@@ -115,7 +115,7 @@ async function translateToEnglish(text) {
 // --- Gemini Article Generation ---
 async function generateArticleContent(keyword, category, completedArticles = []) {
   const apiKey = getNextGeminiKey();
-  const url = `https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash-lite:generateContent?key=${apiKey}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${apiKey}`;
 
 
   // Build interlink list from completed articles
@@ -251,7 +251,7 @@ ${interlinkList}` : ''}`;
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           contents: [{ parts: [{ text: prompt }] }],
-          generationConfig: { temperature: 0.85, maxOutputTokens: 20000 },
+          generationConfig: { temperature: 0.85, maxOutputTokens: 40000, responseMimeType: "application/json" },
         }),
       });
 
@@ -268,14 +268,6 @@ ${interlinkList}` : ''}`;
         console.log('  Empty response from Gemini');
         await sleep(3000);
         continue;
-      }
-
-      // Clean markdown wrappers
-      text = text.replace(/```json\s*/gi, '').replace(/```\s*/g, '').trim();
-      // Extract JSON object if there's extra text
-      const jsonMatch = text.match(/\{[\s\S]*\}/);
-      if (jsonMatch) {
-        text = jsonMatch[0];
       }
 
       const content = JSON.parse(text);
@@ -311,7 +303,7 @@ function stripBrands(text) {
 async function rephraseWithoutBrands(text) {
   for (let attempt = 0; attempt < 3; attempt++) {
     const apiKey = getNextGeminiKey();
-    const url = `https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash-lite:generateContent?key=${apiKey}`;
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${apiKey}`;
     try {
       const response = await fetch(url, {
         method: 'POST',
@@ -348,7 +340,7 @@ async function generateSafePrompt(text, categorySlug) {
 
   for (let attempt = 0; attempt < 3; attempt++) {
     const apiKey = getNextGeminiKey();
-    const url = `https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash-lite:generateContent?key=${apiKey}`;
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${apiKey}`;
     try {
       const response = await fetch(url, {
         method: 'POST',
