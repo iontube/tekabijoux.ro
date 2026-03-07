@@ -670,7 +670,7 @@ function createArticlePage(article, content, kwData) {
   const excerptEscaped = escapeForFrontmatter(excerpt);
   const authorInitials = author.name.split(' ').map(w => w[0]).join('');
 
-  const pageContent = `---
+  let pageContent = `---
 import Layout from '../components/Layout.astro';
 import SimilarArticles from '../components/SimilarArticles.astro';
 import PrevNextNav from '../components/PrevNextNav.astro';
