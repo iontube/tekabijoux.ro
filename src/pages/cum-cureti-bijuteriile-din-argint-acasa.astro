@@ -1,0 +1,383 @@
+---
+import Layout from '../components/Layout.astro';
+import SimilarArticles from '../components/SimilarArticles.astro';
+import PrevNextNav from '../components/PrevNextNav.astro';
+
+const title = "Cum cureți bijuteriile din argint acasa";
+const description = "Argintul isi pierde stralucirea si devine mat, chiar negru, din cauza oxidarii. Nu e nicio drama, se intampla cu majoritatea bijuteriilor din argint 925. Vestea buna e ca poti reda stralucirea argintului chiar la tine acasa, rapid si usor, cu cateva solutii pe care probabil le ai deja in bucatarie.";
+const pubDate = "2024-04-05T04:38:00.000Z";
+const modifiedDate = "2026-03-08T15:40:06.645Z";
+const category = "Bijuterii din Argint";
+const categorySlug = "bijuterii-din-argint";
+const slug = "cum-cureti-bijuteriile-din-argint-acasa";
+const authorName = "Ioana Stanescu";
+const authorRole = "Expert Bijuterii Argint";
+const authorBio = "Ioana colectioneaza si recenzeaza bijuterii din argint de peste 5 ani. Colaboreaza cu ateliere romanesti de bijuterii si cunoaste piata locala in detaliu. Articolele ei se bazeaza pe teste practice si pe experienta reala de purtare.";
+const authorInitials = "IS";
+const schema = "[{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Cat costa curatarea bijuteriilor din argint la bijutier?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Pretul pentru curatarea profesionala a bijuteriilor din argint la un bijutier variaza intre 30 si 100 de lei, in functie de complexitatea bijuteriei si de metoda folosita. O simpla lustruire poate fi mai ieftina, in timp ce indepartarea unor patine persistente sau reparatii minore pot creste costul.\"}},{\"@type\":\"Question\",\"name\":\"Care e diferenta intre argint 925 si argint sterlin?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Nu exista nicio diferenta, sunt acelasi lucru. Argintul 925, numit si argint sterlin (sterling silver), inseamna ca bijuteria este compusa din 92.5% argint pur si 7.5% alte metale (de obicei cupru) pentru a-i conferi rezistenta. Marcajul '925' atesta acest standard de calitate.\"}},{\"@type\":\"Question\",\"name\":\"Merita sa cumpar bijuterii din argint placat cu rodiu?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Da, merita daca vrei o stralucire de lunga durata si rezistenta la oxidare. Placarea cu rodiu (un metal din familia platinei) ofera argintului un aspect mai alb, stralucitor si il protejeaza impotriva innegresii. Dezavantajul e ca stratul de rodiu se poate uza in timp, mai ales la bijuteriile purtate zilnic.\"}},{\"@type\":\"Question\",\"name\":\"Cum sa cureti cercei din argint cu pietre?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Pentru cercei din argint cu pietre, foloseste cea mai blanda metoda: apa calduta cu putin sapun neutru si o perie foarte moale. Evita solutiile chimice sau abrazive, mai ales daca pietrele sunt poroase (turcoaz, perle) sau sensibile. Clateste bine si usuca cu o carpa moale, fara a atinge pietrele.\"}},{\"@type\":\"Question\",\"name\":\"Cum sa pastrez bijuteriile din argint ca sa nu se oxideze?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Cel mai bine e sa le depozitezi separat, in pungute individuale din material textil sau plastic, ferite de lumina directa si de aer. Poti pune in punguta o hartie anti-oxidare sau un plic cu silicagel. Evita sa le tii in baie sau in locuri cu umiditate ridicata. Dupa purtare, sterge-le cu o carpa moale pentru a indeparta transpiratia si uleiurile.\"}}]},{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Acasa\",\"item\":\"https://tekabijoux.ro/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Bijuterii din Argint\",\"item\":\"https://tekabijoux.ro/bijuterii-din-argint/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Cum cureți bijuteriile din argint acasa\",\"item\":\"https://tekabijoux.ro/cum-cureti-bijuteriile-din-argint-acasa/\"}]},{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Cum cureți bijuteriile din argint acasa\",\"description\":\"Argintul isi pierde stralucirea si devine mat, chiar negru, din cauza oxidarii. Nu e nicio drama, se intampla cu majoritatea bijuteriilor din argint 925. Vestea buna e ca poti reda stralucirea argintului chiar la tine acasa, rapid si usor, cu cateva solutii pe care probabil le ai deja in bucatarie.\",\"image\":\"https://tekabijoux.ro/images/articles/cum-cureti-bijuteriile-din-argint-acasa.webp\",\"datePublished\":\"2024-04-05T04:38:00.000Z\",\"dateModified\":\"2026-03-08T15:40:06.645Z\",\"author\":{\"@type\":\"Person\",\"name\":\"Ioana Stanescu\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"TekaBijoux\",\"url\":\"https://tekabijoux.ro\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://tekabijoux.ro/cum-cureti-bijuteriile-din-argint-acasa/\"}}]";
+const similarArticles = [{"title":"Cele mai bune bratari din argint 925 pentru femei","slug":"cele-mai-bune-bratari-din-argint-925-pentru-femei","excerpt":"Daca vrei cele mai bune bratari din argint 925 pentru femei, uita-te dupa modele minimaliste, cu un design atemporal. Recomandarea mea clara ar fi o bratara fina, cu un charm discret sau o simpla lantisor din argint 925, lucrata cu atentie, fara pietre mari sau elemente complicate care se pot agata usor. Acestea sunt si cele mai versatile.","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2025-08-20T07:45:00.000Z","author":"Ioana Stanescu"},{"title":"Cele mai bune inele din argint 925 pentru femei","slug":"cele-mai-bune-inele-din-argint-925-pentru-femei","excerpt":"Cand vine vorba de cele mai bune inele din argint 925 pentru femei, daca vrei ceva clasic si de efect, eu zic sa te uiti la modelele cu o singura piatra centrala, gen solitare subtile sau cu o piatra semipretioasa mica, cum ar fi un spinel negru sau o piatra lunii. Ele sunt versatile si arata fin pe orice mana.","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-01-21T05:47:00.000Z","author":"Ioana Stanescu"},{"title":"Pandantive din argint cu pietre semipretioase","slug":"pandantive-din-argint-cu-pietre-semipretioase","excerpt":"Cand vine vorba de pandantive din argint cu pietre semipretioase, cauta-le pe cele care nu doar ca arata bine, dar sunt si realizate bine. Un pandantiv bun, din argint 925, cu o piatra autentica, nu ar trebui sa depaseasca 250-300 lei pentru modele mai simple, dar pentru cele cu design complex sau pietre mai rare, pretul poate urca spre 500-700 lei. Sfatul meu e sa te uiti la finisaje si la autenticitatea pietrei.","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-02-06T05:15:00.000Z","author":"Ioana Stanescu"},{"title":"Cercei din argint 925: modele si preturi","slug":"cercei-din-argint-925-modele-si-preturi","excerpt":"Daca vrei sa cumperi cercei din argint 925: modele si preturi, gandeste-te la stilul tau personal si la ocazia pentru care ii iei. Pentru zi de zi, ceva finut, gen surub, intre 80-150 lei. Pentru seri speciale, poti merge pe modele statement, cu pietre sau designuri elaborate, undeva intre 200-500 lei, sau chiar mai mult daca sunt gravati sau au detalii complexe.","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-02-21T08:43:00.000Z","author":"Ioana Stanescu"}];
+const allArticles = [{"title":"Cele mai bune ceasuri barbatesti sub 500 lei","slug":"cele-mai-bune-ceasuri-barbatesti-sub-500-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2025-09-12T08:30:00.000Z"},{"title":"Cele mai frumoase lanturi de aur pentru barbati","slug":"cele-mai-frumoase-lanturi-de-aur-pentru-barbati","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2025-10-05T10:15:00.000Z"},{"title":"Cele mai bune bratari din argint 925 pentru femei","slug":"cele-mai-bune-bratari-din-argint-925-pentru-femei","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2025-08-20T07:45:00.000Z"},{"title":"Cum alegi inelul de logodna perfect","slug":"cum-alegi-inelul-de-logodna-perfect","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2025-11-15T09:00:00.000Z"},{"title":"Cele mai bune genti de dama din piele naturala","slug":"cele-mai-bune-genti-de-dama-din-piele-naturala","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2025-07-08T11:30:00.000Z"},{"title":"Cele mai bune ceasuri pentru femei sub 300 lei","slug":"cele-mai-bune-ceasuri-pentru-femei-sub-300-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-01-15T05:29:00.000Z"},{"title":"Ceasuri automate barbatesti sub 1000 lei","slug":"ceasuri-automate-barbatesti-sub-1000-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-01-30T06:32:00.000Z"},{"title":"Casio vs Seiko: care e mai bun la pret similar","slug":"casio-vs-seiko-care-e-mai-bun-la-pret-similar","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-02-15T05:45:00.000Z"},{"title":"Cele mai frumoase cercei din aur pentru femei","slug":"cele-mai-frumoase-cercei-din-aur-pentru-femei","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-01-18T08:02:00.000Z"},{"title":"Cele mai bune inele din argint 925 pentru femei","slug":"cele-mai-bune-inele-din-argint-925-pentru-femei","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-01-21T05:47:00.000Z"},{"title":"Cele mai bune verighete din aur alb sub 2000 lei","slug":"cele-mai-bune-verighete-din-aur-alb-sub-2000-lei","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-01-24T05:31:00.000Z"},{"title":"Cele mai bune ochelari de soare pentru femei sub 300 lei","slug":"cele-mai-bune-ochelari-de-soare-pentru-femei-sub-300-lei","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-01-28T05:26:00.000Z"},{"title":"Cele mai bune smartwatch-uri sub 500 lei","slug":"cele-mai-bune-smartwatch-uri-sub-500-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-02-29T05:46:00.000Z"},{"title":"Lant de aur 14K vs 18K: diferente si preturi","slug":"lant-de-aur-14k-vs-18k-diferente-si-preturi","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-02-02T06:21:00.000Z"},{"title":"Ceasuri de mana elegante pentru birou sub 800 lei","slug":"ceasuri-de-mana-elegante-pentru-birou-sub-800-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-03-17T05:18:00.000Z"},{"title":"Cele mai bune inele din aur pentru barbati","slug":"cele-mai-bune-inele-din-aur-pentru-barbati","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-02-18T09:53:00.000Z"},{"title":"Pandantive din argint cu pietre semipretioase","slug":"pandantive-din-argint-cu-pietre-semipretioase","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-02-06T05:15:00.000Z"},{"title":"Verighete din platina vs aur alb: comparatie preturi","slug":"verighete-din-platina-vs-aur-alb-comparatie-preturi","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-02-08T07:55:00.000Z"},{"title":"Cercei din argint 925: modele si preturi","slug":"cercei-din-argint-925-modele-si-preturi","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-02-21T08:43:00.000Z"},{"title":"Bijuterii din argint Pandora vs Thomas Sabo","slug":"bijuterii-din-argint-pandora-vs-thomas-sabo","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-03-08T06:05:00.000Z"},{"title":"Cum alegi marimea potrivita pentru verighete","slug":"cum-alegi-marimea-potrivita-pentru-verighete","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-02-24T07:19:00.000Z"},{"title":"Portofele din piele naturala pentru barbati","slug":"portofele-din-piele-naturala-pentru-barbati","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-02-12T08:31:00.000Z"},{"title":"Top ceasuri sport barbatesti rezistente la apa","slug":"top-ceasuri-sport-barbatesti-rezistente-la-apa","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-03-31T07:06:00.000Z"},{"title":"Bratari din aur pentru femei sub 1000 lei","slug":"bratari-din-aur-pentru-femei-sub-1000-lei","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-03-04T08:02:00.000Z"},{"title":"Cele mai bune lanturi din argint pentru barbati","slug":"cele-mai-bune-lanturi-din-argint-pentru-barbati","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-03-21T05:02:00.000Z"},{"title":"Cele mai bune inele de logodna cu diamant sub 3000 lei","slug":"cele-mai-bune-inele-de-logodna-cu-diamant-sub-3000-lei","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-03-11T09:38:00.000Z"},{"title":"Top curele din piele pentru barbati sub 200 lei","slug":"top-curele-din-piele-pentru-barbati-sub-200-lei","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-02-27T06:15:00.000Z"},{"title":"Cele mai bune ceasuri Tissot pentru barbati","slug":"cele-mai-bune-ceasuri-tissot-pentru-barbati","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-04-15T08:09:00.000Z"},{"title":"Cum verifici daca o bijuterie din aur e autentica","slug":"cum-verifici-daca-o-bijuterie-din-aur-e-autentica","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-03-19T07:02:00.000Z"}];
+---
+<Layout
+  title={title + " - TekaBijoux"}
+  description={description}
+  canonical={"https://tekabijoux.ro/" + slug + "/"}
+  ogImage={"/images/articles/" + slug + ".webp"}
+  schema={schema}
+  article={true}
+  pubDate={pubDate}
+  modifiedDate={modifiedDate}
+>
+  <article>
+    <div class="art-hero">
+      <img src={"/images/articles/" + slug + ".webp"} alt={title} width="1200" height="514" loading="eager" />
+      <div class="art-hero-over">
+        <nav class="art-hero-bc" aria-label="breadcrumb">
+          <a href="/">Acasa</a>
+          <span class="sep">/</span>
+          <a href={"/" + categorySlug + "/"}>{category}</a>
+          <span class="sep">/</span>
+          <span>{title}</span>
+        </nav>
+        <h1>{title}</h1>
+        <div class="art-hero-meta">
+          <span>{authorName}</span>
+          <span class="dot"></span>
+          <time datetime={pubDate}>5 aprilie 2024</time>
+          <span class="dot"></span>
+          <span>Actualizat: 8 martie 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="toc">
+      <div class="toc-head">Cuprins</div>
+      <ol>
+        <li><a href="#produs-1">Bratara Argint 925 Tennis cu Zirconiu</a></li>
+        <li><a href="#produs-2">Inel Argint 925 Infinit cu Cristal Swarovski</a></li>
+        <li><a href="#produs-3">Colier Argint 925 Lung cu Pandantiv Floare</a></li>
+        <li><a href="#produs-4">Set Cercei Argint 925 Rotunzi Simplu</a></li>
+        <li><a href="#produs-5">Inel Larga Argint 925 cu Model Geometric</a></li>
+        <li><a href="#produs-6">Bratara Argint 925 cu Charmuri Asociate (ex: Cheita, Inimioara)</a></li>
+        <li><a href="#comparatie">Cum alegi bijuteriile din argint potrivite: o comparatie rapida</a></li>
+        <li><a href="#ghid">Ghid practic: Cum cureti bijuteriile din argint acasa fara sa le strici</a></li>
+        <li><a href="#faq">Intrebari frecvente</a></li>
+      </ol>
+    </div>
+
+    <div class="art-body">
+      <p>Argintul isi pierde stralucirea si devine mat, chiar negru, din cauza oxidarii. Nu e nicio drama, se intampla cu majoritatea bijuteriilor din argint 925. Vestea buna e ca poti reda stralucirea argintului chiar la tine acasa, rapid si usor, cu cateva solutii pe care probabil le ai deja in bucatarie.</p><p>Articolul asta o sa-ti arate exact cum sa cureti bijuteriile din argint, ce sa folosesti si ce sa eviti, ca sa nu le strici. Vom vorbi si despre cateva piese dragute din argint pe care le-am testat si cum s-au comportat in timp. Poate gasesti ceva ce-ti place sau iti vine o idee de cadou.</p>
+
+      <div class="product-review" id="produs-1">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #1</span>
+            <h3>Bratara Argint 925 Tennis cu Zirconiu</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Argint 925, placata cu rodiu</div>
+            <div class="product-review__spec"><strong>Greutate</strong>12.5g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Lungime reglabila 16-19cm, latime 4mm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 925</div>
+            <div class="product-review__spec"><strong>Stil</strong>Elegant, clasic</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Am purtat bratara asta destul de mult, cam 3 luni in fiecare zi, si pot sa spun ca e destul de rezistenta. Zirconiile sunt bine prinse si nu s-a zgariat usor, ceea ce e un plus. Arata finuta, nu e genul de bratara ostentativa, se potriveste si la o tinuta casual, si la una mai eleganta. M-a surprins placut placajul cu rodiu, pentru ca argintul nu s-a inchis la culoare asa repede cum ma asteptam, chiar si dupa ce am dat cu ea de diverse chestii prin casa. O curatare rapida cu o laveta speciala si parea ca noua. Daca ma intrebi pe mine, e o piesa versatila.</p><p>E genul de bratara pe care n-o dai jos prea des. Am primit chiar si complimente cand am purtat-o cu o rochie neagra. Partea mai putin placuta e ca, fiind genul tennis, daca iti agati un fir dintr-un pulover mai gros, se poate agata si se poate rupe destul de usor. Deci, atentie cu tricotajele alea mai groase.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Design elegant si versatil</li>
+              <li>Rezista bine la purtare zilnica, placajul cu rodiu ajuta</li>
+              <li>Zirconiile sunt bine fixate</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Se poate agata usor in tesaturi groase</li>
+              <li>Pretul e un pic peste medie pentru argint, dar justificat de design si finisaje</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-2">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #2</span>
+            <h3>Inel Argint 925 Infinit cu Cristal Swarovski</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Argint 925, Cristal Swarovski</div>
+            <div class="product-review__spec"><strong>Greutate</strong>2.1g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Marime reglabila (diametru interior 17-19mm)</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 925, sigla Swarovski</div>
+            <div class="product-review__spec"><strong>Stil</strong>Minimalist, romantic</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Am comandat inelul asta mai mult ca un cadou pentru sora-mea si am zis sa-l 'testez' si eu putin. E finut, asa, cum te astepti de la un inel cu simbol infinit. Cristalul Swarovski straluceste frumos, mai ales in lumina naturala. Ce mi-a placut e ca e reglabil, nu trebuie sa ghicesti marimea exacta. Asta e mare lucru cand cumperi online. Am purtat eu vreo doua saptamani, l-am dat si de apa, si prin casa, si nu s-a innegrit rapid. Am facut si eu curatare cu pasta de dinti, cum zicem noi, si a revenit stralucirea.</p><p>Ce nu mi-a placut neaparat e ca, fiind reglabil, pe termen lung, zona unde se ajusteaza se poate uza mai repede sau se poate rupe daca il fortezi prea tare. Si, sincer, daca stai sa te gandesti, nu e cea mai robusta piesa. Totusi, pentru ocazii speciale sau ca un mic simbol, e dragut. Nu te astepta sa fie o bijuterie pe care sa o porti 20 de ani zi de zi.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Design minimalist si dragut</li>
+              <li>Cristal Swarovski stralucitor</li>
+              <li>Marime reglabila, comod pentru cadou</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Zona de ajustare poate fi un punct slab pe termen lung</li>
+              <li>Nu e cea mai groasa sau robusta piesa din argint</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-3">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #3</span>
+            <h3>Colier Argint 925 Lung cu Pandantiv Floare</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Argint 925</div>
+            <div class="product-review__spec"><strong>Greutate</strong>8.2g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Lungime lant 60cm, pandantiv 2.5cm diametru</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 925</div>
+            <div class="product-review__spec"><strong>Stil</strong>Boho, vintage</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Asta e genul de colier pe care l-am luat pentru vara, sa-l port peste tricouri sau bluze mai largi. Lantul e destul de lung, ajunge cam pe la mijloc, si pandantivul e destul de mare, dar nu exagerat. Imi place ca are un aer un pic retro, boem. L-am purtat destul de des vara trecuta. Dupa vreo 3 luni de purtat cam o data pe saptamana, am observat ca incepe sa capete o nuanta mai inchisa, mai ales la zalele mai mici ale lantului. Asta e normal la argint, na. Am curatat cu bicarbonat si apa, a mers, dar a trebuit sa frec un pic mai mult la colturile pandantivului unde se aduna mai usor.</p><p>Ce ar putea fi un minus e faptul ca lantul, fiind mai lung, se poate incurca destul de usor in par sau in haine, mai ales daca porti pulovere. Si, daca nu esti atenta, pandantivul se poate roti si nu sta mereu cu fata la vedere, mai ales daca te misti mult. Nu e o problema majora, dar e de notat. E o piesa frumoasa, dar necesita putina ingrijire.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Design unic, cu aer boem/vintage</li>
+              <li>Lungime buna pentru diverse tinute</li>
+              <li>Pandantiv detaliat</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Tinde sa se oxideze mai repede pe lant, necesita curatare periodica</li>
+              <li>Se poate incurca usor din cauza lungimii</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-4">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #4</span>
+            <h3>Set Cercei Argint 925 Rotunzi Simplu</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Argint 925</div>
+            <div class="product-review__spec"><strong>Greutate</strong>1.8g (perechea)</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Diametru 10mm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 925</div>
+            <div class="product-review__spec"><strong>Stil</strong>Minimalist, zilnic</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Am luat setul asta de cercei pentru ca voiam ceva simplu, de purtat in fiecare zi, la birou sau cand nu vreau sa ma gandesc prea mult ce sa pun. Sunt mici, rotunzi, se potrivesc cu absolut orice. Am uitat sa-i dau jos vreo 3 saptamani bune. Sincer, m-am cam obisnuit cu ei. Nu m-au deranjat deloc. Au rezistat bine, nu s-au zgariat, nu s-au deformat. Singurul lucru pe care l-am observat e ca, dupa ce i-am dat jos, argintul de pe spate (la sistemul de prindere) a inceput sa capete o usoara nuanta cenusie. Asta e, se intampla. O frecare cu o carpa moale si si-au revenit.</p><p>Ce as putea zice ca e un minus? Pai, sunt chiar atat de simpli incat, daca nu esti atenta, ii poti pierde destul de usor. Sunt mici si se potrivesc perfect in gaura urechii. Poate ca ar fi fost mai bine cu o inchidere un pic mai sigura, gen tija cu filet, dar asta e, sunt cei clasici. Totusi, pentru pretul lor si pentru ce promit, sunt ok. Nu te astepta la ceva spectaculos, sunt cercei de 'every day use'.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Extrem de versatili, merg cu orice tinuta</li>
+              <li>Confortabili pentru purtare zilnica</li>
+              <li>Pret accesibil</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Se pot pierde usor din cauza dimensiunii mici</li>
+              <li>Sistemul de inchidere clasic nu e cel mai sigur</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-5">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #5</span>
+            <h3>Inel Larga Argint 925 cu Model Geometric</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Argint 925</div>
+            <div class="product-review__spec"><strong>Greutate</strong>7.5g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Latime banda 8mm, marime 56</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 925</div>
+            <div class="product-review__spec"><strong>Stil</strong>Modern, statement</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Am fost tentata de modelul geometric, arata destul de diferit fata de ce gasesti de obicei. E un inel lat, destul de solid, se vede ca e argint. L-am purtat cam o luna, in principal la ocazii unde voiam sa fac o impresie, ca nu e chiar un inel subtil. Ce mi-a placut e ca modelul ala geometric chiar atrage privirea. E un fel de 'statement piece'. Daca il porti pe degetul inelar, arata super. Am dus si mainile prin apa cu el, si am atins si tot felul de suprafete, si nu s-a zgariat usor. Asta e un plus mare pentru mine, urasc zgarieturile pe bijuterii.</p><p>Acum, la partea mai putin faina. Fiind lat si din argint masiv, se poate simti un pic greu pe deget daca nu esti obisnuita. Si, dupa vreo luna de purtare, am observat ca argintul a inceput sa se inchida la culoare pe partile mai 'ascunse' ale modelului, adica in interiorul liniilor geometrice. Asta inseamna ca trebuie curatat mai atent, poate cu o pensula mica. De asemenea, daca porti manusi, poate fi un pic incomod. Deci, daca cauti ceva finut, probabil nu e asta. Daca vrei ceva sa iasa in evidenta, e o alegere buna.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Design modern, geometric, atrage atentia</li>
+              <li>Se simte solid si de calitate</li>
+              <li>Rezistent la zgarieturi superficiale</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Se poate inchide la culoare in zonele greu accesibile ale modelului</li>
+              <li>Poate fi un pic greu sau incomod pentru unele persoane</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-6">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #6</span>
+            <h3>Bratara Argint 925 cu Charmuri Asociate (ex: Cheita, Inimioara)</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Argint 925</div>
+            <div class="product-review__spec"><strong>Greutate</strong>15g (cu 3 charmuri)</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Lungime reglabila 17-20cm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 925</div>
+            <div class="product-review__spec"><strong>Stil</strong>Personalizat, tanar</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Bratara asta e genul de cadou pe care-l primesti si te gandesti 'hmm, dragut'. Am primit-o acum ceva timp, cu 3 charmuri simple: o cheita, o inimioara si un mic cerc. E placut sa ai ceva personalizat. Am purtat-o destul de des, in special in weekenduri sau cand ies cu prietenii. Charmurile se misca pe bratara, ceea ce poate fi amuzant, dar uneori si enervant. Sincer, am observat ca argintul de pe charmuri s-a inchis la culoare mai repede decat cel de pe bratara in sine. Probabil pentru ca sunt mai mici si au mai multe detalii unde se poate aduna mizerie sau se oxideaza.</p><p>Cea mai mare problema pe care am avut-o e ca una dintre inelele care tine un charm de bratara a inceput sa se deschida. Na, asta e, s-a intamplat cand am tras mai tare de ea, incercand sa o prind de ceva. Am reusit sa o inchid la loc cu un cleste, dar nu mai e la fel de sigura. Si, daca vrei sa mai adaugi charmuri, pretul creste destul de mult. Deci, e un fel de capcana. E draguta pentru ce e, dar nu te astepta la o piesa de muzeu.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Permite personalizare cu diverse charmuri</li>
+              <li>Aspect tanar si jucaus</li>
+              <li>Bratara in sine e de calitate buna (argint 925)</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Charmurile se pot oxida mai repede decat bratara</li>
+              <li>Sistemul de prindere al charmurilor poate fi fragil</li>
+              <li>Costul poate creste semnificativ cu charmuri suplimentare</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="comparison-outer" id="comparatie">
+        <h2>Cum alegi bijuteriile din argint potrivite: o comparatie rapida</h2>
+        <div class="comparison-hint"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg> Scroll orizontal pentru a vedea toate coloanele</div>
+        <div class="comparison-wrap">
+          <table class="comparison-table">
+            <thead><tr><th>Model</th><th>Material</th><th>Greutate</th><th>Dimensiuni</th><th>Stil</th><th>Potrivit pentru</th></tr></thead>
+            <tbody>
+            <tr><td>Bratara Tennis</td><td>Argint 925 placat rodiu</td><td>12.5g</td><td>16-19cm</td><td>Elegant, clasic</td><td>Evenimente, tinute smart-casual, cadou rafinat</td></tr>
+            <tr><td>Inel Infinit</td><td>Argint 925, Cristal Swarovski</td><td>2.1g</td><td>Reglabil</td><td>Minimalist, romantic</td><td>Purtare zilnica discreta, cadou pentru iubita/sora</td></tr>
+            <tr><td>Colier Floare</td><td>Argint 925</td><td>8.2g</td><td>60cm lant, 2.5cm pandantiv</td><td>Boho, vintage</td><td>Tinute lejere de vara, stiluri nonconformiste</td></tr>
+            <tr><td>Cercei Rotunzi</td><td>Argint 925</td><td>1.8g</td><td>10mm diametru</td><td>Minimalist, zilnic</td><td>Absolut orice ocazie, stil practic</td></tr>
+            <tr><td>Inel Geometric</td><td>Argint 925</td><td>7.5g</td><td>Banda 8mm</td><td>Modern, statement</td><td>Atrage atentia, tinute cu personalitate</td></tr>
+            <tr><td>Bratara Charmuri</td><td>Argint 925</td><td>15g</td><td>17-20cm</td><td>Personalizat, tanar</td><td>Cadou personal, adolescenti, tineri</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="guide" id="ghid">
+        <h2>Ghid practic: Cum cureti bijuteriile din argint acasa fara sa le strici</h2>
+        <p>Bun, deci ai bijuterii din argint si s-au cam inchis la culoare. Nu te panica. Oxidarea e normala, mai ales la argintul 925, care e un aliaj. Vestea buna e ca poti sa le faci sa straluceasca din nou, chiar la tine acasa. Hai sa vedem cum.</p><h4>Metoda 1: Solutia cu apa fierbinte, bicarbonat si folie de aluminiu</h4><p>Asta e o metoda blanda, dar eficienta pentru majoritatea cazurilor. Ai nevoie de:</p><ul><ul><li>un recipient nemetalic (sticlă, ceramică)</li><li>folie de aluminiu</li><li>bicarbonat de sodiu</li><li>apa fierbinte</li><li>bijuteriile din argint murdare</li></ul></ul><p>Cum procedezi: Tapeteaza recipientul cu folie de aluminiu, cu partea lucioasa in sus. Pune bijuteriile peste folie. Presara 1-2 linguri de bicarbonat de sodiu peste ele. Toarna apa fierbinte (nu clocotita, ca sa nu strici pietrele, daca exista) peste tot. Vei vedea ca reactioneaza, bolboroseste un pic. Lasa-le asa cam 5-10 minute. Apoi, scoate-le cu o penseta sau o furculita nemetalica, clateste-le bine sub jet de apa si usuca-le imediat cu o carpa moale, de preferat din microfibra. Argintul ar trebui sa fie mult mai stralucitor.</p><h4>Metoda 2: Pasta de dinti (varianta clasica, dar cu precautii)</h4><p>Pasta de dinti poate fi un abraziv usor, deci o poti folosi, dar cu grija. NU folosi pasta de dinti cu gel sau cu particule abrazive mari (gen pentru albire agresiva). Ai nevoie de o pasta de dinti alba, normala.</p><p>Cum procedezi: Pune o cantitate mica de pasta de dinti pe o periuta de dinti moale (una veche, curata). Freaca usor bijuteria, concentrandu-te pe zonele oxidate. Nu insista prea tare. Dupa ce ai frecat, clateste bine bijuteria sub jet de apa si usuc-o imediat cu o carpa moale. Asta merge bine pentru zgarieturi fine sau pete mici.</p><h4>Metoda 3: Solutia speciala pentru curatat argintul</h4><p>Pe piata exista solutii dedicate. Le gasesti in supermarketuri sau magazine de bijuterii. De obicei, sunt niste lichide in care bagi bijuteria pentru cateva secunde sau minute, conform instructiunilor.</p><p>Cum procedezi: Citeste cu atentie prospectul. De obicei, scufunzi bijuteria pentru un timp scurt, apoi o clatesti si o usuci. Avantajul e ca sunt rapide si eficiente. Dezavantajul e ca pot fi mai agresive si, uneori, pot indeparta si stratul de rodiu (daca bijuteria e placata). Foloseste-le cu moderatie. Daca ai pietre pretioase sau semipretioase, verifica daca solutia e compatibila. Multe solutii nu sunt bune pentru perle, turcoaz, coral sau chihlimbar.</p><h4>Ce sa EVITI cu desavarsire</h4><p>Aici e partea cea mai importanta. Ca sa nu strici bijuteriile: NU folosi inalbitor, clor, acetona, solutii de curatat geamuri sau orice altceva agresiv. Aceste chimicale pot deteriora argintul, pot indeparta placajul sau pot ataca pietrele. De asemenea, evitati bureti de sarma sau perii tari care pot zgaraia argintul. Pentru o intretinere regulata, cel mai bine e sa folosesti o carpa speciala pentru argint. Le gasesti online sau in magazinele de profil si sunt cea mai sigura metoda pentru a pastra stralucirea zilnica.</p><p>Daca ai piese din aur, regulile sunt un pic diferite. Poti citi mai multe despre <a href="/lant-de-aur-14k-vs-18k-diferente-si-preturi/">lant de aur 14K vs 18K: diferente si preturi</a>, dar pentru argint, sfaturile de mai sus sunt cele mai bune. Daca ti se pare prea complicat, mergi la un bijutier. Si nu uita, daca e vorba de o bijuterie cu adevarat speciala, cum ar fi un inel de logodna, mai bine apelezi la profesionisti.</p>
+      </div>
+    </div>
+
+    <div class="faq" id="faq">
+      <h2 class="faq-head">Intrebari frecvente</h2>
+      <details class="faq-q">
+  <summary>Cat costa curatarea bijuteriilor din argint la bijutier?</summary>
+  <div class="ans"><p>Pretul pentru curatarea profesionala a bijuteriilor din argint la un bijutier variaza intre 30 si 100 de lei, in functie de complexitatea bijuteriei si de metoda folosita. O simpla lustruire poate fi mai ieftina, in timp ce indepartarea unor patine persistente sau reparatii minore pot creste costul.</p></div>
+</details>
+<details class="faq-q">
+  <summary>Care e diferenta intre argint 925 si argint sterlin?</summary>
+  <div class="ans"><p>Nu exista nicio diferenta, sunt acelasi lucru. Argintul 925, numit si argint sterlin (sterling silver), inseamna ca bijuteria este compusa din 92.5% argint pur si 7.5% alte metale (de obicei cupru) pentru a-i conferi rezistenta. Marcajul '925' atesta acest standard de calitate.</p></div>
+</details>
+<details class="faq-q">
+  <summary>Merita sa cumpar bijuterii din argint placat cu rodiu?</summary>
+  <div class="ans"><p>Da, merita daca vrei o stralucire de lunga durata si rezistenta la oxidare. Placarea cu rodiu (un metal din familia platinei) ofera argintului un aspect mai alb, stralucitor si il protejeaza impotriva innegresii. Dezavantajul e ca stratul de rodiu se poate uza in timp, mai ales la bijuteriile purtate zilnic.</p></div>
+</details>
+<details class="faq-q">
+  <summary>Cum sa cureti cercei din argint cu pietre?</summary>
+  <div class="ans"><p>Pentru cercei din argint cu pietre, foloseste cea mai blanda metoda: apa calduta cu putin sapun neutru si o perie foarte moale. Evita solutiile chimice sau abrazive, mai ales daca pietrele sunt poroase (turcoaz, perle) sau sensibile. Clateste bine si usuca cu o carpa moale, fara a atinge pietrele.</p></div>
+</details>
+<details class="faq-q">
+  <summary>Cum sa pastrez bijuteriile din argint ca sa nu se oxideze?</summary>
+  <div class="ans"><p>Cel mai bine e sa le depozitezi separat, in pungute individuale din material textil sau plastic, ferite de lumina directa si de aer. Poti pune in punguta o hartie anti-oxidare sau un plic cu silicagel. Evita sa le tii in baie sau in locuri cu umiditate ridicata. Dupa purtare, sterge-le cu o carpa moale pentru a indeparta transpiratia si uleiurile.</p></div>
+</details>
+    </div>
+
+    <div class="author">
+      <div class="author-av">{authorInitials}</div>
+      <div>
+        <div class="author-role">{authorRole}</div>
+        <div class="author-name">{authorName}</div>
+        <p class="author-bio">{authorBio}</p>
+      </div>
+    </div>
+
+    <SimilarArticles articles={similarArticles} currentSlug={slug} />
+
+    <PrevNextNav
+      currentSlug={slug}
+      currentCategory={categorySlug}
+      articles={allArticles}
+    />
+  </article>
+
+  <script>
+    // Comparison table scroll hint
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.comparison-outer').forEach(outer => {
+        const wrap = outer.querySelector('.comparison-wrap');
+        if (!wrap) return;
+        const check = () => {
+          if (wrap.scrollWidth > wrap.clientWidth + 2) {
+            outer.classList.add('can-scroll');
+          } else {
+            outer.classList.remove('can-scroll');
+          }
+        };
+        check();
+        window.addEventListener('resize', check);
+      });
+
+      // TOC active tracking
+      const tocLinks = document.querySelectorAll('.toc a');
+      const sections = [];
+      tocLinks.forEach(link => {
+        const id = link.getAttribute('href')?.replace('#', '');
+        const el = id && document.getElementById(id);
+        if (el) sections.push({ el, link });
+      });
+      if (sections.length > 0) {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            const match = sections.find(s => s.el === entry.target);
+            if (match) {
+              if (entry.isIntersecting) {
+                tocLinks.forEach(l => l.classList.remove('on'));
+                match.link.classList.add('on');
+              }
+            }
+          });
+        }, { rootMargin: '-20% 0px -60% 0px' });
+        sections.forEach(s => observer.observe(s.el));
+      }
+    });
+  </script>
+</Layout>
