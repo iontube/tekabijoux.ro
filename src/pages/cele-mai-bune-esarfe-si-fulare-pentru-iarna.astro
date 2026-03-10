@@ -1,0 +1,388 @@
+---
+import Layout from '../components/Layout.astro';
+import SimilarArticles from '../components/SimilarArticles.astro';
+import PrevNextNav from '../components/PrevNextNav.astro';
+
+const title = "Cele mai bune esarfe si fulare pentru iarna";
+const description = "Cele mai bune esarfe si fulare pentru iarna le gasesti cand stii exact ce material cauti si ce stil ti se potriveste cel mai bine.";
+const pubDate = "2024-03-12T08:52:00.000Z";
+const modifiedDate = "2026-03-10T16:16:14.628Z";
+const category = "Accesorii Fashion";
+const categorySlug = "accesorii-fashion";
+const slug = "cele-mai-bune-esarfe-si-fulare-pentru-iarna";
+const authorName = "Diana Popescu";
+const authorRole = "Expert Accesorii si Moda";
+const authorBio = "Diana scrie despre moda si accesorii de peste 7 ani. A lucrat ca stilist personal si acum se concentreaza pe comparatii de preturi pentru accesorii fashion. Testeaza produsele in conditii reale si ofera recomandari bazate pe experienta directa.";
+const authorInitials = "DP";
+const schema = "[{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"cat costa o esarfa buna de iarna?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Preturile variaza mult. O esarfa din amestec de fibre, mai mult de moda, poate costa intre 100-200 lei. Modelele din lana merinos sau casmir de calitate superioara, sau cele 100% lana virgină, pot ajunge la 300-800 lei sau chiar mai mult, in functie de brand si compozitie.\"}},{\"@type\":\"Question\",\"name\":\"care e diferenta intre o esarfa de casmir si una de lana merinos?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Casmirul este, in general, mai fin, mai moale si mai usor, oferind o izolatie termica excelenta. Lana merinos este, de asemenea, moale si calduroasa, dar poate fi putin mai robusta si mai durabila, fiind adesea o optiune mai accesibila decat casmirul pur.\"}},{\"@type\":\"Question\",\"name\":\"merita sa cumpar o esarfa din lana 100% pentru iarna?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Absolut. Lana 100% naturala, mai ales cea de calitate (cum e lana merinos sau cea virgină), ofera o caldura exceptionala, este respirabila si rezista bine in timp. E o alegere excelenta pentru frigul intens.\"}},{\"@type\":\"Question\",\"name\":\"cum ingrijesc corect o esarfa din casmir sau lana?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"De obicei, se recomanda spalarea manuala in apa rece cu un detergent special pentru lana sau casmir. Evita stoarcerea agresiva. Se usuca prin intindere pe o suprafata plana, ferita de soare direct. Unele pot fi curatate chimic, verifica eticheta.\"}},{\"@type\":\"Question\",\"name\":\"cum aleg marimea potrivita pentru un fular de iarna?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Depinde de stilul dorit. Un fular lung (180-200 cm) ofera flexibilitate maxima la legat. Unul mai lat (30-40 cm) ofera mai multa caldura si volum. Pentru zilele foarte friguroase, un fular generos, care iti permite sa iti acoperi si capul, este ideal.\"}}]},{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Acasa\",\"item\":\"https://tekabijoux.ro/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Accesorii Fashion\",\"item\":\"https://tekabijoux.ro/accesorii-fashion/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Cele mai bune esarfe si fulare pentru iarna\",\"item\":\"https://tekabijoux.ro/cele-mai-bune-esarfe-si-fulare-pentru-iarna/\"}]},{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Cele mai bune esarfe si fulare pentru iarna\",\"description\":\"Cele mai bune esarfe si fulare pentru iarna le gasesti cand stii exact ce material cauti si ce stil ti se potriveste cel mai bine.\",\"image\":\"https://tekabijoux.ro/images/articles/cele-mai-bune-esarfe-si-fulare-pentru-iarna.webp\",\"datePublished\":\"2024-03-12T08:52:00.000Z\",\"dateModified\":\"2026-03-10T16:16:14.628Z\",\"author\":{\"@type\":\"Person\",\"name\":\"Diana Popescu\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"TekaBijoux\",\"url\":\"https://tekabijoux.ro\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://tekabijoux.ro/cele-mai-bune-esarfe-si-fulare-pentru-iarna/\"}}]";
+const similarArticles = [{"title":"Cele mai bune genti de dama din piele naturala","slug":"cele-mai-bune-genti-de-dama-din-piele-naturala","excerpt":"Daca vrei cele mai bune genti de dama din piele naturala, sincer, nu exista un singur raspuns universal. Totusi, pentru un echilibru excelent intre calitate, stil si pret, iti recomand sa te uiti la branduri precum Coccinelle sau Furla. Sunt branduri italiene consacrate care ofera piele de calitate buna la preturi corecte.","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2025-07-08T11:30:00.000Z","author":"Diana Popescu"},{"title":"Cele mai bune ochelari de soare pentru femei sub 300 lei","slug":"cele-mai-bune-ochelari-de-soare-pentru-femei-sub-300-lei","excerpt":"Ca sa gasesti cele mai bune ochelari de soare pentru femei sub 300 lei, uita-te la branduri ca Polaroid, Optică Romaneasca (daca au modele in oferta), sau cauta reduceri la nume mai cunoscute. Atenție la protecția UV 400. Nu te lăsa păcălită de branduri obscure care promit mult la preț mic.","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-01-28T05:26:00.000Z","author":"Diana Popescu"},{"title":"Portofele din piele naturala pentru barbati","slug":"portofele-din-piele-naturala-pentru-barbati","excerpt":"Daca vrei un portofel din piele naturala pentru barbati care sa tina o viata si sa arate impecabil, mergi pe piele de vaca, grain top sau full grain, de la branduri consacrate. Modelul clasic cu clapetă sau cel subțire, minimalist, sunt alegeri sigure, undeva la 200-500 lei.","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-02-12T08:31:00.000Z","author":"Diana Popescu"},{"title":"Top curele din piele pentru barbati sub 200 lei","slug":"top-curele-din-piele-pentru-barbati-sub-200-lei","excerpt":"Cauti curele de piele pentru barbati sub 200 lei? Ai ajuns unde trebuie. Am adunat cele mai bune optiuni ca sa arati impecabil fara sa dai o avere.","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-02-27T06:15:00.000Z","author":"Diana Popescu"}];
+const allArticles = [{"title":"Cele mai bune ceasuri barbatesti sub 500 lei","slug":"cele-mai-bune-ceasuri-barbatesti-sub-500-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2025-09-12T08:30:00.000Z"},{"title":"Cele mai frumoase lanturi de aur pentru barbati","slug":"cele-mai-frumoase-lanturi-de-aur-pentru-barbati","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2025-10-05T10:15:00.000Z"},{"title":"Cele mai bune bratari din argint 925 pentru femei","slug":"cele-mai-bune-bratari-din-argint-925-pentru-femei","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2025-08-20T07:45:00.000Z"},{"title":"Cum alegi inelul de logodna perfect","slug":"cum-alegi-inelul-de-logodna-perfect","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2025-11-15T09:00:00.000Z"},{"title":"Cele mai bune genti de dama din piele naturala","slug":"cele-mai-bune-genti-de-dama-din-piele-naturala","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2025-07-08T11:30:00.000Z"},{"title":"Cele mai bune ceasuri pentru femei sub 300 lei","slug":"cele-mai-bune-ceasuri-pentru-femei-sub-300-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-01-15T05:29:00.000Z"},{"title":"Ceasuri automate barbatesti sub 1000 lei","slug":"ceasuri-automate-barbatesti-sub-1000-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-01-30T06:32:00.000Z"},{"title":"Casio vs Seiko: care e mai bun la pret similar","slug":"casio-vs-seiko-care-e-mai-bun-la-pret-similar","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-02-15T05:45:00.000Z"},{"title":"Cele mai frumoase cercei din aur pentru femei","slug":"cele-mai-frumoase-cercei-din-aur-pentru-femei","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-01-18T08:02:00.000Z"},{"title":"Cele mai bune inele din argint 925 pentru femei","slug":"cele-mai-bune-inele-din-argint-925-pentru-femei","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-01-21T05:47:00.000Z"},{"title":"Cele mai bune verighete din aur alb sub 2000 lei","slug":"cele-mai-bune-verighete-din-aur-alb-sub-2000-lei","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-01-24T05:31:00.000Z"},{"title":"Cele mai bune ochelari de soare pentru femei sub 300 lei","slug":"cele-mai-bune-ochelari-de-soare-pentru-femei-sub-300-lei","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-01-28T05:26:00.000Z"},{"title":"Cele mai bune smartwatch-uri sub 500 lei","slug":"cele-mai-bune-smartwatch-uri-sub-500-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-02-29T05:46:00.000Z"},{"title":"Lant de aur 14K vs 18K: diferente si preturi","slug":"lant-de-aur-14k-vs-18k-diferente-si-preturi","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-02-02T06:21:00.000Z"},{"title":"Ceasuri de mana elegante pentru birou sub 800 lei","slug":"ceasuri-de-mana-elegante-pentru-birou-sub-800-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-03-17T05:18:00.000Z"},{"title":"Cele mai bune inele din aur pentru barbati","slug":"cele-mai-bune-inele-din-aur-pentru-barbati","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-02-18T09:53:00.000Z"},{"title":"Pandantive din argint cu pietre semipretioase","slug":"pandantive-din-argint-cu-pietre-semipretioase","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-02-06T05:15:00.000Z"},{"title":"Verighete din platina vs aur alb: comparatie preturi","slug":"verighete-din-platina-vs-aur-alb-comparatie-preturi","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-02-08T07:55:00.000Z"},{"title":"Cercei din argint 925: modele si preturi","slug":"cercei-din-argint-925-modele-si-preturi","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-02-21T08:43:00.000Z"},{"title":"Bijuterii din argint Pandora vs Thomas Sabo","slug":"bijuterii-din-argint-pandora-vs-thomas-sabo","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-03-08T06:05:00.000Z"},{"title":"Cum alegi marimea potrivita pentru verighete","slug":"cum-alegi-marimea-potrivita-pentru-verighete","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-02-24T07:19:00.000Z"},{"title":"Portofele din piele naturala pentru barbati","slug":"portofele-din-piele-naturala-pentru-barbati","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-02-12T08:31:00.000Z"},{"title":"Top ceasuri sport barbatesti rezistente la apa","slug":"top-ceasuri-sport-barbatesti-rezistente-la-apa","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-03-31T07:06:00.000Z"},{"title":"Bratari din aur pentru femei sub 1000 lei","slug":"bratari-din-aur-pentru-femei-sub-1000-lei","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-03-04T08:02:00.000Z"},{"title":"Cele mai bune lanturi din argint pentru barbati","slug":"cele-mai-bune-lanturi-din-argint-pentru-barbati","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-03-21T05:02:00.000Z"},{"title":"Cele mai bune inele de logodna cu diamant sub 3000 lei","slug":"cele-mai-bune-inele-de-logodna-cu-diamant-sub-3000-lei","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-03-11T09:38:00.000Z"},{"title":"Top curele din piele pentru barbati sub 200 lei","slug":"top-curele-din-piele-pentru-barbati-sub-200-lei","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-02-27T06:15:00.000Z"},{"title":"Cele mai bune ceasuri Tissot pentru barbati","slug":"cele-mai-bune-ceasuri-tissot-pentru-barbati","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-04-15T08:09:00.000Z"},{"title":"Cum verifici daca o bijuterie din aur e autentica","slug":"cum-verifici-daca-o-bijuterie-din-aur-e-autentica","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-03-19T07:02:00.000Z"},{"title":"Cum cureți bijuteriile din argint acasa","slug":"cum-cureti-bijuteriile-din-argint-acasa","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-04-05T04:38:00.000Z"},{"title":"Verighete clasice vs moderne: modele si preturi","slug":"verighete-clasice-vs-moderne-modele-si-preturi","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-03-24T09:33:00.000Z"}];
+---
+<Layout
+  title={title + " - TekaBijoux"}
+  description={description}
+  canonical={"https://tekabijoux.ro/" + slug + "/"}
+  ogImage={"/images/articles/" + slug + ".webp"}
+  schema={schema}
+  article={true}
+  pubDate={pubDate}
+  modifiedDate={modifiedDate}
+>
+  <article>
+    <div class="art-hero">
+      <img src={"/images/articles/" + slug + ".webp"} alt={title} width="1200" height="514" loading="eager" />
+      <div class="art-hero-over">
+        <nav class="art-hero-bc" aria-label="breadcrumb">
+          <a href="/">Acasa</a>
+          <span class="sep">/</span>
+          <a href={"/" + categorySlug + "/"}>{category}</a>
+          <span class="sep">/</span>
+          <span>{title}</span>
+        </nav>
+        <h1>{title}</h1>
+        <div class="art-hero-meta">
+          <span>{authorName}</span>
+          <span class="dot"></span>
+          <time datetime={pubDate}>12 martie 2024</time>
+          <span class="dot"></span>
+          <span>Actualizat: 10 martie 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="toc">
+      <div class="toc-head">Cuprins</div>
+      <ol>
+        <li><a href="#produs-1">Esarfa Eleganta din Casmir 100% - Rosu Intens</a></li>
+        <li><a href="#produs-2">Fular Barbatesc din Lana Merinos si Cashmere - Gri Melange</a></li>
+        <li><a href="#produs-3">Esarfa Mare Imprimata Geometric - Visiniu si Auriu</a></li>
+        <li><a href="#produs-4">Fular Lung din Lână Virgină - Albastru Petrol</a></li>
+        <li><a href="#produs-5">Esarfa Geometrica Texturata - Negru cu Accente Argintii</a></li>
+        <li><a href="#produs-6">Fular Mare din Lână Impletita - Crem Natural</a></li>
+        <li><a href="#comparatie">Comparam Esarfe si Fulare de Iarna: Ce Material ti se Potriveste?</a></li>
+        <li><a href="#ghid">Ghid de Cumparare: Cum Alegi Cele Mai Bune Esarfe si Fulare pentru Iarna</a></li>
+        <li><a href="#faq">Intrebari frecvente</a></li>
+      </ol>
+    </div>
+
+    <div class="art-body">
+      <p>Cele mai bune esarfe si fulare pentru iarna le gasesti cand stii exact ce material cauti si ce stil ti se potriveste cel mai bine.</p><p>Iarna asta, frigul nu te va prinde nepregatita daca alegi corect accesorile. O esarfa sau un fular bun nu sunt doar pentru a te tine de cald, ci si un statement de stil, o pata de culoare sau un detaliu fin care completeaza perfect tinuta. De la casmir moale la lana merinos sau combinatii de materiale, optiunile sunt multe si variate. Hai sa vedem ce recomandari am pentru tine anul asta.</p><p>Am selectat cateva modele care mi-au atras atentia, incercand sa acopar diverse stiluri si bugete. Stiu cat de greu poate fi sa alegi cand vezi atatea variante, asa ca sper ca experienta mea si detaliile pe care ti le ofer sa te ajute sa gasesti piesa perfecta pentru garderoba ta de iarna. Nu uita, o <a href="/cele-mai-bune-genti-de-dama-din-piele-naturala/">geanta de dama</a> bine aleasa si o esarfa potrivita pot transforma complet o tinuta.</p>
+
+      <div class="product-review" id="produs-1">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #1</span>
+            <h3>Esarfa Eleganta din Casmir 100% - Rosu Intens</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>100% Casmir</div>
+            <div class="product-review__spec"><strong>Greutate</strong>120g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>200cm x 70cm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Certificat de autenticitate casmir</div>
+            <div class="product-review__spec"><strong>Stil</strong>Elegant, clasic, statement</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Sincer, cand am vazut culoarea asta, am ramas blocata. E un rosu aprins, dar nu strident, genul de culoare care iti lumineaza instant fata si tinuta. Materialul e superb, asa fin si moale cum doar casmirul 100% poate fi. Am purtat-o intr-o zi geroasa de ianuarie, cu o tinuta complet neagra, si toata lumea m-a intrebat de unde e. Se simte luxoasa pe piele, deloc zgarietoare. E destul de mare, asa ca o poti infasura in diverse moduri, fie ca o esarfa clasica, fie ca o pelerina peste umeri pe seara, daca iesi undeva la un restaurant si nu vrei sa te ingreunezi cu un sacou.</p><p>Ce mi-a mai placut e ca, desi e subtire, tine surprinzator de bine de cald. Nu te astepta sa fie groasa ca un fular de lana grossa, dar caldura e acolo. Am lasat-o peste noapte pe un scaun si dimineata era perfect intinsa, fara sa se sifoneze tare. E genul de piesa care nu iese din moda niciodata si care, daca e ingrijita corespunzator, te va insoti ani buni. Sincer, daca ma intrebi pe mine, e o investitie buna.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Material extrem de moale si placut pe piele</li>
+              <li>Culoare vibranta si statement, ce animeaza orice tinuta</li>
+              <li>Foarte calduroasa pentru grosimea sa</li>
+              <li>Dimensiuni generoase pentru diverse stilizari</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Pretul este pe masura calitatii, nu e tocmai o achizitie ieftina</li>
+              <li>Necesita ingrijire speciala (curatare chimica sau spalare manuala delicata)</li>
+              <li>Se poate agata usor de obiecte ascutite</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-2">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #2</span>
+            <h3>Fular Barbatesc din Lana Merinos si Cashmere - Gri Melange</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>70% Lana Merinos, 30% Casmir</div>
+            <div class="product-review__spec"><strong>Greutate</strong>180g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>180cm x 30cm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj de compozitie, eticheta de autenticitate lana</div>
+            <div class="product-review__spec"><strong>Stil</strong>Casual, elegant-casual, business-casual</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Am luat acest fular pentru sotul meu si a fost un succes urias. El e genul mai practic, nu prea se pricepe la accesorii, dar a apreciat imediat cat de placut e materialul. E un amestec de lana merinos cu casmir, deci e moale, dar si rezistent. Culoarea gri melange e super versatila, merge la orice, de la palton negru la geaca de piele maro. Nu e un fular gros, din ala care te sufoca, ci mai degraba unul mediu, perfect pentru zilele mai reci, dar nu cele de ger cumplit.</p><p>Ce mi-a placut mult e ca nu zgaraie deloc, chiar daca e lana. E suficient de lung incat sa-l infasori o data sau de doua ori lejer, fara sa ramana prea mult material. E genul de accesoriu care ridica nivelul unei tinute banale. L-a purtat si cu <a href="/cele-mai-bune-ceasuri-barbatesti-sub-500-lei/">ceasul</a> lui preferat si a zis ca se simte mult mai „asortat”. Singurul minus, daca pot sa zic asa, e ca nu e un fular imens, deci daca cauti ceva sa te acopere si pe cap, poate nu e cea mai buna varianta, desi se poate si asta. Dar per total, o achizitie excelenta.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Combinatie de materiale premium (lana merinos + casmir)</li>
+              <li>Foarte moale, nu irita pielea</li>
+              <li>Culoare neutra si versatila</li>
+              <li>Design clasic, potrivit pentru multiple stiluri</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Nu este cel mai gros fular de pe piata, deci poate nu e ideal pentru ger extrem</li>
+              <li>Necesita oarecare atentie la ingrijire pentru a-si pastra forma si textura</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-3">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #3</span>
+            <h3>Esarfa Mare Imprimata Geometric - Visiniu si Auriu</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>70% Vascoza, 30% Poliester</div>
+            <div class="product-review__spec"><strong>Greutate</strong>150g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>140cm x 140cm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Eticheta producator</div>
+            <div class="product-review__spec"><strong>Stil</strong>Boho, statement, eclectic</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Asta e esarfa mea „wow” pentru zilele cand vreau sa ies din tipare. E mare, patrata, cu un imprimeu geometric in nuante de visiniu, auriu si putin negru. Daca ma intrebi pe mine, arata mult mai scump decat este. Materialul e un amestec de vascoza cu poliester, nu e chiar casmir, evident, dar e placut la atingere, fluida si are o cadere frumoasa. Nu e genul de esarfa care tine de cald la propriu, e mai mult un accesoriu de stil.</p><p>Am purtat-o in multe feluri: legata lejer la gat peste un pulover simplu, ca un turban, sau chiar prinsa pe <a href="/cele-mai-bune-genti-de-dama-din-piele-naturala/">geanta</a>. E atat de mare incat poti sa iti faci tot felul de artificii cu ea. Pentru iarna, o vad perfecta peste o tinuta monocroma, ca sa aduca un element vizual interesant. Nu o recomand pentru zilele cand temperaturile sunt sub zero, dar pentru un eveniment sau o iesire seara, e geniala. Singurul minus ar fi ca datorita printului, s-ar putea sa nu se potriveasca oricui, depinde mult de stilul personal.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Design unic, cu imprimeu geometric indraznet</li>
+              <li>Dimensiuni mari, ofera multe posibilitati de styling</li>
+              <li>Pret accesibil pentru un accesoriu statement</li>
+              <li>Material fluid, cu o cadere frumoasa</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Nu ofera protectie termica semnificativa, e mai mult un accesoriu de moda</li>
+              <li>Imprimeul poate fi prea intens pentru gusturile clasice sau minimaliste</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-4">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #4</span>
+            <h3>Fular Lung din Lână Virgină - Albastru Petrol</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>100% Lână Virgină</div>
+            <div class="product-review__spec"><strong>Greutate</strong>220g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>190cm x 35cm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Certificat de provenienta lana virgină</div>
+            <div class="product-review__spec"><strong>Stil</strong>Elegant, modern, versatil</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Asta e genul de fular pe care il cautam de mult. Lâna virgină e o chestie aparte, se simte diferit de cea obisnuita, mai fina si mai rezistenta. Culoarea asta albastru petrol e superba, un pic misterioasa, nu prea comuna. E destul de lung si lat, asa ca il poti purta cum vrei, ba chiar sa iti acoperi si capul daca te prinde vantul. Am purtat-o cu un palton bej si arata impecabil. E calduroasa, nu gluma, te simti protejata de frig.</p><p>Ce mi-a placut mult e textura. E o tesatura simpla, dar de calitate, care nu pare ca se va scamata imediat. Nu am purtat-o decat vreo doua saptamani, deci nu pot sa spun cum se comporta dupa un an, dar prima impresie e excelenta. E genul de fular pe care il dai de pe tine si il lasi sa atarne pe umeri, ca un accesoriu de sine statator. Un mic minus: lana virgină, chiar si cea de calitate, poate fi uneori un pic mai rigida decat casmirul, dar asta e si o chestiune de preferinta personala. Si, na, pretul nu e mic, dar merita.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Material 100% lână virgină, de calitate superioară</li>
+              <li>Culoare deosebita, albastru petrol, elegantă</li>
+              <li>Foarte calduroasa si protectoare impotriva frigului</li>
+              <li>Dimensiuni generoase pentru diverse stiluri de purtare</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Poate fi perceputa ca fiind un pic mai rigida decat materialele mai moi gen casmir</li>
+              <li>Pretul este ridicat, reflectand calitatea materialului</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-5">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #5</span>
+            <h3>Esarfa Geometrica Texturata - Negru cu Accente Argintii</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>50% Acril, 30% Lana, 20% Poliamida</div>
+            <div class="product-review__spec"><strong>Greutate</strong>180g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>180cm x 25cm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Eticheta de compozitie</div>
+            <div class="product-review__spec"><strong>Stil</strong>Modern, minimalist, urban</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Am ales aceasta esarfa pentru ca e perfecta pentru zilele in care nu stiu ce sa pun la gat. E neagra, deci merge la orice, dar are niste firicele subtiri argintii si o textura usor neregulata care o fac mai interesanta decat o simpla esarfa neagra. Materialul e un amestec, deci e mai usor de intretinut decat lana 100% sau casmirul. Nu e cea mai moale chestie din lume, dar nici nu zgarie. E calduroasa, dar nu te coace.</p><p>Am purtat-o cu o <a href="/cele-mai-bune-bratari-din-argint-925-pentru-femei/">bratie</a> argintie si un pulover gri si a aratat foarte bine. E destul de lunga, poti sa o legi simplu, sa o lasi sa atarne. Pentru un stil urban, mai modern, e perfecta. Nu o recomand daca vrei ceva ultra-elegant sau daca cauti un material natural 100%. E o optiune buna, practica, pentru oricine cauta o esarfa de zi cu zi, rezistenta si usor de asortat. Poate ca nu te va da pe spate prin finetea materialului, dar isi face treaba excelent.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Foarte versatila, merge la orice tinuta</li>
+              <li>Textura si accentele argintii adauga un plus de stil</li>
+              <li>Usor de intretinut datorita amestecului de fibre</li>
+              <li>Pret bun pentru o esarfa de iarna</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Nu este la fel de moale sau luxoasa ca un produs din casmir sau lana merinos</li>
+              <li>Amestecul de fibre sintetice poate fi mai putin respirabil pentru unele persoane</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-6">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #6</span>
+            <h3>Fular Mare din Lână Impletita - Crem Natural</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>100% Lână (impletita manual)</div>
+            <div class="product-review__spec"><strong>Greutate</strong>280g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>160cm x 40cm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Eticheta artizanala</div>
+            <div class="product-review__spec"><strong>Stil</strong>Boho, rustic, confortabil</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Asta e fularul meu preferat pentru weekend-uri si zile relaxate. E impletit manual, ceea ce ii da un aer autentic, rustic. E din lana naturala, de culoare crem, deci se potriveste cu multe alte culori. E destul de lat si are o impletitura groasa, deci e super calduros. Perfect pentru plimbari in parc sau cand mergi la munte. E genul de fular care te imbraca, nu doar te inveleste.</p><p>Am purtat-o cu o geaca de blugi si cu o caciula de lana si a aratat perfect. Se simte foarte confortabil pe gat, desi e impletitura mai groasa, nu ma jeneaza. Nu e un fular fin, pentru tinute elegante, ci mai degraba unul pentru confort si stil relaxat. Singurul lucru e ca, fiind impletit manual, pot exista mici diferente intre bucati, dar asta e farmecul lui. Si da, e un pic mai greu de spalat, trebuie atentie sa nu se deformeze. Dar per total, e o piesa draga mie.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Impletitura manuala, ofera un aspect unic si autentic</li>
+              <li>Foarte calduros si confortabil</li>
+              <li>Lana naturala, cu un aspect rustic-chic</li>
+              <li>Lat si generos, ofera protectie maxima</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Necesita spalare manuala cu grija pentru a nu se deforma</li>
+              <li>Aspectul rustic nu se potriveste oricarui stil vestimentar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="comparison-outer" id="comparatie">
+        <h2>Comparam Esarfe si Fulare de Iarna: Ce Material ti se Potriveste?</h2>
+        <div class="comparison-hint"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg> Scroll orizontal pentru a vedea toate coloanele</div>
+        <div class="comparison-wrap">
+          <table class="comparison-table">
+            <thead><tr><th>Model</th><th>Material</th><th>Greutate</th><th>Dimensiuni</th><th>Stil</th><th>Potrivit pentru</th></tr></thead>
+            <tbody>
+            <tr><td>Esarfa Casmir 100%</td><td>100% Casmir</td><td>120g</td><td>200x70cm</td><td>Elegant, clasic</td><td>Purtatoare care cauta lux si finete, tinute elegante, zile reci dar nu extreme</td></tr>
+            <tr><td>Fular Lana Merinos + Cashmere</td><td>70% Lana Merinos, 30% Casmir</td><td>180g</td><td>180x30cm</td><td>Casual, elegant-casual</td><td>Barbatii si femeile care vor un echilibru intre caldura, moliciune si durabilitate, tinute de zi cu zi</td></tr>
+            <tr><td>Esarfa Vascoza + Poliester</td><td>70% Vascoza, 30% Poliester</td><td>150g</td><td>140x140cm</td><td>Boho, statement</td><td>Persoanele care cauta un accesoriu de moda vizual, pentru a completa tinute, nu neaparat pentru caldura extrema</td></tr>
+            <tr><td>Fular Lână Virgină</td><td>100% Lână Virgină</td><td>220g</td><td>190x35cm</td><td>Elegant, modern</td><td>Cei care apreciaza materialele naturale de calitate, durabilitatea si nu se tem de un aspect mai „serios”</td></tr>
+            <tr><td>Fular Lână Impletita Manual</td><td>100% Lână</td><td>280g</td><td>160x40cm</td><td>Boho, rustic</td><td>Iubitorii de piese unice, confortabile, pentru zile relaxate, plimbari si un stil mai boem</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="guide" id="ghid">
+        <h2>Ghid de Cumparare: Cum Alegi Cele Mai Bune Esarfe si Fulare pentru Iarna</h2>
+        <p>Alegerea esarfei sau fularului perfect pentru iarna poate parea simpla, dar sunt cateva aspecte de care ar trebui sa tii cont pentru a te asigura ca faci cea mai buna investitie. Nu e vorba doar de a te feri de frig, ci si de a adauga un plus de stil si personalitate tinutelor tale.</p><h4>Materialul conteaza cel mai mult</h4><p>Aici e primul filtru. Ce cauti? Moliciune de neegalat? Cocsura maxima? Sau poate ceva usor de intretinut?</p><ul><ul><li><strong>Casmirul:</strong> E regele moliciunii. Extrem de fin, usor si incredibil de calduros. Partea proasta? E scump si necesita ingrijire delicata. Perfect pentru o tinuta de seara sau cand vrei sa te rasfeti.</li><li><strong>Lâna Merinos:</strong> O varianta excelenta, mult mai accesibila decat casmirul. E moale, nu zgarie, e calduroasa si respirabila. Un amestec de lana merinos cu casmir este, pentru mine, ideal – obtii moliciune, caldura si durabilitate.</li><li><strong>Lâna Virgină:</strong> E mai robusta, mai „istetă” la frig, dar poate fi un pic mai aspra decat merinos sau casmir. Daca vrei ceva sa te tina de cald in conditii grele si nu te deranjeaza o textura mai pronuntata, e o optiune buna.</li><li><strong>Amestecuri (Acril, Poliester, Vascoza):</strong> Acestea sunt de obicei mai accesibile si mai usor de intretinut. Vascoza poate oferi o cadere frumoasa, iar poliesterul si acrilul adauga durabilitate. Totusi, nu te astepta la aceeasi respirabilitate sau moliciune ca la fibrele naturale. Sunt bune pentru un accesoriu de moda, mai mult decat pentru protectie termica extrema.</li><li><strong>Bumbac:</strong> De obicei, bumbacul nu e cea mai buna alegere pentru iarna, pentru ca absoarbe umezeala si te poate lasa sa racesti. Mai bun pentru sezoanele de tranzitie.</li></ul><h4>Dimensiunea si Forma: Stilul tau conteaza</h4><p>Nu toate esarfele sunt create la fel. Forma si dimensiunea dicteaza cum le poti purta:</p><ul><li><strong>Esarfe lungi si inguste:</strong> Clasice, usor de legat in diverse noduri. Versatile, merg cu aproape orice.</li><li><strong>Esarfe patrate mari:</strong> Le poti folosi ca esarfe de gat, dar si pe cap, ca turban, sau chiar legate de geanta. Ofera cele mai multe optiuni de styling.</li><li><strong>Fulare late si scurte:</strong> Sunt mai mult pentru caldura, te invelesc bine.</li><li><strong>Fulare lungi si late:</strong> O combinatie perfecta – ofera caldura si multe posibilitati de styling.</li></ul><h4>Culoarea si Imprimeul: Cum asortezi?</h4><p>Aici e partea distractiva. Gandeste-te la ce piese ai deja in garderoba.</p><ul><li><strong>Neutre (negru, gri, bej, crem):</strong> Se potrivesc cu orice. Daca ai o garderoba colorata, mergi pe neutre. Daca ai multe haine basic, o esarfa colorata poate inveseli tinuta.</li><li><strong>Culori vibrante (rosu, albastru electric, verde smarald):</strong> Perfecte pentru a adauga un punct focal. Alege o culoare care iti complimenteaza tenul sau care se potriveste cu o alta piesa din tinuta (ex: o esarfa visinie cu o pereche de <a href="/cele-mai-bune-ochelari-de-soare-pentru-femei-sub-300-lei/">ochelari de soare</a>).</li><li><strong>Imprimeuri (carouri, geometrice, florale):</strong> Adauga personalitate. Daca porti o tinuta uni, un imprimeu poate „salva” look-ul. Daca tinuta e deja incarcata, poate fi prea mult.</li></ul></ul><p><strong>Sfaturi de la mine:</strong> Nu te teme sa experimentezi. O esarfa buna poate transforma o tinuta banala in ceva special. Verifica intotdeauna eticheta pentru compozitia materialului si instructiunile de ingrijire. Si nu uita, daca alegi o piesa de calitate superioara, cum ar fi un fular din lana merinos sau casmir, gandeste-te la el ca la o investitie pe termen lung. Ca si in cazul lanturilor de aur, calitatea se vede si se simte.</p>
+      </div>
+    </div>
+
+    <div class="faq" id="faq">
+      <h2 class="faq-head">Intrebari frecvente</h2>
+      <details class="faq-q">
+  <summary>cat costa o esarfa buna de iarna?</summary>
+  <div class="ans"><p>Preturile variaza mult. O esarfa din amestec de fibre, mai mult de moda, poate costa intre 100-200 lei. Modelele din lana merinos sau casmir de calitate superioara, sau cele 100% lana virgină, pot ajunge la 300-800 lei sau chiar mai mult, in functie de brand si compozitie.</p></div>
+</details>
+<details class="faq-q">
+  <summary>care e diferenta intre o esarfa de casmir si una de lana merinos?</summary>
+  <div class="ans"><p>Casmirul este, in general, mai fin, mai moale si mai usor, oferind o izolatie termica excelenta. Lana merinos este, de asemenea, moale si calduroasa, dar poate fi putin mai robusta si mai durabila, fiind adesea o optiune mai accesibila decat casmirul pur.</p></div>
+</details>
+<details class="faq-q">
+  <summary>merita sa cumpar o esarfa din lana 100% pentru iarna?</summary>
+  <div class="ans"><p>Absolut. Lana 100% naturala, mai ales cea de calitate (cum e lana merinos sau cea virgină), ofera o caldura exceptionala, este respirabila si rezista bine in timp. E o alegere excelenta pentru frigul intens.</p></div>
+</details>
+<details class="faq-q">
+  <summary>cum ingrijesc corect o esarfa din casmir sau lana?</summary>
+  <div class="ans"><p>De obicei, se recomanda spalarea manuala in apa rece cu un detergent special pentru lana sau casmir. Evita stoarcerea agresiva. Se usuca prin intindere pe o suprafata plana, ferita de soare direct. Unele pot fi curatate chimic, verifica eticheta.</p></div>
+</details>
+<details class="faq-q">
+  <summary>cum aleg marimea potrivita pentru un fular de iarna?</summary>
+  <div class="ans"><p>Depinde de stilul dorit. Un fular lung (180-200 cm) ofera flexibilitate maxima la legat. Unul mai lat (30-40 cm) ofera mai multa caldura si volum. Pentru zilele foarte friguroase, un fular generos, care iti permite sa iti acoperi si capul, este ideal.</p></div>
+</details>
+    </div>
+
+    <div class="author">
+      <div class="author-av">{authorInitials}</div>
+      <div>
+        <div class="author-role">{authorRole}</div>
+        <div class="author-name">{authorName}</div>
+        <p class="author-bio">{authorBio}</p>
+      </div>
+    </div>
+
+    <SimilarArticles articles={similarArticles} currentSlug={slug} />
+
+    <PrevNextNav
+      currentSlug={slug}
+      currentCategory={categorySlug}
+      articles={allArticles}
+    />
+  </article>
+
+  <script>
+    // Comparison table scroll hint
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.comparison-outer').forEach(outer => {
+        const wrap = outer.querySelector('.comparison-wrap');
+        if (!wrap) return;
+        const check = () => {
+          if (wrap.scrollWidth > wrap.clientWidth + 2) {
+            outer.classList.add('can-scroll');
+          } else {
+            outer.classList.remove('can-scroll');
+          }
+        };
+        check();
+        window.addEventListener('resize', check);
+      });
+
+      // TOC active tracking
+      const tocLinks = document.querySelectorAll('.toc a');
+      const sections = [];
+      tocLinks.forEach(link => {
+        const id = link.getAttribute('href')?.replace('#', '');
+        const el = id && document.getElementById(id);
+        if (el) sections.push({ el, link });
+      });
+      if (sections.length > 0) {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            const match = sections.find(s => s.el === entry.target);
+            if (match) {
+              if (entry.isIntersecting) {
+                tocLinks.forEach(l => l.classList.remove('on'));
+                match.link.classList.add('on');
+              }
+            }
+          });
+        }, { rootMargin: '-20% 0px -60% 0px' });
+        sections.forEach(s => observer.observe(s.el));
+      }
+    });
+  </script>
+</Layout>

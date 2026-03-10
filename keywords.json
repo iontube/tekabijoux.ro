@@ -58,12 +58,6 @@
   ],
   "pending": [
     {
-      "keyword": "Cele mai bune esarfe si fulare pentru iarna",
-      "category": "Accesorii Fashion",
-      "categorySlug": "accesorii-fashion",
-      "pubDate": "2024-03-12T08:52:00.000Z"
-    },
-    {
       "keyword": "Genti crossbody de dama: modele si preturi",
       "category": "Accesorii Fashion",
       "categorySlug": "accesorii-fashion",
@@ -843,6 +837,17 @@
       "excerpt": "Alegerea verighetelor perfecte, fie clasice sau moderne, se rezuma la stilul personal si la ce anume va reprezinta ca si cuplu. Modelele clasice de verighete raman o optiune sigura, oferind eleganta atemporala, in timp ce optiunile moderne vin cu designuri indraznete si materiale inovatoare. Inainte de a va hotari, este esential sa intelegeti diferentele dintre cele doua stiluri, sa evaluati calitatea materialelor si sa comparati preturile pentru a gasi perechea potrivita bugetului si preferintelor voastre.",
       "author": "Stefan Marinescu",
       "date": "2024-03-24T09:33:00.000Z"
+    },
+    {
+      "keyword": "Cele mai bune esarfe si fulare pentru iarna",
+      "category": "Accesorii Fashion",
+      "categorySlug": "accesorii-fashion",
+      "pubDate": "2024-03-12T08:52:00.000Z",
+      "slug": "cele-mai-bune-esarfe-si-fulare-pentru-iarna",
+      "modifiedDate": "2026-03-10T16:16:14.628Z",
+      "excerpt": "Cele mai bune esarfe si fulare pentru iarna le gasesti cand stii exact ce material cauti si ce stil ti se potriveste cel mai bine.",
+      "author": "Diana Popescu",
+      "date": "2024-03-12T08:52:00.000Z"
     }
   ]
 }
