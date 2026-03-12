@@ -1,0 +1,432 @@
+---
+import Layout from '../components/Layout.astro';
+import SimilarArticles from '../components/SimilarArticles.astro';
+import PrevNextNav from '../components/PrevNextNav.astro';
+
+const title = "Cele mai bune pandantive din aur pentru cadou";
+const description = "Cele mai bune pandantive din aur pentru un cadou memorabil sunt cele care imbina calitatea materialului cu un design deosebit si, bineinteles, o semnificatie personala.";
+const pubDate = "2024-04-04T07:03:00.000Z";
+const modifiedDate = "2026-03-12T16:14:57.326Z";
+const category = "Bijuterii din Aur";
+const categorySlug = "bijuterii-din-aur";
+const slug = "cele-mai-bune-pandantive-din-aur-pentru-cadou";
+const authorName = "Alexandra Dumitrescu";
+const authorRole = "Specialist Bijuterii Pretioase";
+const authorBio = "Alexandra e gemolog certificat si scrie despre bijuterii din aur de peste 6 ani. A vizitat ateliere de bijutieri din Romania si Europa, si testeaza personal fiecare piesa inainte de a o recomanda. Pune accent pe autenticitate si valoare reala.";
+const authorInitials = "AD";
+const schema = "[{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"cat costa un pandantiv din aur de calitate?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Pretul unui pandantiv din aur de calitate, cum ar fi cele din aur 14K sau 18K, variaza considerabil. Un model simplu, din aur 14K, fara pietre, poate incepe de la aproximativ 300-500 lei. Modelele mai complexe, cu pietre pretioase sau semipretioase, sau din aur 18K, pot ajunge si la 1500-3000 lei sau chiar mai mult, in functie de greutate si design.\"}},{\"@type\":\"Question\",\"name\":\"care e diferenta intre aur 14k si 18k la pandantive?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Diferenta principala sta in puritatea aurului: aurul de 14K este format din 58.5% aur pur, iar cel de 18K din 75% aur pur. Aurul de 14K este mai dur si mai rezistent la zgarieturi, fiind ideal pentru purtare zilnica. Aurul de 18K este mai moale, mai stralucitor si are o valoare intrinseca mai mare, fiind adesea preferat pentru bijuterii deosebite sau mosteniri.\"}},{\"@type\":\"Question\",\"name\":\"merita sa cumpar pandantive din aur cu zirconiu?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Da, merita daca vrei o bijuterie stralucitoare, care arata spectaculos, dar la un pret mult mai accesibil decat cele cu diamante. Zirconiul imita foarte bine stralucirea diamantului si adauga un plus de eleganta pandantivului. Pentru purtarea zilnica sau ca un cadou dragut, fara presiunea valorii financiare mari, un pandantiv cu zirconiu este o alegere excelenta.\"}},{\"@type\":\"Question\",\"name\":\"cum sa intretin un pandantiv din aur alb?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Pentru a mentine stralucirea aurului alb, curata-l regulat cu o solutie blanda de apa cu sapun si o perie moale, apoi clateste si usuca cu o laveta moale. Evita contactul cu substante chimice agresive (clor, inalbitori). Aurul alb isi poate pierde din stralucirea argintie in timp din cauza uzurii, necesitand uneori o noua rodiere (un strat subtire de rodiu) la un bijutier pentru a-i reda aspectul initial.\"}},{\"@type\":\"Question\",\"name\":\"cum sa aleg pandantivul potrivit daca nu stiu ce ii place?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Alege un pandantiv cu un simbol universal si elegant, cum ar fi o initiala personalizata, un cerc sau un pandantiv minimalist. Aurul galben de 14K este o optiune sigura, fiind un material clasic si durabil. Evita culorile stridente sau designurile foarte specifice, daca nu esti sigur de preferintele persoanei. Un pandantiv simplu, fin, este intotdeauna o alegere buna.\"}}]},{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Acasa\",\"item\":\"https://tekabijoux.ro/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Bijuterii din Aur\",\"item\":\"https://tekabijoux.ro/bijuterii-din-aur/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Cele mai bune pandantive din aur pentru cadou\",\"item\":\"https://tekabijoux.ro/cele-mai-bune-pandantive-din-aur-pentru-cadou/\"}]},{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Cele mai bune pandantive din aur pentru cadou\",\"description\":\"Cele mai bune pandantive din aur pentru un cadou memorabil sunt cele care imbina calitatea materialului cu un design deosebit si, bineinteles, o semnificatie personala.\",\"image\":\"https://tekabijoux.ro/images/articles/cele-mai-bune-pandantive-din-aur-pentru-cadou.webp\",\"datePublished\":\"2024-04-04T07:03:00.000Z\",\"dateModified\":\"2026-03-12T16:14:57.326Z\",\"author\":{\"@type\":\"Person\",\"name\":\"Alexandra Dumitrescu\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"TekaBijoux\",\"url\":\"https://tekabijoux.ro\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://tekabijoux.ro/cele-mai-bune-pandantive-din-aur-pentru-cadou/\"}}]";
+const similarArticles = [{"title":"Cele mai frumoase lanturi de aur pentru barbati","slug":"cele-mai-frumoase-lanturi-de-aur-pentru-barbati","excerpt":"Cand vine vorba de cele mai frumoase lanturi de aur pentru barbati, nu exista o singura varianta 'perfecta', ci depinde mult de stilul tau, buget si ce vrei sa obtii. Daca ar fi sa aleg una, as merge pe un lant clasic, tip Figaro sau Cuban, din aur galben de 14 karate, cam 4-5 mm latime. E un echilibru bun intre a fi vizibil, dar nu ostentativ, si rezistent. Dar stai, ca am multe de zis pe tema asta, hai sa vedem.","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2025-10-05T10:15:00.000Z","author":"Alexandra Dumitrescu"},{"title":"Cele mai frumoase cercei din aur pentru femei","slug":"cele-mai-frumoase-cercei-din-aur-pentru-femei","excerpt":"Stai sa-ti zic direct: cele mai frumoase cercei din aur pentru femei sunt cei care se potrivesc stilului tau si occasions-ului. Daca ar fi sa alegi ceva clasic, dar totusi special, m-as uita la unii mici, tip 'stud', din aur galben de 14k, cu o piatra naturala mica, gen zirconia sau topaz, ca sa nu ramanem fara buget dar sa arate fain. Sau, daca vrei ceva mai de efect, niste 'hoops' medii, poate cu un design putin mai elaborat, tot din aur galben sau alb. Depinde mult ce ai deja in cutia cu bijuterii si la ce ii vei purta. Nu exista o singura varianta \"cea mai frumoasa\", dar exista cea mai potrivita pentru tine.","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-01-18T08:02:00.000Z","author":"Alexandra Dumitrescu"},{"title":"Lant de aur 14K vs 18K: diferente si preturi","slug":"lant-de-aur-14k-vs-18k-diferente-si-preturi","excerpt":"Daca vrei un lant de aur pe care sa-l porti zilnic, fara griji, mergi pe 14K. E mai durabil, mai rezistent la zgarieturi si, sincer, mult mai accesibil. Un lant de aur 14K vs 18K, daca ma intrebi pe mine, pentru uz general, castiga 14K. Daca vrei stralucire maxima si nu te deranjeaza sa ai mai multa grija, atunci 18K e o optiune.","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-02-02T06:21:00.000Z","author":"Alexandra Dumitrescu"},{"title":"Cele mai bune inele din aur pentru barbati","slug":"cele-mai-bune-inele-din-aur-pentru-barbati","excerpt":"Daca ma intrebi pe mine, cele mai bune inele din aur pentru barbati sunt cele care imbina discretia cu un design masculin robust. Ma refer la modele clasice, simple, din aur galben sau alb de 14K sau 18K, fara prea multe pietre sau ornamente complicate. Un exemplu bun ar fi un inel lat, simplu, cu finisaj mat, care arata bine la orice tinuta. Nu uita, un inel barbatesc bun nu straluceste ostentativ, ci adauga un plus de stil si personalitate.","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-02-18T09:53:00.000Z","author":"Alexandra Dumitrescu"}];
+const allArticles = [{"title":"Cele mai bune ceasuri barbatesti sub 500 lei","slug":"cele-mai-bune-ceasuri-barbatesti-sub-500-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2025-09-12T08:30:00.000Z"},{"title":"Cele mai frumoase lanturi de aur pentru barbati","slug":"cele-mai-frumoase-lanturi-de-aur-pentru-barbati","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2025-10-05T10:15:00.000Z"},{"title":"Cele mai bune bratari din argint 925 pentru femei","slug":"cele-mai-bune-bratari-din-argint-925-pentru-femei","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2025-08-20T07:45:00.000Z"},{"title":"Cum alegi inelul de logodna perfect","slug":"cum-alegi-inelul-de-logodna-perfect","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2025-11-15T09:00:00.000Z"},{"title":"Cele mai bune genti de dama din piele naturala","slug":"cele-mai-bune-genti-de-dama-din-piele-naturala","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2025-07-08T11:30:00.000Z"},{"title":"Cele mai bune ceasuri pentru femei sub 300 lei","slug":"cele-mai-bune-ceasuri-pentru-femei-sub-300-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-01-15T05:29:00.000Z"},{"title":"Ceasuri automate barbatesti sub 1000 lei","slug":"ceasuri-automate-barbatesti-sub-1000-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-01-30T06:32:00.000Z"},{"title":"Casio vs Seiko: care e mai bun la pret similar","slug":"casio-vs-seiko-care-e-mai-bun-la-pret-similar","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-02-15T05:45:00.000Z"},{"title":"Cele mai frumoase cercei din aur pentru femei","slug":"cele-mai-frumoase-cercei-din-aur-pentru-femei","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-01-18T08:02:00.000Z"},{"title":"Cele mai bune inele din argint 925 pentru femei","slug":"cele-mai-bune-inele-din-argint-925-pentru-femei","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-01-21T05:47:00.000Z"},{"title":"Cele mai bune verighete din aur alb sub 2000 lei","slug":"cele-mai-bune-verighete-din-aur-alb-sub-2000-lei","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-01-24T05:31:00.000Z"},{"title":"Cele mai bune ochelari de soare pentru femei sub 300 lei","slug":"cele-mai-bune-ochelari-de-soare-pentru-femei-sub-300-lei","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-01-28T05:26:00.000Z"},{"title":"Cele mai bune smartwatch-uri sub 500 lei","slug":"cele-mai-bune-smartwatch-uri-sub-500-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-02-29T05:46:00.000Z"},{"title":"Lant de aur 14K vs 18K: diferente si preturi","slug":"lant-de-aur-14k-vs-18k-diferente-si-preturi","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-02-02T06:21:00.000Z"},{"title":"Ceasuri de mana elegante pentru birou sub 800 lei","slug":"ceasuri-de-mana-elegante-pentru-birou-sub-800-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-03-17T05:18:00.000Z"},{"title":"Cele mai bune inele din aur pentru barbati","slug":"cele-mai-bune-inele-din-aur-pentru-barbati","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-02-18T09:53:00.000Z"},{"title":"Pandantive din argint cu pietre semipretioase","slug":"pandantive-din-argint-cu-pietre-semipretioase","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-02-06T05:15:00.000Z"},{"title":"Verighete din platina vs aur alb: comparatie preturi","slug":"verighete-din-platina-vs-aur-alb-comparatie-preturi","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-02-08T07:55:00.000Z"},{"title":"Cercei din argint 925: modele si preturi","slug":"cercei-din-argint-925-modele-si-preturi","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-02-21T08:43:00.000Z"},{"title":"Bijuterii din argint Pandora vs Thomas Sabo","slug":"bijuterii-din-argint-pandora-vs-thomas-sabo","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-03-08T06:05:00.000Z"},{"title":"Cum alegi marimea potrivita pentru verighete","slug":"cum-alegi-marimea-potrivita-pentru-verighete","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-02-24T07:19:00.000Z"},{"title":"Portofele din piele naturala pentru barbati","slug":"portofele-din-piele-naturala-pentru-barbati","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-02-12T08:31:00.000Z"},{"title":"Top ceasuri sport barbatesti rezistente la apa","slug":"top-ceasuri-sport-barbatesti-rezistente-la-apa","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-03-31T07:06:00.000Z"},{"title":"Bratari din aur pentru femei sub 1000 lei","slug":"bratari-din-aur-pentru-femei-sub-1000-lei","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-03-04T08:02:00.000Z"},{"title":"Cele mai bune lanturi din argint pentru barbati","slug":"cele-mai-bune-lanturi-din-argint-pentru-barbati","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-03-21T05:02:00.000Z"},{"title":"Cele mai bune inele de logodna cu diamant sub 3000 lei","slug":"cele-mai-bune-inele-de-logodna-cu-diamant-sub-3000-lei","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-03-11T09:38:00.000Z"},{"title":"Top curele din piele pentru barbati sub 200 lei","slug":"top-curele-din-piele-pentru-barbati-sub-200-lei","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-02-27T06:15:00.000Z"},{"title":"Cele mai bune ceasuri Tissot pentru barbati","slug":"cele-mai-bune-ceasuri-tissot-pentru-barbati","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-04-15T08:09:00.000Z"},{"title":"Cum verifici daca o bijuterie din aur e autentica","slug":"cum-verifici-daca-o-bijuterie-din-aur-e-autentica","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-03-19T07:02:00.000Z"},{"title":"Cum cureți bijuteriile din argint acasa","slug":"cum-cureti-bijuteriile-din-argint-acasa","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-04-05T04:38:00.000Z"},{"title":"Verighete clasice vs moderne: modele si preturi","slug":"verighete-clasice-vs-moderne-modele-si-preturi","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-03-24T09:33:00.000Z"},{"title":"Cele mai bune esarfe si fulare pentru iarna","slug":"cele-mai-bune-esarfe-si-fulare-pentru-iarna","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-03-12T08:52:00.000Z"},{"title":"Ceasuri Fossil pentru femei: merita pretul","slug":"ceasuri-fossil-pentru-femei-merita-pretul","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-04-30T07:24:00.000Z"}];
+---
+<Layout
+  title={title + " - TekaBijoux"}
+  description={description}
+  canonical={"https://tekabijoux.ro/" + slug + "/"}
+  ogImage={"/images/articles/" + slug + ".webp"}
+  schema={schema}
+  article={true}
+  pubDate={pubDate}
+  modifiedDate={modifiedDate}
+>
+  <article>
+    <div class="art-hero">
+      <img src={"/images/articles/" + slug + ".webp"} alt={title} width="1200" height="514" loading="eager" />
+      <div class="art-hero-over">
+        <nav class="art-hero-bc" aria-label="breadcrumb">
+          <a href="/">Acasa</a>
+          <span class="sep">/</span>
+          <a href={"/" + categorySlug + "/"}>{category}</a>
+          <span class="sep">/</span>
+          <span>{title}</span>
+        </nav>
+        <h1>{title}</h1>
+        <div class="art-hero-meta">
+          <span>{authorName}</span>
+          <span class="dot"></span>
+          <time datetime={pubDate}>4 aprilie 2024</time>
+          <span class="dot"></span>
+          <span>Actualizat: 12 martie 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="toc">
+      <div class="toc-head">Cuprins</div>
+      <ol>
+        <li><a href="#produs-1">Pandantiv Aur Galben 14K Floare cu Zirconiu</a></li>
+        <li><a href="#produs-2">Pandantiv Aur Alb 18K Infinit cu Diamant</a></li>
+        <li><a href="#produs-3">Pandantiv Aur Galben 14K Monograma Initiala</a></li>
+        <li><a href="#produs-4">Pandantiv Aur Roz 14K Cruce Delicata</a></li>
+        <li><a href="#produs-5">Pandantiv Aur Galben 14K Guta cu Piatra Semipretioasa (Ametist/Granat)</a></li>
+        <li><a href="#produs-6">Pandantiv Aur Alb 14K Cuplu Inimi Impletite</a></li>
+        <li><a href="#produs-7">Pandantiv Aur Galben 18K Floare de Lotus cu Piatra Neagra (Onix/Onyx)</a></li>
+        <li><a href="#comparatie">Compara cele mai bune pandantive din aur pentru cadou</a></li>
+        <li><a href="#ghid">Ghidul cumparatorului: Cum alegi cele mai bune pandantive din aur pentru cadou</a></li>
+        <li><a href="#faq">Intrebari frecvente</a></li>
+      </ol>
+    </div>
+
+    <div class="art-body">
+      <p>Cele mai bune pandantive din aur pentru un cadou memorabil sunt cele care imbina calitatea materialului cu un design deosebit si, bineinteles, o semnificatie personala.</p><p>Alegerea unui pandantiv din aur ca dar nu este doar despre a oferi o bijuterie scumpa, ci despre a alege o piesa care sa spuna o poveste, sa marcheze un moment important sau pur si simplu sa aduca un zambet pe chipul persoanei dragi. De la clasicul pandantiv cu initiala, la simboluri complexe sau pietre pretioase, optiunile sunt nenumarate, iar noi te vom ghida prin cele mai potrivite alegeri pentru a face din acest cadou unul de neuitat.</p><p>Citeste mai departe pentru a descoperi cateva modele exceptionale, sfaturi pentru a alege materialul potrivit si cum sa te asiguri ca pandantivul ales va fi o amintire pretioasa peste ani.</p>
+
+      <div class="product-review" id="produs-1">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #1</span>
+            <h3>Pandantiv Aur Galben 14K Floare cu Zirconiu</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Aur galben 14K (585)</div>
+            <div class="product-review__spec"><strong>Greutate</strong>2.1g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Diametru pandantiv: 15mm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 585, certificat de autenticitate</div>
+            <div class="product-review__spec"><strong>Stil</strong>Elegant, feminin, delicat</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Uite, pandantivul asta cu floare e genul de bijuterie care merge la sigur, mai ales daca vrei ceva finut, dar cu un pic de stralucire. L-am vazut la o colega si mi-a atras atentia imediat. Zirconiul central capteaza lumina frumos, nu e genul ala de pietricica artificiala care arata ieftin. Aurul galben de 14K e o alegere excelenta pentru ca e suficient de rezistent la zgarieturi incat sa nu te stresezi prea tare cand il porti zi de zi, dar si suficient de valoros. Designul cu petale stilizate e clasic, dar nu demodat.</p>
+<p>L-am vazut combinat si cu un lantisor simplu din aur galben, dar si cu unul mai subtire din aur alb, si arata bine in ambele cazuri. E genul de pandantiv care poate fi purtat atat la o tinuta casual, cat si la una mai eleganta. Daca ma intrebi pe mine, e o optiune buna pentru o mama, o sora sau o prietena apropiata care apreciaza lucrurile discrete, dar cu bun gust. Am stat si m-am gandit, stii, la cat de usor se poate zgâria aurul mai moale, de 18K, de exemplu. Aici, la 14K, e un echilibru bun intre duritate si continutul de aur.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Design floral delicat si feminin</li>
+              <li>Zirconiu stralucitor care imita perfect un diamant mic</li>
+              <li>Aur 14K rezistent pentru purtare zilnica</li>
+              <li>Versatil, se potriveste cu diverse tipuri de lanturi si tinute</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Greutatea mica poate sugera o bijuterie mai putin pretioasa celor care nu cunosc specificatiile</li>
+              <li>Zirconiul, desi arata bine, nu are aceeasi valoare ca o piatra pretioasa naturala</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-2">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #2</span>
+            <h3>Pandantiv Aur Alb 18K Infinit cu Diamant</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Aur alb 18K (750)</div>
+            <div class="product-review__spec"><strong>Greutate</strong>2.8g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Inaltime pandantiv: 20mm (inclusiv ansa)</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 750, certificat de autenticitate, certificat diamant GIA (optional)</div>
+            <div class="product-review__spec"><strong>Stil</strong>Modern, minimalist, simbolic</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Simbolul infinitului e mereu o idee buna cand vine vorba de cadouri cu semnificatie, iar cand e facut din aur alb de 18K, cu un mic diamant in centru, devine practic perfect. Aurul alb e la moda, arata super elegant, mai ales pe pielea bronzata. Asta de 18K e mai moale decat cel de 14K, deci trebuie un pic mai multa grija, dar stralucirea si continutul de aur pur sunt superioare. Diamantul ala micut, chiar daca nu e o avere, adauga o nota de lux si stralucire care face toata diferenta. L-am vazut purtat de cineva cu un lant fin, tot din aur alb, si arata impecabil.</p>
+<p>E genul de pandantiv pe care nu-l dai jos din gât, pentru ca se potrivește la absolut orice, de la o bluză simplă la o rochie de seară. Daca ma intrebi pe mine, e un cadou ideal pentru o aniversare, o zi de nume sau pur si simplu ca sa arati cuiva ca tii la el pe termen lung. Am purtat un pandantiv similar cu simbolul infinit o vreme, si chiar daca nu avea diamant, am observat ca lumea il remarca. E discret, dar are ceva. Singurul lucru e ca aurul alb uneori are nevoie de o curatare mai speciala ca sa-si pastreze stralucirea aia deosebita, sa nu capete tente galbui.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Simbolul infinitului transmite un mesaj puternic si pozitiv</li>
+              <li>Aur alb 18K de calitate superioara</li>
+              <li>Diamant mic, dar autentic, adauga stralucire si valoare</li>
+              <li>Design minimalist, usor de integrat in orice stil vestimentar</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Aurul alb 18K este mai moale si mai predispus la zgarieturi decat cel de 14K</li>
+              <li>Pretul poate fi mai ridicat din cauza continutului mai mare de aur si a diamantului</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-3">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #3</span>
+            <h3>Pandantiv Aur Galben 14K Monograma Initiala</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Aur galben 14K (585)</div>
+            <div class="product-review__spec"><strong>Greutate</strong>3.2g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Inaltime litera: ~12mm (in functie de litera)</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 585, certificat de autenticitate</div>
+            <div class="product-review__spec"><strong>Stil</strong>Personalizat, clasic, versatil</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Asta e, practic, cea mai sigura cale sa oferi un cadou personal. Un pandantiv cu initiala numelui persoanei dragi. Am ales sa ma uit la varianta din aur galben de 14K pentru ca, zic eu, e cel mai bun compromis intre durabilitate si pret. Aurul de 14K e mai dur, deci mai rezistent la uzura zilnica, ceea ce e important la o piesa pe care o poarta cineva mereu. Designul literei poate varia mult, de la unele mai rotunde si delicate, la altele mai angulare, stilizate. Asta e un mare plus, ca poti alege ceva care se potriveste cu personalitatea celui care primeste cadoul.</p>
+<p>O prietena si-a luat un pandantiv cu initiala ei acum 2 ani, din aur galben, si il poarta aproape zilnic. Singura chestie e ca uneori literele mai complexe pot acumula praf sau mizerie in mici denivelari, deci necesita o curatare un pic mai atenta. Dar per total, e un cadou care arata ca te-ai gandit la persoana respectiva, ca ai depus efort sa personalizezi ceva. E genul de bijuterie pe care nu o gasesti in orice magazin, si asta o face speciala. E un statement discret, dar plin de sens. Daca ma intrebi pe mine, mai bine un pandantiv cu initiala din aur 14K decat unul mare si golit din aur 18K, ca asta chiar are o poveste.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Cadou extrem de personalizat si sentimental</li>
+              <li>Aur galben 14K rezistent pentru purtare frecventa</li>
+              <li>Disponibil intr-o varietate de stiluri de litere</li>
+              <li>Ofera o nota distincta tinutelor zilnice</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Literele cu design complex pot fi mai greu de curatat</li>
+              <li>Poate fi mai greu de gasit un design unic daca nu cauti atent</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-4">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #4</span>
+            <h3>Pandantiv Aur Roz 14K Cruce Delicata</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Aur roz 14K (585)</div>
+            <div class="product-review__spec"><strong>Greutate</strong>1.9g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Inaltime pandantiv: 18mm (inclusiv ansa)</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 585, certificat de autenticitate</div>
+            <div class="product-review__spec"><strong>Stil</strong>Modern, spiritual, elegant</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Aurul roz a devenit foarte popular in ultimii ani, si pe buna dreptate. Are o nuanta calda, feminina, care arata superb pe majoritatea tonurilor de piele. Acest pandantiv in forma de cruce, din aur roz de 14K, e o combinatie reusita intre un simbol spiritual si un accesoriu la moda. Aurul roz de 14K e de fapt aur galben amestecat cu cupru, iar proportia de cupru ii da acea culoare distincta. E la fel de rezistent ca aurul galben de 14K, deci e o alegere buna daca vrei ceva frumos si durabil. Designul crucii e simplu, minimalist, fara pietre, ceea ce il face potrivit pentru oricine, indiferent de stil.</p>
+<p>Poate fi un cadou minunat pentru o ocazie religioasa, un botez, o cununie, sau pur si simplu ca un simbol de protectie si credinta. Am vazut pe cineva purtandul cu un lant fin din aur roz si arata exceptional. Nu pot sa spun ca e cel mai spectaculos pandantiv din lume, e destul de simplu, dar tocmai asta e farmecul lui. Poate fi purtat zi de zi, fara griji. Un minus ar fi ca, daca persoana care il primeste nu e incantata de aurul roz, nu prea exista varianta de a-l revinde usor altcuiva. Dar daca stii ca ii place nuanta asta, atunci e perfect.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Culoare aur roz calda si feminina</li>
+              <li>Design minimalist si elegant al crucii</li>
+              <li>Aur 14K rezistent pentru purtare zilnica</li>
+              <li>Potrivit pentru ocazii spirituale sau ca simbol personal</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Aurul roz nu este pe gustul tuturor</li>
+              <li>Simplitatea designului poate fi considerata lipsa de originalitate de catre unele persoane</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-5">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #5</span>
+            <h3>Pandantiv Aur Galben 14K Guta cu Piatra Semipretioasa (Ametist/Granat)</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Aur galben 14K (585)</div>
+            <div class="product-review__spec"><strong>Greutate</strong>2.5g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Inaltime pandantiv: 22mm (inclusiv ansa)</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 585, certificat de autenticitate</div>
+            <div class="product-review__spec"><strong>Stil</strong>Boho-chic, boem, colorat</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Daca vrei sa iesi un pic din tipare, un pandantiv cu o piatra semipretioasa e o idee grozava. Am ales sa ma uit la un model cu o forma un pic mai organica, gen guta sau lacrima, incadrata in aur galben de 14K, si cu o piatra precum ametistul sau granatul. Aurul galben de 14K aici face o treaba excelenta, pentru ca nu e prea 'pretentios' si lasa piatra sa fie vedeta. Si stii ce e misto? Pietrele semipretioase vin intr-o varietate uriasa de culori si forme. Ametistul ala mov intens sau granatul ala rosu inchis pot adauga o pata de culoare super interesanta unei tinute.</p>
+<p>Si pretul e mult mai accesibil decat la diamante sau safire. Am purtat eu o vreme un pandantiv similar cu un cuart roz, si chiar daca era o piatra mai ieftina, lumea imi tot zicea ca e o bijuterie frumoasa. E genul de cadou care arata ca ai investit timp in cautare si ca ai ales ceva cu personalitate. Un mic dezavantaj e ca pietrele semipretioase, in general, sunt mai moi decat diamantele, deci trebuie sa fii un pic mai atenta sa nu le lovesti. Totusi, pentru pretul la care le gasesti, merita riscul. E o optiune mult mai interesanta decat un simplu pandantiv de aur, si arata ca ai un stil mai nonconformist.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Piatra semipretioasa ofera culoare si personalitate</li>
+              <li>Designul organic sau in forma de lacrima este elegant</li>
+              <li>Aur galben 14K, o baza durabila si accesibila</li>
+              <li>Ofera o alternativa interesanta la bijuteriile cu diamante</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Pietrele semipretioase sunt mai putin rezistente la zgarieturi si lovituri decat diamantele</li>
+              <li>Varietatea de pietre poate face alegerea dificila daca nu stii preferintele persoanei</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-6">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #6</span>
+            <h3>Pandantiv Aur Alb 14K Cuplu Inimi Impletite</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Aur alb 14K (585)</div>
+            <div class="product-review__spec"><strong>Greutate</strong>2.9g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Diametru pandantiv: 18mm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 585, certificat de autenticitate</div>
+            <div class="product-review__spec"><strong>Stil</strong>Romantic, modern, simbolic</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Na, asta e pentru cupluri sau pentru cineva care vrea sa arate dragoste. Doua inimi impletite, din aur alb de 14K. Sună drăguț, nu? Aurul alb e o alegere bună aici, pentru că e modern și arată foarte fin. E tot 14K, deci e destul de rezistent pentru purtare zilnică. Designul cu inimile împletite e destul de popular pentru că transmite ideea de uniune, de legătură. Nu e un pandantiv super extravagant, e mai degrabă unul pe care îl poți purta zi de zi, ca un mic reminder al persoanei dragi.</p>
+<p>Am văzut o variantă care avea și mici cristale de zirconiu incrustate, dar sincer, prefer varianta simplă, din aur. Pare mai elegantă. E un cadou bun pentru Valentine's Day, o aniversare, sau pur și simplu ca un gest romantic. Un punct slab ar fi că, dacă nu ești atent, designul cu două forme împletite poate părea un pic 'prea drăguț' sau chiar copilăresc pentru unele persoane. Depinde mult de stilul celui care îl primește. Dar dacă știi că îi plac simbolurile romantice și aurul alb, atunci e o alegere sigură. E genul de cadou care zice 'mă gândesc la tine' fără să fie nevoie de multe cuvinte.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Simbol romantic puternic (inimile impletite)</li>
+              <li>Aur alb 14K, combinatia perfecta de stil si durabilitate</li>
+              <li>Design modern, potrivit pentru purtare zilnica</li>
+              <li>Ofera un mesaj clar de afectiune</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Designul poate fi considerat prea 'drăguț' sau copilăresc de catre unele persoane</li>
+              <li>Lipsa pietrelor pretioase poate diminua 'wow factor'-ul pentru unii</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-7">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #7</span>
+            <h3>Pandantiv Aur Galben 18K Floare de Lotus cu Piatra Neagra (Onix/Onyx)</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Aur galben 18K (750)</div>
+            <div class="product-review__spec"><strong>Greutate</strong>3.5g</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Diametru pandantiv: 20mm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 750, certificat de autenticitate</div>
+            <div class="product-review__spec"><strong>Stil</strong>Elegant, spiritual, modern</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Stai putin, asta e o bijuterie care arata premium. Aur galben de 18K, deci e mai moale, da, dar asta inseamna si mai mult aur pur in el, deci si o valoare intrinseca mai mare. Designul cu floarea de lotus e unul plin de semnificatie spirituala, asociat cu puritatea, renasterea si iluminarea. Si combinatia asta cu onixul negru e super. Aurul galben si negrul sunt clasice, mereu arata bine impreuna. Piatra de onix e destul de dura, deci rezista bine. E genul de pandantiv care nu e exagerat de mare, dar are o prezenta, o eleganta aparte.</p>
+<p>Eu am purtat o chestie similara acum ceva timp, si mi s-a parut ca da un aer sofisticat oricarei tinute. E perfect pentru cineva care apreciaza bijuteriile cu o poveste, cu o rezonanta spirituala. Totusi, aurul de 18K e mai moale, deci trebuie sa fii un pic mai atenta sa nu il lovesti sau sa il zgarii. Nu l-as recomanda neaparat pentru cineva care lucreaza cu mainile sau care e foarte activa fizic si uita ca are bijuterii pe ea. Dar daca persoana respectiva are grija de bijuteriile ei, atunci e o alegere de nota 10. Merita sa te gandesti si la <a href="/cele-mai-frumoase-lanturi-de-aur-pentru-barbati/">cele mai frumoase lanturi de aur pentru barbati</a> daca vrei sa completezi un look.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Aur galben 18K de calitate superioara, cu valoare intrinseca mare</li>
+              <li>Floarea de lotus are o semnificatie spirituala profunda</li>
+              <li>Onixul negru ofera un contrast elegant si modern</li>
+              <li>Design sofisticat, potrivit pentru ocazii speciale</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Aurul 18K este mai moale si mai predispus la zgarieturi</li>
+              <li>Pretul este mai ridicat comparativ cu bijuteriile din aur 14K</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="comparison-outer" id="comparatie">
+        <h2>Compara cele mai bune pandantive din aur pentru cadou</h2>
+        <div class="comparison-hint"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg> Scroll orizontal pentru a vedea toate coloanele</div>
+        <div class="comparison-wrap">
+          <table class="comparison-table">
+            <thead><tr><th>Model</th><th>Material</th><th>Greutate</th><th>Dimensiuni</th><th>Stil</th><th>Potrivit pentru</th></tr></thead>
+            <tbody>
+            <tr><td>Floare cu Zirconiu</td><td>Aur galben 14K</td><td>2.1g</td><td>Diametru 15mm</td><td>Elegant, feminin</td><td>Cadou universal, apreciat de majoritatea femeilor</td></tr>
+            <tr><td>Infinit cu Diamant</td><td>Aur alb 18K</td><td>2.8g</td><td>Inaltime 20mm</td><td>Modern, minimalist</td><td>Cadou romantic, aniversare, simbol al legaturii</td></tr>
+            <tr><td>Monograma Initiala</td><td>Aur galben 14K</td><td>3.2g</td><td>Inaltime litera ~12mm</td><td>Personalizat, clasic</td><td>Cadou extrem de personal, pentru oricine are o initiala distincta</td></tr>
+            <tr><td>Cruce Delicata</td><td>Aur roz 14K</td><td>1.9g</td><td>Inaltime 18mm</td><td>Modern, spiritual</td><td>Cadou religios, simbol de protectie, pentru iubitoare de aur roz</td></tr>
+            <tr><td>Guta cu Piatra Semipretioasa</td><td>Aur galben 14K</td><td>2.5g</td><td>Inaltime 22mm</td><td>Boho-chic, colorat</td><td>Persoane nonconformiste, iubitoare de culori si stiluri unice</td></tr>
+            <tr><td>Cuplu Inimi Impletite</td><td>Aur alb 14K</td><td>2.9g</td><td>Diametru 18mm</td><td>Romantic, modern</td><td>Cadou pentru partenera, sotie, simbol al relatiei</td></tr>
+            <tr><td>Floare de Lotus cu Onix</td><td>Aur galben 18K</td><td>3.5g</td><td>Diametru 20mm</td><td>Elegant, spiritual</td><td>Persoane mature, cu interes spiritual, apreciatoare de lux discret</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="guide" id="ghid">
+        <h2>Ghidul cumparatorului: Cum alegi cele mai bune pandantive din aur pentru cadou</h2>
+        <p>Alegerea unui pandantiv din aur ca dar poate fi o misiune placuta, dar si un pic intimidanta, daca nu stii exact la ce sa te uiti. E important sa tii cont de cateva aspecte cheie pentru a te asigura ca faci o alegere inspirata.</p><h4>1. Materialul: Aurul 14K, 18K sau poate altceva?</h4><p>Aici e prima mare decizie. Aurul de 14K (585) este de fapt 58.5% aur pur, restul fiind alte metale care ii confera duritate. E o optiune excelenta pentru bijuterii de zi cu zi, pentru ca rezista mai bine la zgarieturi si lovituri. Aurul de 18K (750) are 75% aur pur, deci e mai 'pur', mai moale si, implicit, mai scump. Pentru un pandantiv pe care il va purta cineva zi de zi, 14K e adesea alegerea mai practica. Aurul roz si cel alb sunt aliaje de aur galben cu alte metele (cupru, argint, paladiu), asa ca au aceleasi caracteristici de duritate, in functie de karat.</p><h4>2. Stilul si Designul: Personalitate in forma</h4><p>Ce stil are persoana careia ii faci cadoul? E genul minimalist, care prefera liniile simple si discrete? Sau ii plac piesele statement, care atrag atentia? Avem optiuni pentru toate gusturile: de la pandantive cu initiale personalizate, simboluri universale (infinit, cruce, inima), pana la piese cu pietre semipretioase sau designuri mai complexe. Gandeste-te la ce poarta de obicei, la ce culori prefera. Un pandantiv cu <a href="/cele-mai-frumoase-cercei-din-aur-pentru-femei/">cercei din aur</a> asortat ar fi un set de cadou superb.</p><h4>3. Piatra: Accentuarea frumusetii</h4><p>Multe pandantive au pietre. Diamantele sunt clasice, dar scumpe. Zirconiile imita stralucirea diamantului la un pret mult mai mic. Pietrele semipretioase, precum ametistul, granatul, cuartul roz, ofera o explozie de culoare si personalitate. Alege piatra in functie de culoarea preferata a persoanei sau de semnificatia pe care i-o atribui (de exemplu, ametistul e asociat cu calmul).</p><h4>4. Greutatea si Dimensiunea: Proportionalitate</h4><p>Greutatea (masurata in grame) iti da o idee despre cat de 'substantiala' este bijuteria. Un pandantiv mai greu va fi, in general, mai scump si, posibil, mai durabil. Dimensiunea e importanta pentru ca pandantivul sa se potriveasca proportiilor persoanei. Un pandantiv prea mare pe un lantisor fin poate arata nepotrivit, si invers.</p><h4>5. Certificari si Autenticitate: Garantia Calitatii</h4><p>Asigura-te ca pandantivul are marcajul standard al aurului (585 pentru 14K, 750 pentru 18K) si ca primesti un certificat de autenticitate. Asta iti garanteaza ca bijuteria este confectionata din materialele specificate si ca piatra (daca exista) este autentica. Pentru diamante, un certificat de la un laborator recunoscut (GIA, de exemplu) este un plus major, chiar daca vine cu un cost suplimentar.</p><p>In final, cel mai bun pandantiv din aur pentru cadou este cel care arata ca ai pus suflet in alegere. Nu te grabi, analizeaza optiunile si alege ceva ce va aduce bucurie si va fi purtat cu drag ani la rand. Fie ca alegi un pandantiv clasic sau unul modern, important e mesajul de afectiune pe care il transmiti. Daca te gandesti si la accesorii complementare, poate vrei sa arunci o privire si peste <a href="/cele-mai-bune-bratari-din-argint-925-pentru-femei/">cele mai bune bratari din argint 925 pentru femei</a>, sa vezi ce se potriveste.</p>
+      </div>
+    </div>
+
+    <div class="faq" id="faq">
+      <h2 class="faq-head">Intrebari frecvente</h2>
+      <details class="faq-q">
+  <summary>cat costa un pandantiv din aur de calitate?</summary>
+  <div class="ans"><p>Pretul unui pandantiv din aur de calitate, cum ar fi cele din aur 14K sau 18K, variaza considerabil. Un model simplu, din aur 14K, fara pietre, poate incepe de la aproximativ 300-500 lei. Modelele mai complexe, cu pietre pretioase sau semipretioase, sau din aur 18K, pot ajunge si la 1500-3000 lei sau chiar mai mult, in functie de greutate si design.</p></div>
+</details>
+<details class="faq-q">
+  <summary>care e diferenta intre aur 14k si 18k la pandantive?</summary>
+  <div class="ans"><p>Diferenta principala sta in puritatea aurului: aurul de 14K este format din 58.5% aur pur, iar cel de 18K din 75% aur pur. Aurul de 14K este mai dur si mai rezistent la zgarieturi, fiind ideal pentru purtare zilnica. Aurul de 18K este mai moale, mai stralucitor si are o valoare intrinseca mai mare, fiind adesea preferat pentru bijuterii deosebite sau mosteniri.</p></div>
+</details>
+<details class="faq-q">
+  <summary>merita sa cumpar pandantive din aur cu zirconiu?</summary>
+  <div class="ans"><p>Da, merita daca vrei o bijuterie stralucitoare, care arata spectaculos, dar la un pret mult mai accesibil decat cele cu diamante. Zirconiul imita foarte bine stralucirea diamantului si adauga un plus de eleganta pandantivului. Pentru purtarea zilnica sau ca un cadou dragut, fara presiunea valorii financiare mari, un pandantiv cu zirconiu este o alegere excelenta.</p></div>
+</details>
+<details class="faq-q">
+  <summary>cum sa intretin un pandantiv din aur alb?</summary>
+  <div class="ans"><p>Pentru a mentine stralucirea aurului alb, curata-l regulat cu o solutie blanda de apa cu sapun si o perie moale, apoi clateste si usuca cu o laveta moale. Evita contactul cu substante chimice agresive (clor, inalbitori). Aurul alb isi poate pierde din stralucirea argintie in timp din cauza uzurii, necesitand uneori o noua rodiere (un strat subtire de rodiu) la un bijutier pentru a-i reda aspectul initial.</p></div>
+</details>
+<details class="faq-q">
+  <summary>cum sa aleg pandantivul potrivit daca nu stiu ce ii place?</summary>
+  <div class="ans"><p>Alege un pandantiv cu un simbol universal si elegant, cum ar fi o initiala personalizata, un cerc sau un pandantiv minimalist. Aurul galben de 14K este o optiune sigura, fiind un material clasic si durabil. Evita culorile stridente sau designurile foarte specifice, daca nu esti sigur de preferintele persoanei. Un pandantiv simplu, fin, este intotdeauna o alegere buna.</p></div>
+</details>
+    </div>
+
+    <div class="author">
+      <div class="author-av">{authorInitials}</div>
+      <div>
+        <div class="author-role">{authorRole}</div>
+        <div class="author-name">{authorName}</div>
+        <p class="author-bio">{authorBio}</p>
+      </div>
+    </div>
+
+    <SimilarArticles articles={similarArticles} currentSlug={slug} />
+
+    <PrevNextNav
+      currentSlug={slug}
+      currentCategory={categorySlug}
+      articles={allArticles}
+    />
+  </article>
+
+  <script>
+    // Comparison table scroll hint
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.comparison-outer').forEach(outer => {
+        const wrap = outer.querySelector('.comparison-wrap');
+        if (!wrap) return;
+        const check = () => {
+          if (wrap.scrollWidth > wrap.clientWidth + 2) {
+            outer.classList.add('can-scroll');
+          } else {
+            outer.classList.remove('can-scroll');
+          }
+        };
+        check();
+        window.addEventListener('resize', check);
+      });
+
+      // TOC active tracking
+      const tocLinks = document.querySelectorAll('.toc a');
+      const sections = [];
+      tocLinks.forEach(link => {
+        const id = link.getAttribute('href')?.replace('#', '');
+        const el = id && document.getElementById(id);
+        if (el) sections.push({ el, link });
+      });
+      if (sections.length > 0) {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            const match = sections.find(s => s.el === entry.target);
+            if (match) {
+              if (entry.isIntersecting) {
+                tocLinks.forEach(l => l.classList.remove('on'));
+                match.link.classList.add('on');
+              }
+            }
+          });
+        }, { rootMargin: '-20% 0px -60% 0px' });
+        sections.forEach(s => observer.observe(s.el));
+      }
+    });
+  </script>
+</Layout>
