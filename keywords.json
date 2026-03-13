@@ -82,12 +82,6 @@
       "pubDate": "2024-04-17T04:32:00.000Z"
     },
     {
-      "keyword": "Seturi de bijuterii din argint sub 300 lei",
-      "category": "Bijuterii din Argint",
-      "categorySlug": "bijuterii-din-argint",
-      "pubDate": "2024-04-20T07:34:00.000Z"
-    },
-    {
       "keyword": "Cele mai frumoase verighete gravate",
       "category": "Verighete si Logodna",
       "categorySlug": "verighete-si-logodna",
@@ -858,6 +852,17 @@
       "excerpt": "Cele mai bune pandantive din aur pentru un cadou memorabil sunt cele care imbina calitatea materialului cu un design deosebit si, bineinteles, o semnificatie personala.",
       "author": "Alexandra Dumitrescu",
       "date": "2024-04-04T07:03:00.000Z"
+    },
+    {
+      "keyword": "Seturi de bijuterii din argint sub 300 lei",
+      "category": "Bijuterii din Argint",
+      "categorySlug": "bijuterii-din-argint",
+      "pubDate": "2024-04-20T07:34:00.000Z",
+      "slug": "seturi-de-bijuterii-din-argint-sub-300-lei",
+      "modifiedDate": "2026-03-13T16:03:39.109Z",
+      "excerpt": "Seturi de bijuterii din argint sub 300 lei? Da, exista si arata fantastic.",
+      "author": "Ioana Stanescu",
+      "date": "2024-04-20T07:34:00.000Z"
     }
   ]
 }

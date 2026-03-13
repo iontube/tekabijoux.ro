@@ -1,0 +1,354 @@
+---
+import Layout from '../components/Layout.astro';
+import SimilarArticles from '../components/SimilarArticles.astro';
+import PrevNextNav from '../components/PrevNextNav.astro';
+
+const title = "Seturi de bijuterii din argint sub 300 lei";
+const description = "Seturi de bijuterii din argint sub 300 lei? Da, exista si arata fantastic.";
+const pubDate = "2024-04-20T07:34:00.000Z";
+const modifiedDate = "2026-03-13T16:03:39.109Z";
+const category = "Bijuterii din Argint";
+const categorySlug = "bijuterii-din-argint";
+const slug = "seturi-de-bijuterii-din-argint-sub-300-lei";
+const authorName = "Ioana Stanescu";
+const authorRole = "Expert Bijuterii Argint";
+const authorBio = "Ioana colectioneaza si recenzeaza bijuterii din argint de peste 5 ani. Colaboreaza cu ateliere romanesti de bijuterii si cunoaste piata locala in detaliu. Articolele ei se bazeaza pe teste practice si pe experienta reala de purtare.";
+const authorInitials = "IS";
+const schema = "[{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"cat costa un set de bijuterii din argint sub 300 lei?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Seturile de bijuterii din argint 925 sub 300 lei au preturi care variaza, in general, intre 100 lei si 299 lei. Poti gasi seturi minimaliste, cu pandantive mici si cercei asortati, dar si modele mai complexe, cu pietre semipretioase sau un design mai elaborat, in aceasta gama de pret.\"}},{\"@type\":\"Question\",\"name\":\"care e diferenta intre argint 925 si argint tibetan?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Argintul 925, numit si Sterling Silver, contine 92.5% argint pur si 7.5% alte metale (de obicei cupru), ceea ce il face durabil. Argintul tibetan este de obicei un aliaj de argint cu alte metale, adesea cu un continut de argint mult mai mic (uneori doar 20-30%), si poate contine si nichel, fiind adesea folosit pentru piese decorative, nu pentru bijuterii fine.\"}},{\"@type\":\"Question\",\"name\":\"merita sa cumpar seturi de bijuterii din argint online?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Da, merita sa cumperi seturi de bijuterii din argint online daca alegi magazine de incredere. Beneficiezi de o varietate mai mare de modele, preturi competitive si poti citi recenzii de la alti clienti. Asigura-te ca magazinul ofera garantie si politica de retur.\"}},{\"@type\":\"Question\",\"name\":\"cum sa ingrijesc un set de bijuterii din argint ca sa nu se innegreasca?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Pentru a preveni innegrirea, depoziteaza bijuteriile din argint separat, in pungute de material textil sau cutii captusite, ferite de aer si umiditate. Evita contactul cu parfumuri, lotiuni, clor si produse de curatenie. Daca argintul se oxideaza, curata-l cu o carpa speciala pentru argint sau cu o solutie blanda de curatat.\"}},{\"@type\":\"Question\",\"name\":\"ce inseamna cand un set de bijuterii din argint are marcaj 925?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Marcajul 925 pe un set de bijuterii din argint atesta ca este confectionat din Argint 925 Sterling. Aceasta este o garantie a puritatii argintului, indicand ca 92.5% din metal este argint pur, iar restul de 7.5% sunt alte metale, asigurand astfel rezistenta si durabilitatea bijuteriei.\"}}]},{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Acasa\",\"item\":\"https://tekabijoux.ro/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Bijuterii din Argint\",\"item\":\"https://tekabijoux.ro/bijuterii-din-argint/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Seturi de bijuterii din argint sub 300 lei\",\"item\":\"https://tekabijoux.ro/seturi-de-bijuterii-din-argint-sub-300-lei/\"}]},{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Seturi de bijuterii din argint sub 300 lei\",\"description\":\"Seturi de bijuterii din argint sub 300 lei? Da, exista si arata fantastic.\",\"image\":\"https://tekabijoux.ro/images/articles/seturi-de-bijuterii-din-argint-sub-300-lei.webp\",\"datePublished\":\"2024-04-20T07:34:00.000Z\",\"dateModified\":\"2026-03-13T16:03:39.109Z\",\"author\":{\"@type\":\"Person\",\"name\":\"Ioana Stanescu\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"TekaBijoux\",\"url\":\"https://tekabijoux.ro\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://tekabijoux.ro/seturi-de-bijuterii-din-argint-sub-300-lei/\"}}]";
+const similarArticles = [{"title":"Cele mai bune bratari din argint 925 pentru femei","slug":"cele-mai-bune-bratari-din-argint-925-pentru-femei","excerpt":"Daca vrei cele mai bune bratari din argint 925 pentru femei, uita-te dupa modele minimaliste, cu un design atemporal. Recomandarea mea clara ar fi o bratara fina, cu un charm discret sau o simpla lantisor din argint 925, lucrata cu atentie, fara pietre mari sau elemente complicate care se pot agata usor. Acestea sunt si cele mai versatile.","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2025-08-20T07:45:00.000Z","author":"Ioana Stanescu"},{"title":"Cele mai bune inele din argint 925 pentru femei","slug":"cele-mai-bune-inele-din-argint-925-pentru-femei","excerpt":"Cand vine vorba de cele mai bune inele din argint 925 pentru femei, daca vrei ceva clasic si de efect, eu zic sa te uiti la modelele cu o singura piatra centrala, gen solitare subtile sau cu o piatra semipretioasa mica, cum ar fi un spinel negru sau o piatra lunii. Ele sunt versatile si arata fin pe orice mana.","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-01-21T05:47:00.000Z","author":"Ioana Stanescu"},{"title":"Pandantive din argint cu pietre semipretioase","slug":"pandantive-din-argint-cu-pietre-semipretioase","excerpt":"Cand vine vorba de pandantive din argint cu pietre semipretioase, cauta-le pe cele care nu doar ca arata bine, dar sunt si realizate bine. Un pandantiv bun, din argint 925, cu o piatra autentica, nu ar trebui sa depaseasca 250-300 lei pentru modele mai simple, dar pentru cele cu design complex sau pietre mai rare, pretul poate urca spre 500-700 lei. Sfatul meu e sa te uiti la finisaje si la autenticitatea pietrei.","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-02-06T05:15:00.000Z","author":"Ioana Stanescu"},{"title":"Cercei din argint 925: modele si preturi","slug":"cercei-din-argint-925-modele-si-preturi","excerpt":"Daca vrei sa cumperi cercei din argint 925: modele si preturi, gandeste-te la stilul tau personal si la ocazia pentru care ii iei. Pentru zi de zi, ceva finut, gen surub, intre 80-150 lei. Pentru seri speciale, poti merge pe modele statement, cu pietre sau designuri elaborate, undeva intre 200-500 lei, sau chiar mai mult daca sunt gravati sau au detalii complexe.","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-02-21T08:43:00.000Z","author":"Ioana Stanescu"}];
+const allArticles = [{"title":"Cele mai bune ceasuri barbatesti sub 500 lei","slug":"cele-mai-bune-ceasuri-barbatesti-sub-500-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2025-09-12T08:30:00.000Z"},{"title":"Cele mai frumoase lanturi de aur pentru barbati","slug":"cele-mai-frumoase-lanturi-de-aur-pentru-barbati","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2025-10-05T10:15:00.000Z"},{"title":"Cele mai bune bratari din argint 925 pentru femei","slug":"cele-mai-bune-bratari-din-argint-925-pentru-femei","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2025-08-20T07:45:00.000Z"},{"title":"Cum alegi inelul de logodna perfect","slug":"cum-alegi-inelul-de-logodna-perfect","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2025-11-15T09:00:00.000Z"},{"title":"Cele mai bune genti de dama din piele naturala","slug":"cele-mai-bune-genti-de-dama-din-piele-naturala","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2025-07-08T11:30:00.000Z"},{"title":"Cele mai bune ceasuri pentru femei sub 300 lei","slug":"cele-mai-bune-ceasuri-pentru-femei-sub-300-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-01-15T05:29:00.000Z"},{"title":"Ceasuri automate barbatesti sub 1000 lei","slug":"ceasuri-automate-barbatesti-sub-1000-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-01-30T06:32:00.000Z"},{"title":"Casio vs Seiko: care e mai bun la pret similar","slug":"casio-vs-seiko-care-e-mai-bun-la-pret-similar","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-02-15T05:45:00.000Z"},{"title":"Cele mai frumoase cercei din aur pentru femei","slug":"cele-mai-frumoase-cercei-din-aur-pentru-femei","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-01-18T08:02:00.000Z"},{"title":"Cele mai bune inele din argint 925 pentru femei","slug":"cele-mai-bune-inele-din-argint-925-pentru-femei","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-01-21T05:47:00.000Z"},{"title":"Cele mai bune verighete din aur alb sub 2000 lei","slug":"cele-mai-bune-verighete-din-aur-alb-sub-2000-lei","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-01-24T05:31:00.000Z"},{"title":"Cele mai bune ochelari de soare pentru femei sub 300 lei","slug":"cele-mai-bune-ochelari-de-soare-pentru-femei-sub-300-lei","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-01-28T05:26:00.000Z"},{"title":"Cele mai bune smartwatch-uri sub 500 lei","slug":"cele-mai-bune-smartwatch-uri-sub-500-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-02-29T05:46:00.000Z"},{"title":"Lant de aur 14K vs 18K: diferente si preturi","slug":"lant-de-aur-14k-vs-18k-diferente-si-preturi","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-02-02T06:21:00.000Z"},{"title":"Ceasuri de mana elegante pentru birou sub 800 lei","slug":"ceasuri-de-mana-elegante-pentru-birou-sub-800-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-03-17T05:18:00.000Z"},{"title":"Cele mai bune inele din aur pentru barbati","slug":"cele-mai-bune-inele-din-aur-pentru-barbati","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-02-18T09:53:00.000Z"},{"title":"Pandantive din argint cu pietre semipretioase","slug":"pandantive-din-argint-cu-pietre-semipretioase","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-02-06T05:15:00.000Z"},{"title":"Verighete din platina vs aur alb: comparatie preturi","slug":"verighete-din-platina-vs-aur-alb-comparatie-preturi","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-02-08T07:55:00.000Z"},{"title":"Cercei din argint 925: modele si preturi","slug":"cercei-din-argint-925-modele-si-preturi","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-02-21T08:43:00.000Z"},{"title":"Bijuterii din argint Pandora vs Thomas Sabo","slug":"bijuterii-din-argint-pandora-vs-thomas-sabo","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-03-08T06:05:00.000Z"},{"title":"Cum alegi marimea potrivita pentru verighete","slug":"cum-alegi-marimea-potrivita-pentru-verighete","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-02-24T07:19:00.000Z"},{"title":"Portofele din piele naturala pentru barbati","slug":"portofele-din-piele-naturala-pentru-barbati","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-02-12T08:31:00.000Z"},{"title":"Top ceasuri sport barbatesti rezistente la apa","slug":"top-ceasuri-sport-barbatesti-rezistente-la-apa","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-03-31T07:06:00.000Z"},{"title":"Bratari din aur pentru femei sub 1000 lei","slug":"bratari-din-aur-pentru-femei-sub-1000-lei","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-03-04T08:02:00.000Z"},{"title":"Cele mai bune lanturi din argint pentru barbati","slug":"cele-mai-bune-lanturi-din-argint-pentru-barbati","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-03-21T05:02:00.000Z"},{"title":"Cele mai bune inele de logodna cu diamant sub 3000 lei","slug":"cele-mai-bune-inele-de-logodna-cu-diamant-sub-3000-lei","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-03-11T09:38:00.000Z"},{"title":"Top curele din piele pentru barbati sub 200 lei","slug":"top-curele-din-piele-pentru-barbati-sub-200-lei","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-02-27T06:15:00.000Z"},{"title":"Cele mai bune ceasuri Tissot pentru barbati","slug":"cele-mai-bune-ceasuri-tissot-pentru-barbati","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-04-15T08:09:00.000Z"},{"title":"Cum verifici daca o bijuterie din aur e autentica","slug":"cum-verifici-daca-o-bijuterie-din-aur-e-autentica","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-03-19T07:02:00.000Z"},{"title":"Cum cureți bijuteriile din argint acasa","slug":"cum-cureti-bijuteriile-din-argint-acasa","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-04-05T04:38:00.000Z"},{"title":"Verighete clasice vs moderne: modele si preturi","slug":"verighete-clasice-vs-moderne-modele-si-preturi","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-03-24T09:33:00.000Z"},{"title":"Cele mai bune esarfe si fulare pentru iarna","slug":"cele-mai-bune-esarfe-si-fulare-pentru-iarna","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-03-12T08:52:00.000Z"},{"title":"Ceasuri Fossil pentru femei: merita pretul","slug":"ceasuri-fossil-pentru-femei-merita-pretul","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-04-30T07:24:00.000Z"},{"title":"Cele mai bune pandantive din aur pentru cadou","slug":"cele-mai-bune-pandantive-din-aur-pentru-cadou","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-04-04T07:03:00.000Z"}];
+---
+<Layout
+  title={title + " - TekaBijoux"}
+  description={description}
+  canonical={"https://tekabijoux.ro/" + slug + "/"}
+  ogImage={"/images/articles/" + slug + ".webp"}
+  schema={schema}
+  article={true}
+  pubDate={pubDate}
+  modifiedDate={modifiedDate}
+>
+  <article>
+    <div class="art-hero">
+      <img src={"/images/articles/" + slug + ".webp"} alt={title} width="1200" height="514" loading="eager" />
+      <div class="art-hero-over">
+        <nav class="art-hero-bc" aria-label="breadcrumb">
+          <a href="/">Acasa</a>
+          <span class="sep">/</span>
+          <a href={"/" + categorySlug + "/"}>{category}</a>
+          <span class="sep">/</span>
+          <span>{title}</span>
+        </nav>
+        <h1>{title}</h1>
+        <div class="art-hero-meta">
+          <span>{authorName}</span>
+          <span class="dot"></span>
+          <time datetime={pubDate}>20 aprilie 2024</time>
+          <span class="dot"></span>
+          <span>Actualizat: 13 martie 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="toc">
+      <div class="toc-head">Cuprins</div>
+      <ol>
+        <li><a href="#produs-1">Set Colier si Cercei Argint 'Infinit' cu Zirconiu</a></li>
+        <li><a href="#produs-2">Set Argint 'Flori de Gherta' cu Piatra Semipretioasa (Ametist/Granat)</a></li>
+        <li><a href="#produs-3">Set Argint Geometric Triunghiular</a></li>
+        <li><a href="#produs-4">Set Argint Medieval 'Dragon' cu Piatra Neagra</a></li>
+        <li><a href="#produs-5">Set Argint 'Perle Simulate' Clasic</a></li>
+        <li><a href="#comparatie">Comparatie Rapida: Seturi de Bijuterii din Argint sub 300 Lei</a></li>
+        <li><a href="#ghid">Ghid de Cumparare: Cum Alegi Seturi de Bijuterii din Argint Sub 300 Lei</a></li>
+        <li><a href="#faq">Intrebari frecvente</a></li>
+      </ol>
+    </div>
+
+    <div class="art-body">
+      <p>Seturi de bijuterii din argint sub 300 lei? Da, exista si arata fantastic.</p><p>Nu trebuie sa spargi banca ca sa te simti eleganta si stilata. Un set bine ales din argint 925, la un pret accesibil, poate ridica orice tinuta si poate fi un cadou surpriza pentru cineva drag sau chiar pentru tine. Am rascolit piata si am gasit cateva optiuni care chiar merita atentia, chiar si cu un buget limitat. Hai sa vedem ce am gasit!</p><p>Stiu, poate pare greu de crezut ca poti gasi seturi de bijuterii din argint cu adevarat frumoase si de calitate sub 300 lei. Dar, pe bune, piata e plina de surprize. Cheia e sa stii unde sa cauti si la ce sa te uiti. Aceste seturi sunt perfecte pentru a completa o tinuta de zi cu zi, pentru a adauga un strop de stralucire unei ocazii speciale sau pur si simplu pentru a te rasfata. Mai mult, sunt si optiuni excelente de cadouri, pentru ca cine nu iubeste o bijuterie noua? Urmeaza sa-ti prezint cateva modele despre care eu zic ca sunt niste castigatoare, cu tot cu plusuri si minusuri, ca sa stii la ce sa te astepti.</p>
+
+      <div class="product-review" id="produs-1">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #1</span>
+            <h3>Set Colier si Cercei Argint 'Infinit' cu Zirconiu</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Argint 925 Sterling</div>
+            <div class="product-review__spec"><strong>Greutate</strong>Aprox. 5.5g (setul)</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Colier: lungime lant 45cm + 5cm prelungire, pandantiv 20mm; Cercei: 15mm lungime</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj Argint 925</div>
+            <div class="product-review__spec"><strong>Stil</strong>Minimalist, romantic</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Am primit acest set cadou acum vreo jumatate de an si pot sa zic ca l-am purtat destul de des. Simbolul infinitului e subtil, dar elegant. Colierul are un lantisor finut, cu o prelungire de 5cm, ceea ce e super util, ca poti sa-l ajustezi cum vrei. Pandantivul e micut, cam cat un bob de mazarare, si are un zirconiu micut in centru care prinde lumina chiar dragut. Cerceii sunt tot cu acelasi simbol, si sunt destul de usori.</p>
+<p>Nu mi-au iritat urechile niciodata, chiar si cand i-am purtat toata ziua. Argintul s-a pastrat bine, nu s-a oxidat urat, doar o usoara patinare pe care am curatat-o usor cu o carpa speciala. E genul de set pe care il porti la o iesire la cafea, sau la birou, nu neaparat la o petrecere mare, dar completeaza frumos o tinuta. E o alegere buna daca vrei ceva delicat si cu un mesaj.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Design elegant si discret, potrivit pentru orice ocazie</li>
+              <li>Argint 925 de calitate, rezistent la oxidare</li>
+              <li>Sistem de prelungire la colier pentru ajustare usoara</li>
+              <li>Zirconiu ce adauga un plus de stralucire</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Pandantivul si cerceii sunt destul de mici, s-ar putea sa nu fie pe placul tuturor</li>
+              <li>Lantisorul e destul de fin, poate necesita putina grija in plus</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-2">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #2</span>
+            <h3>Set Argint 'Flori de Gherta' cu Piatra Semipretioasa (Ametist/Granat)</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Argint 925 Sterling</div>
+            <div class="product-review__spec"><strong>Greutate</strong>Aprox. 8g (setul)</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Colier: pandantiv 25mm; Cercei: 20mm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj Argint 925</div>
+            <div class="product-review__spec"><strong>Stil</strong>Boho, romantic</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Asta e genul de set care te duce cu gandul la paduri si povesti. Am ales varianta cu ametist, dar stiu ca exista si cu granat. Designul e inspirat de natura, cu niste frunzulite delicate si piatra semipretioasa in centru. Colierul are un lant mediu, cam 45cm, si pandantivul e destul de vizibil, nu ceva micut. Cerceii sunt lunguti, atarnă frumos, si se potrivesc perfect cu pandantivul. Pietrele astea semipretioase adauga o culoare si o nota de personalitate.</p>
+<p>Ametistul meu e un mov dragut, nu foarte intens, dar se vede. Am purtat setul asta la cateva evenimente mai casual si am primit complimente. Argintul s-a comportat bine, nu am observat zgarieturi majore, dar am avut grija sa nu-l lovesc. Totusi, pietrele astea, chiar daca sunt naturale, sunt destul de sensibile. Am citit ca nu e bine sa le expui la chimicale sau la socuri.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Design unic, inspirat din natura, cu piatra semipretioasa autentica</li>
+              <li>Setul e mai statement, atrage atentia intr-un mod placut</li>
+              <li>Argint 925 solid, pare destul de rezistent</li>
+              <li>Varietatea de pietre (ametist, granat) ofera optiuni</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Pietrele semipretioase pot fi sensibile la socuri si chimicale</li>
+              <li>Designul poate fi prea specific pentru gusturile unora, nu e chiar minimalist</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-3">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #3</span>
+            <h3>Set Argint Geometric Triunghiular</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Argint 925 Sterling</div>
+            <div class="product-review__spec"><strong>Greutate</strong>Aprox. 6g (setul)</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Colier: lant 40cm + 5cm prelungire, pandantiv 15mm; Cercei: 10mm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj Argint 925</div>
+            <div class="product-review__spec"><strong>Stil</strong>Modern, minimalist, geometric</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Daca vrei ceva modern, curat si fara prea multe fite, setul asta e pentru tine. Forma triunghiulara e foarte in voga si arata super fain. Colierul are un lantisor subtire, dar pare rezistent, si pandantivul e micut, tot un triunghi, destul de discret. Il port des la blugi si un tricou, si ii da tinutei un aer mai sofisticat. Cerceii sunt mici si potriviti, nu te incomodeaza. Ce mi-a placut cel mai mult e faptul ca argintul e finisat mat, nu lucios, ceea ce il face sa arate mai scump si mai discret. L-am purtat si in dus din greseala o data, si n-a patit nimic. Totusi, am observat ca, fiind finisat mat, se poate zgaraia mai usor daca nu esti atenta. Si, na, lantul e cam scurt la lungimea maxima, bine ca are prelungirea aia.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Design modern si minimalist, foarte versatil</li>
+              <li>Finisaj mat, elegant si discret</li>
+              <li>Argint 925 de buna calitate</li>
+              <li>Pret excelent pentru un set complet</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Finisajul mat se poate zgaraia mai usor</li>
+              <li>Lantisorul poate fi prea scurt pentru anumite preferinte</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-4">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #4</span>
+            <h3>Set Argint Medieval 'Dragon' cu Piatra Neagra</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Argint 925 Sterling</div>
+            <div class="product-review__spec"><strong>Greutate</strong>Aprox. 12g (setul)</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Colier: pandantiv 30mm; Cercei: 25mm lungime (cu tortita)</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj Argint 925</div>
+            <div class="product-review__spec"><strong>Stil</strong>Gotic, medieval, statement</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Acum, asta e pentru cine cauta ceva mai… diferit. Designul e inspirat din motive medievale, cu un dragon stilizat si o piatra neagra (probabil onix sintetic, dar arata fain). E un set mai masiv, mai cu personalitate. Colierul e mai greu, pandantivul are cam 3 cm, iar cerceii sunt atarnati, cu tortita. Nu e genul de bijuterie pe care o porti zi de zi la birou, ci mai mult la o ocazie speciala, sau daca mergi la un concert rock, stii tu. Argintul e destul de gros, pare solid. L-am purtat cam de 5-6 ori, si nu am vazut semne de uzura majore, dar o data mi-a agatat un pulover mai fin, asa ca trebuie sa fii atenta. Pietra neagra e destul de inchisa, da un aer misterios. E un set care, daca nu e pe gustul tau, poate parea prea mult, dar daca iti place stilul, e chiar misto.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Design statement, unic, cu influente medievale/gotice</li>
+              <li>Argint 925 solid, pare durabil</li>
+              <li>Piatra neagra ofera un contrast interesant</li>
+              <li>Atrage atentia si genereaza comentarii</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Poate fi prea masiv sau prea specific pentru preferintele generale</li>
+              <li>Designul complex poate agata hainele mai fine</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-5">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #5</span>
+            <h3>Set Argint 'Perle Simulate' Clasic</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Argint 925 Sterling, perle simulate</div>
+            <div class="product-review__spec"><strong>Greutate</strong>Aprox. 7g (setul)</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Colier: lant 42cm, pandantiv cu perla 8mm; Cercei: perla 8mm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj Argint 925</div>
+            <div class="product-review__spec"><strong>Stil</strong>Clasic, elegant, versatil</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Asta e o alegere sigura, mereu la moda. Setul vine cu un colier cu un singur pandantiv – o perla simulata, destul de stralucitoare – si cercei asortati, tot cu cate o perla. Argintul e fin, lantisorul are cam 42cm, adica se așaza frumos la baza gatului. E genul de set pe care il poti purta la o nunta, la o cina eleganta, sau chiar la un interviu. Arata clasic si fin.</p>
+<p>Am purtat cerceii la un eveniment important si am primit multe aprecieri. Perlele astea simulate sunt de buna calitate, nu arata ieftin, dar evident, nu sunt perle naturale. Ce am observat e ca argintul, fiind finisat lucios, se poate zgaraia mai usor daca nu ai grija. Si am auzit de la o prietena ca daca le lasi in contact cu parfumuri sau lotiuni, se poate deteriora stratul de pe perlele simulate, deci trebuie sa le pui la urma.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Design clasic si elegant, atemporal</li>
+              <li>Perlele simulate au un aspect de calitate</li>
+              <li>Versatil, potrivit pentru ocazii formale si informale</li>
+              <li>Argint 925 de calitate</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Finisajul lucios al argintului se poate zgaraia</li>
+              <li>Perlele simulate necesita ingrijire pentru a nu se deteriora stratul exterior</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="comparison-outer" id="comparatie">
+        <h2>Comparatie Rapida: Seturi de Bijuterii din Argint sub 300 Lei</h2>
+        <div class="comparison-hint"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg> Scroll orizontal pentru a vedea toate coloanele</div>
+        <div class="comparison-wrap">
+          <table class="comparison-table">
+            <thead><tr><th>Model</th><th>Material</th><th>Greutate</th><th>Dimensiuni</th><th>Stil</th><th>Potrivit pentru</th></tr></thead>
+            <tbody>
+            <tr><td>Set 'Infinit'</td><td>Argint 925</td><td>5.5g</td><td>Pandantiv 20mm, Cercei 15mm</td><td>Minimalist, romantic</td><td>Zi cu zi, birou</td></tr>
+            <tr><td>Set 'Flori de Gherta'</td><td>Argint 925</td><td>8g</td><td>Pandantiv 25mm, Cercei 20mm</td><td>Boho, romantic</td><td>Evenimente casual, tinute cu personalitate</td></tr>
+            <tr><td>Set Geometric</td><td>Argint 925</td><td>6g</td><td>Pandantiv 15mm, Cercei 10mm</td><td>Modern, minimalist</td><td>Stil urban, zi cu zi</td></tr>
+            <tr><td>Set 'Dragon'</td><td>Argint 925</td><td>12g</td><td>Pandantiv 30mm, Cercei 25mm</td><td>Gotic, medieval</td><td>Ocazii speciale, tinute nonconformiste</td></tr>
+            <tr><td>Set Clasic Perle</td><td>Argint 925, perle simulate</td><td>7g</td><td>Pandantiv 8mm, Cercei 8mm</td><td>Clasic, elegant</td><td>Evenimente formale, birou, cadou clasic</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="guide" id="ghid">
+        <h2>Ghid de Cumparare: Cum Alegi Seturi de Bijuterii din Argint Sub 300 Lei</h2>
+        <p>Bun, ai vazut ca se poate gasi ceva frumos si sub 300 de lei. Dar cum alegi exact ce trebuie? Nu te lua doar dupa poze, ca alea pot fi inselatoare. Uite cateva sfaturi de la cineva care a vazut multe:</p><h4>Verifica Materialul</h4><p>Asta e cel mai important. Cauta mereu 'Argint 925' sau 'Sterling Silver'. Asta inseamna ca e argint pur amestecat cu alte metale pentru a fi mai rezistent. Nu te multumi cu 'aliaj argintiu' sau alte denumiri vagi. Un marcaj 925 pe bijuterie e un semn bun. Daca scrie 'argint placat', inseamna ca are un strat subtire de argint peste alt metal, si ala se duce in timp. Pentru seturi sub 300 lei, argintul 925 masiv e cel mai bun raport calitate-pret.</p><h4>Stilul Conteaza</h4><p>Ce cauti? Ceva minimalist, de zi cu zi? Sau vrei ceva statement, care sa iasa in evidenta? Daca e pentru birou, mergi pe modele simple, delicate. Daca e pentru iesiri, poti sa-ti permiti ceva mai indraznet. Gandeste-te si la tinutele pe care le porti cel mai des. Un set geometric se potriveste cu haine mai moderne, pe cand unul cu perle merge la clasic. Daca vrei sa vezi mai multe exemple de stiluri, arunca un ochi pe <a href="/cele-mai-bune-bratari-din-argint-925-pentru-femei/">cele mai bune bratari din argint 925 pentru femei</a> – acolo gasesti idei de stiluri diferite.</p><h4>Atentie la Detalii</h4><p>Cum e lantul? E prea subtire? Se poate scurta sau lungi? Cum e inchiderea? E sigura? La cercei, cum e sistemul de prindere? Sunt confortabili? Si daca au pietre, chiar si semipretioase sau zirconii, verifica daca sunt bine prinse. Un detaliu care mie mi se pare important, mai ales la <a href="/cele-mai-bune-inele-din-argint-925-pentru-femei/">cele mai bune inele din argint 925 pentru femei</a>, e finisajul. Unii prefera lucios, altii mat. Alege ce ti se pare ca se potriveste mai bine cu personalitatea ta.</p><h4>Ingrijirea pe Termen Lung</h4><p>Argintul e un metal minunat, dar are tendinta sa se oxideze (sa se innegreasca) in timp, mai ales daca e expus la aer, umezeala sau anumite chimicale. Nu e mare problema, se curata usor cu solutii speciale sau chiar cu pasta de dinti, dar e bine sa stii. Daca setul are pietre sau perle simulate, citeste instructiunile de ingrijire. Unele componente pot fi mai sensibile. Si, pana la urma, sfatul meu e sa nu le tii in baie sau in locuri foarte umede.</p><p>Sa alegi un set de bijuterii din argint sub 300 lei nu inseamna sa faci compromisuri majore la calitate sau stil. Cu putina atentie si informare, poti gasi piese absolut superbe care sa te bucure mult timp. Acum ca stii la ce sa te uiti, nu iti ramane decat sa alegi modelul care te reprezinta cel mai bine.</p>
+      </div>
+    </div>
+
+    <div class="faq" id="faq">
+      <h2 class="faq-head">Intrebari frecvente</h2>
+      <details class="faq-q">
+  <summary>cat costa un set de bijuterii din argint sub 300 lei?</summary>
+  <div class="ans"><p>Seturile de bijuterii din argint 925 sub 300 lei au preturi care variaza, in general, intre 100 lei si 299 lei. Poti gasi seturi minimaliste, cu pandantive mici si cercei asortati, dar si modele mai complexe, cu pietre semipretioase sau un design mai elaborat, in aceasta gama de pret.</p></div>
+</details>
+<details class="faq-q">
+  <summary>care e diferenta intre argint 925 si argint tibetan?</summary>
+  <div class="ans"><p>Argintul 925, numit si Sterling Silver, contine 92.5% argint pur si 7.5% alte metale (de obicei cupru), ceea ce il face durabil. Argintul tibetan este de obicei un aliaj de argint cu alte metale, adesea cu un continut de argint mult mai mic (uneori doar 20-30%), si poate contine si nichel, fiind adesea folosit pentru piese decorative, nu pentru bijuterii fine.</p></div>
+</details>
+<details class="faq-q">
+  <summary>merita sa cumpar seturi de bijuterii din argint online?</summary>
+  <div class="ans"><p>Da, merita sa cumperi seturi de bijuterii din argint online daca alegi magazine de incredere. Beneficiezi de o varietate mai mare de modele, preturi competitive si poti citi recenzii de la alti clienti. Asigura-te ca magazinul ofera garantie si politica de retur.</p></div>
+</details>
+<details class="faq-q">
+  <summary>cum sa ingrijesc un set de bijuterii din argint ca sa nu se innegreasca?</summary>
+  <div class="ans"><p>Pentru a preveni innegrirea, depoziteaza bijuteriile din argint separat, in pungute de material textil sau cutii captusite, ferite de aer si umiditate. Evita contactul cu parfumuri, lotiuni, clor si produse de curatenie. Daca argintul se oxideaza, curata-l cu o carpa speciala pentru argint sau cu o solutie blanda de curatat.</p></div>
+</details>
+<details class="faq-q">
+  <summary>ce inseamna cand un set de bijuterii din argint are marcaj 925?</summary>
+  <div class="ans"><p>Marcajul 925 pe un set de bijuterii din argint atesta ca este confectionat din Argint 925 Sterling. Aceasta este o garantie a puritatii argintului, indicand ca 92.5% din metal este argint pur, iar restul de 7.5% sunt alte metale, asigurand astfel rezistenta si durabilitatea bijuteriei.</p></div>
+</details>
+    </div>
+
+    <div class="author">
+      <div class="author-av">{authorInitials}</div>
+      <div>
+        <div class="author-role">{authorRole}</div>
+        <div class="author-name">{authorName}</div>
+        <p class="author-bio">{authorBio}</p>
+      </div>
+    </div>
+
+    <SimilarArticles articles={similarArticles} currentSlug={slug} />
+
+    <PrevNextNav
+      currentSlug={slug}
+      currentCategory={categorySlug}
+      articles={allArticles}
+    />
+  </article>
+
+  <script>
+    // Comparison table scroll hint
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.comparison-outer').forEach(outer => {
+        const wrap = outer.querySelector('.comparison-wrap');
+        if (!wrap) return;
+        const check = () => {
+          if (wrap.scrollWidth > wrap.clientWidth + 2) {
+            outer.classList.add('can-scroll');
+          } else {
+            outer.classList.remove('can-scroll');
+          }
+        };
+        check();
+        window.addEventListener('resize', check);
+      });
+
+      // TOC active tracking
+      const tocLinks = document.querySelectorAll('.toc a');
+      const sections = [];
+      tocLinks.forEach(link => {
+        const id = link.getAttribute('href')?.replace('#', '');
+        const el = id && document.getElementById(id);
+        if (el) sections.push({ el, link });
+      });
+      if (sections.length > 0) {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            const match = sections.find(s => s.el === entry.target);
+            if (match) {
+              if (entry.isIntersecting) {
+                tocLinks.forEach(l => l.classList.remove('on'));
+                match.link.classList.add('on');
+              }
+            }
+          });
+        }, { rootMargin: '-20% 0px -60% 0px' });
+        sections.forEach(s => observer.observe(s.el));
+      }
+    });
+  </script>
+</Layout>
