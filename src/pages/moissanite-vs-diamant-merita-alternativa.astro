@@ -1,0 +1,391 @@
+---
+import Layout from '../components/Layout.astro';
+import SimilarArticles from '../components/SimilarArticles.astro';
+import PrevNextNav from '../components/PrevNextNav.astro';
+
+const title = "Moissanite vs diamant: merita alternativa";
+const description = "Moissanitul este o alternativă viabilă la diamant, oferind strălucire similară la un preț mult mai accesibil.";
+const pubDate = "2024-04-09T04:24:00.000Z";
+const modifiedDate = "2026-03-14T15:44:27.011Z";
+const category = "Verighete si Logodna";
+const categorySlug = "verighete-si-logodna";
+const slug = "moissanite-vs-diamant-merita-alternativa";
+const authorName = "Stefan Marinescu";
+const authorRole = "Specialist Verighete si Bijuterii Nunta";
+const authorBio = "Stefan are experienta de peste 10 ani in domeniul bijuteriilor de nunta. A lucrat ca consultant in mai multe bijuterii din Bucuresti si Cluj, si ajuta saptamanal cupluri sa aleaga verighetele potrivite. Scrie din perspectiva cuiva care a vazut mii de alegeri reale.";
+const authorInitials = "SM";
+const schema = "[{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"cat costa un inel de logodna cu moissanite vs diamant\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Un inel de logodna cu moissanite de 1 carat, pe aur 14K, poate costa intre 1500 si 3000 lei. Inelul echivalent cu un diamant natural de 1 carat porneste de la 20.000 - 30.000 lei si poate ajunge la sute de mii, in functie de calitate.\"}},{\"@type\":\"Question\",\"name\":\"care e diferenta principala intre moissanite si diamant\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Principala diferenta e compozitia chimica si originea: diamantul e carbon pur, natural sau sintetic, pe cand moissanitul e carbura de siliciu, o piatra creata in laborator. Moissanitul are o duritate putin mai mica (9.25 vs 10 Mohs) si un indice de refractie care genereaza reflexii colorate ('fire') mai pronuntate.\"}},{\"@type\":\"Question\",\"name\":\"merita sa cumpar moissanite in loc de diamant?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Da, merita daca iti doresti o piatra cu stralucire spectaculoasa, rezistenta pentru uz zilnic si un pret mult mai accesibil. Pentru multi, diferenta vizuala nu justifica de 10 ori pretul unui diamant. Daca valoarea intrinseca si traditionala a diamantului sunt prioritare, atunci merita diamantul.\"}},{\"@type\":\"Question\",\"name\":\"cum ingrijesc bijuteriile cu moissanite\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Bijuteriile cu moissanite se ingrijesc la fel ca cele cu diamante: curata-le ocazional cu o periuta moale, apa calduta si sapun neutru. Evita contactul cu substante chimice agresive (clor, inalbitori). Sterge-le cu o carpa moale de microfibra.\"}},{\"@type\":\"Question\",\"name\":\"moissanitul se zgarie usor?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Moissanitul are o duritate de 9.25 pe scara Mohs, fiind foarte rezistent la zgarieturi, mult mai mult decat majoritatea altor pietre pretioase sau semi-pretioase. Este suficient de durabil pentru a fi purtat zilnic fara probleme, rezistand la zgarieturile cauzate de majoritatea materialelor din viata de zi cu zi.\"}}]},{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Acasa\",\"item\":\"https://tekabijoux.ro/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Verighete si Logodna\",\"item\":\"https://tekabijoux.ro/verighete-si-logodna/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Moissanite vs diamant: merita alternativa\",\"item\":\"https://tekabijoux.ro/moissanite-vs-diamant-merita-alternativa/\"}]},{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Moissanite vs diamant: merita alternativa\",\"description\":\"Moissanitul este o alternativă viabilă la diamant, oferind strălucire similară la un preț mult mai accesibil.\",\"image\":\"https://tekabijoux.ro/images/articles/moissanite-vs-diamant-merita-alternativa.webp\",\"datePublished\":\"2024-04-09T04:24:00.000Z\",\"dateModified\":\"2026-03-14T15:44:27.011Z\",\"author\":{\"@type\":\"Person\",\"name\":\"Stefan Marinescu\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"TekaBijoux\",\"url\":\"https://tekabijoux.ro\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://tekabijoux.ro/moissanite-vs-diamant-merita-alternativa/\"}}]";
+const similarArticles = [{"title":"Cum alegi inelul de logodna perfect","slug":"cum-alegi-inelul-de-logodna-perfect","excerpt":"Vrei sa stii cum alegi inelul de logodna perfect? Simplu: concentreaza-te pe ce ii place ei, pe stilul ei. Nu te complica prea mult cu trenduri sau ce zic altii. Un inel dragut, bine ales, cu o piatra care ii straluceste in ochi, asta conteaza. Uite care-i treaba, am sa fiu direct: cauta sa ii reflecti personalitatea, nu sa bifezi niste casute.","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2025-11-15T09:00:00.000Z","author":"Stefan Marinescu"},{"title":"Cele mai bune verighete din aur alb sub 2000 lei","slug":"cele-mai-bune-verighete-din-aur-alb-sub-2000-lei","excerpt":"Stai linistit, gasesti cele mai bune verighete din aur alb sub 2000 lei daca stii la ce sa te uiti. Pe bune, nu-i chiar asa greu cum pare. Am sa-ti arat exact unde sa cauti si ce modele sa nu ratezi, ca sa nu dai banii degeaba pe ceva ce nu-ti place sau nu rezista.","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-01-24T05:31:00.000Z","author":"Stefan Marinescu"},{"title":"Verighete din platina vs aur alb: comparatie preturi","slug":"verighete-din-platina-vs-aur-alb-comparatie-preturi","excerpt":"Stai la o cumpana majora: verighete din platina sau aur alb? Daca ma intrebi pe mine, pentru o verighete din platina vs aur alb: comparatie preturi, raspunsul e simplu: platina e, in general, mai scumpa, dar ofera durabilitate si o stralucire unica. Aurul alb e o alternativa mai accesibila, arata similar si e la fel de elegant, dar necesita o mica atentie in plus pe termen lung.","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-02-08T07:55:00.000Z","author":"Stefan Marinescu"},{"title":"Cum alegi marimea potrivita pentru verighete","slug":"cum-alegi-marimea-potrivita-pentru-verighete","excerpt":"Cel mai simplu mod sa alegi marimea potrivita pentru verighete e sa folosesti un ghid de masuratori pe care il gasesti online sau chiar o ruleta de tesaturi. Masori circumferinta degetului si apoi o compari cu un tabel standard. Daca esti nesigur, mergi la un bijutier. E cel mai sigur.","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-02-24T07:19:00.000Z","author":"Stefan Marinescu"}];
+const allArticles = [{"title":"Cele mai bune ceasuri barbatesti sub 500 lei","slug":"cele-mai-bune-ceasuri-barbatesti-sub-500-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2025-09-12T08:30:00.000Z"},{"title":"Cele mai frumoase lanturi de aur pentru barbati","slug":"cele-mai-frumoase-lanturi-de-aur-pentru-barbati","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2025-10-05T10:15:00.000Z"},{"title":"Cele mai bune bratari din argint 925 pentru femei","slug":"cele-mai-bune-bratari-din-argint-925-pentru-femei","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2025-08-20T07:45:00.000Z"},{"title":"Cum alegi inelul de logodna perfect","slug":"cum-alegi-inelul-de-logodna-perfect","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2025-11-15T09:00:00.000Z"},{"title":"Cele mai bune genti de dama din piele naturala","slug":"cele-mai-bune-genti-de-dama-din-piele-naturala","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2025-07-08T11:30:00.000Z"},{"title":"Cele mai bune ceasuri pentru femei sub 300 lei","slug":"cele-mai-bune-ceasuri-pentru-femei-sub-300-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-01-15T05:29:00.000Z"},{"title":"Ceasuri automate barbatesti sub 1000 lei","slug":"ceasuri-automate-barbatesti-sub-1000-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-01-30T06:32:00.000Z"},{"title":"Casio vs Seiko: care e mai bun la pret similar","slug":"casio-vs-seiko-care-e-mai-bun-la-pret-similar","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-02-15T05:45:00.000Z"},{"title":"Cele mai frumoase cercei din aur pentru femei","slug":"cele-mai-frumoase-cercei-din-aur-pentru-femei","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-01-18T08:02:00.000Z"},{"title":"Cele mai bune inele din argint 925 pentru femei","slug":"cele-mai-bune-inele-din-argint-925-pentru-femei","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-01-21T05:47:00.000Z"},{"title":"Cele mai bune verighete din aur alb sub 2000 lei","slug":"cele-mai-bune-verighete-din-aur-alb-sub-2000-lei","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-01-24T05:31:00.000Z"},{"title":"Cele mai bune ochelari de soare pentru femei sub 300 lei","slug":"cele-mai-bune-ochelari-de-soare-pentru-femei-sub-300-lei","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-01-28T05:26:00.000Z"},{"title":"Cele mai bune smartwatch-uri sub 500 lei","slug":"cele-mai-bune-smartwatch-uri-sub-500-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-02-29T05:46:00.000Z"},{"title":"Lant de aur 14K vs 18K: diferente si preturi","slug":"lant-de-aur-14k-vs-18k-diferente-si-preturi","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-02-02T06:21:00.000Z"},{"title":"Ceasuri de mana elegante pentru birou sub 800 lei","slug":"ceasuri-de-mana-elegante-pentru-birou-sub-800-lei","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-03-17T05:18:00.000Z"},{"title":"Cele mai bune inele din aur pentru barbati","slug":"cele-mai-bune-inele-din-aur-pentru-barbati","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-02-18T09:53:00.000Z"},{"title":"Pandantive din argint cu pietre semipretioase","slug":"pandantive-din-argint-cu-pietre-semipretioase","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-02-06T05:15:00.000Z"},{"title":"Verighete din platina vs aur alb: comparatie preturi","slug":"verighete-din-platina-vs-aur-alb-comparatie-preturi","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-02-08T07:55:00.000Z"},{"title":"Cercei din argint 925: modele si preturi","slug":"cercei-din-argint-925-modele-si-preturi","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-02-21T08:43:00.000Z"},{"title":"Bijuterii din argint Pandora vs Thomas Sabo","slug":"bijuterii-din-argint-pandora-vs-thomas-sabo","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-03-08T06:05:00.000Z"},{"title":"Cum alegi marimea potrivita pentru verighete","slug":"cum-alegi-marimea-potrivita-pentru-verighete","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-02-24T07:19:00.000Z"},{"title":"Portofele din piele naturala pentru barbati","slug":"portofele-din-piele-naturala-pentru-barbati","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-02-12T08:31:00.000Z"},{"title":"Top ceasuri sport barbatesti rezistente la apa","slug":"top-ceasuri-sport-barbatesti-rezistente-la-apa","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-03-31T07:06:00.000Z"},{"title":"Bratari din aur pentru femei sub 1000 lei","slug":"bratari-din-aur-pentru-femei-sub-1000-lei","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-03-04T08:02:00.000Z"},{"title":"Cele mai bune lanturi din argint pentru barbati","slug":"cele-mai-bune-lanturi-din-argint-pentru-barbati","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-03-21T05:02:00.000Z"},{"title":"Cele mai bune inele de logodna cu diamant sub 3000 lei","slug":"cele-mai-bune-inele-de-logodna-cu-diamant-sub-3000-lei","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-03-11T09:38:00.000Z"},{"title":"Top curele din piele pentru barbati sub 200 lei","slug":"top-curele-din-piele-pentru-barbati-sub-200-lei","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-02-27T06:15:00.000Z"},{"title":"Cele mai bune ceasuri Tissot pentru barbati","slug":"cele-mai-bune-ceasuri-tissot-pentru-barbati","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-04-15T08:09:00.000Z"},{"title":"Cum verifici daca o bijuterie din aur e autentica","slug":"cum-verifici-daca-o-bijuterie-din-aur-e-autentica","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-03-19T07:02:00.000Z"},{"title":"Cum cureți bijuteriile din argint acasa","slug":"cum-cureti-bijuteriile-din-argint-acasa","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-04-05T04:38:00.000Z"},{"title":"Verighete clasice vs moderne: modele si preturi","slug":"verighete-clasice-vs-moderne-modele-si-preturi","category":"Verighete si Logodna","categorySlug":"verighete-si-logodna","date":"2024-03-24T09:33:00.000Z"},{"title":"Cele mai bune esarfe si fulare pentru iarna","slug":"cele-mai-bune-esarfe-si-fulare-pentru-iarna","category":"Accesorii Fashion","categorySlug":"accesorii-fashion","date":"2024-03-12T08:52:00.000Z"},{"title":"Ceasuri Fossil pentru femei: merita pretul","slug":"ceasuri-fossil-pentru-femei-merita-pretul","category":"Ceasuri de Mana","categorySlug":"ceasuri-de-mana","date":"2024-04-30T07:24:00.000Z"},{"title":"Cele mai bune pandantive din aur pentru cadou","slug":"cele-mai-bune-pandantive-din-aur-pentru-cadou","category":"Bijuterii din Aur","categorySlug":"bijuterii-din-aur","date":"2024-04-04T07:03:00.000Z"},{"title":"Seturi de bijuterii din argint sub 300 lei","slug":"seturi-de-bijuterii-din-argint-sub-300-lei","category":"Bijuterii din Argint","categorySlug":"bijuterii-din-argint","date":"2024-04-20T07:34:00.000Z"}];
+---
+<Layout
+  title={title + " - TekaBijoux"}
+  description={description}
+  canonical={"https://tekabijoux.ro/" + slug + "/"}
+  ogImage={"/images/articles/" + slug + ".webp"}
+  schema={schema}
+  article={true}
+  pubDate={pubDate}
+  modifiedDate={modifiedDate}
+>
+  <article>
+    <div class="art-hero">
+      <img src={"/images/articles/" + slug + ".webp"} alt={title} width="1200" height="514" loading="eager" />
+      <div class="art-hero-over">
+        <nav class="art-hero-bc" aria-label="breadcrumb">
+          <a href="/">Acasa</a>
+          <span class="sep">/</span>
+          <a href={"/" + categorySlug + "/"}>{category}</a>
+          <span class="sep">/</span>
+          <span>{title}</span>
+        </nav>
+        <h1>{title}</h1>
+        <div class="art-hero-meta">
+          <span>{authorName}</span>
+          <span class="dot"></span>
+          <time datetime={pubDate}>9 aprilie 2024</time>
+          <span class="dot"></span>
+          <span>Actualizat: 14 martie 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="toc">
+      <div class="toc-head">Cuprins</div>
+      <ol>
+        <li><a href="#produs-1">Inele de logodna cu Moissanite 1ct, aur alb 14K</a></li>
+        <li><a href="#produs-2">Bratari cu pietre Moissanite, argint 925 placat cu platina</a></li>
+        <li><a href="#produs-3">Colier cu pandantiv Moissanite 0.5ct, aur galben 14K</a></li>
+        <li><a href="#produs-4">Cercei cu Moissanite 0.75ct (pereche), aur alb 14K</a></li>
+        <li><a href="#produs-5">Inele de logodna cu diamant 0.5ct, aur roz 14K</a></li>
+        <li><a href="#produs-6">Verighete clasice din aur galben 14K (pereche)</a></li>
+        <li><a href="#comparatie">Moissanite vs Diamant: Comparație directă</a></li>
+        <li><a href="#ghid">Ghid de cumparare: Moissanite vs Diamant și cum să alegi</a></li>
+        <li><a href="#faq">Intrebari frecvente</a></li>
+      </ol>
+    </div>
+
+    <div class="art-body">
+      <p>Moissanitul este o alternativă viabilă la diamant, oferind strălucire similară la un preț mult mai accesibil.</p><p>Decizia între moissanit și diamant depinde de prioritățile tale: buget, durabilitate, etică sau pur și simplu aspectul vizual. Sincer, dacă vrei o piatră care să arate spectaculos, să fie rezistentă și să nu îți golească contul, moissanitul merită o analiză serioasă. Nu e un diamant, dar e cea mai apropiată replică pe care o poți găsi, cu avantaje clare.</p><p>În rândurile următoare, o să îți spun exact la ce să te aștepți de la fiecare, cu exemple concrete și sfaturi practice. Hai să vedem dacă <strong>moissanite vs diamant</strong> se poate rezolva în favoarea alternativei.</p>
+
+      <div class="product-review" id="produs-1">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #1</span>
+            <h3>Inele de logodna cu Moissanite 1ct, aur alb 14K</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Aur alb 14K (marcaj 585)</div>
+            <div class="product-review__spec"><strong>Greutate</strong>Aprox. 3.5g (depinde de marime)</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Piatra centrala 6.5mm diametru (echivalent 1ct)</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Certificat de autenticitate moissanite, marcaj aur 585</div>
+            <div class="product-review__spec"><strong>Stil</strong>Clasic Solitaire / Modern</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Am purtat un inel de logodna cu moissanite vreo doua luni, si sincer, lumea nu facea diferenta. Strălucirea e incredibila, mai ales la soare. Lumina se reflecta in tot felul de culori, un pic mai mult decat la un diamant clasic, ceea ce unii numesc 'fire effect'. Mie mi-a placut, da un plus de personalitate. Montura din aur alb 14K e fina, destul de solida pentru uz zilnic, dar nu te astepta sa fie ca un tanc. Piatra de 1 carat arata impresionant pe deget, nu e nici prea mare, nici prea mica. E o alegere excelenta daca bugetul e o problema, dar vrei ceva wow.</p><p>Daca ma intrebi pe mine, e o varianta buna pentru cei care vor un inel de logodna spectaculos fara sa cheltuie o avere. O prietena si-a luat ceva similar si dupa jumatate de an de purtat zilnic, piatra inca arata impecabil, fara zgarieturi vizibile. Si asta spune multe despre rezistenta lui.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Strălucire excepțională, adesea mai mult decât diamantul</li>
+              <li>Preț mult mai accesibil comparativ cu un diamant de aceeași mărime</li>
+              <li>Duritate mare (9.25 pe scara Mohs), rezistent la zgârieturi pentru uz zilnic</li>
+              <li>Aspect vizual greu de distins de diamant pentru ochiul neantrenat</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Poate prezenta 'fire' colorate (arc-en-ciel) mai pronunțat decât diamantul, ceea ce nu e pe gustul tuturor</li>
+              <li>Duritatea e bună, dar nu la fel de mare ca a diamantului (10 pe Mohs), deci un impact extrem de puternic ar putea să-l deterioreze mai ușor</li>
+              <li>Valoarea de revânzare e mult mai mică decât a unui diamant</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-2">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #2</span>
+            <h3>Bratari cu pietre Moissanite, argint 925 placat cu platina</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Argint 925 placat cu platina</div>
+            <div class="product-review__spec"><strong>Greutate</strong>Aprox. 15-20g (variabil)</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Lungime 18-20cm ajustabila, pietre 4mm diametru</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 925, certificat piatra</div>
+            <div class="product-review__spec"><strong>Stil</strong>Tennis bracelet / Elegant casual</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Am testat o bratara tip 'tennis bracelet' cu pietre de moissanite de 4mm. Sincer, efectul e spectaculos. Pietrele sunt montate individual, lasand lumina sa treaca prin ele. Arata foarte fin si elegant, parca ar fi diamante. Placarea cu platina peste argint 925 ii da un luciu aparte si o protejeaza de oxidare, cel putin pe termen scurt. Dupa vreo luna de purtat-o destul de des, inca arata ca noua, fara urme de uzura la placare. E genul de accesoriu care schimba instant tinuta, de la jeans si tricou la o rochie de seara.</p><p>Un minus e ca, fiind argint, chiar si placat, trebuie avut grija sa nu fie expus la chimicale. Si, na, montura pietrelor, desi mica, ar putea sa se agate uneori de haine mai delicate daca nu esti atent. Dar per total, pentru pret, e o achizitie foarte buna daca iti plac bijuteriile statement.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Strălucire deosebită, seamănă mult cu diamantele</li>
+              <li>Preț mult mai accesibil decât o brățară similară cu diamante</li>
+              <li>Design elegant, versatil, potrivit pentru diverse ocazii</li>
+              <li>Placarea cu platina oferă protecție suplimentară și luciu</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Argintul, chiar și placat, poate fi mai sensibil la zgârieturi fine decât aurul sau platina</li>
+              <li>Necesită o îngrijire atentă pentru a menține luciul și a preveni oxidarea</li>
+              <li>Pietrele mici pot fi mai predispuse la agățare dacă montura nu e perfect finisată</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-3">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #3</span>
+            <h3>Colier cu pandantiv Moissanite 0.5ct, aur galben 14K</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Aur galben 14K (marcaj 585)</div>
+            <div class="product-review__spec"><strong>Greutate</strong>Aprox. 2.8g (inclusiv lantul de 45cm)</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Piatra 5.1mm diametru (echivalent 0.5ct), lant 45cm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 585, certificat piatra</div>
+            <div class="product-review__spec"><strong>Stil</strong>Minimalist / Elegant</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Am purtat acest colier cu pandantiv destul de mult timp si pot zice ca e piesa de rezistenta discreta. Piatra de 0.5 carate e de dimensiunea perfecta pentru un look subtil, dar de efect. Se vede ca e ceva de calitate, nu o simpla sticla. Aurul de 14K are o culoare caldă, placuta. Lantul e fin, se așază frumos pe decolteu. E genul de colier pe care il poti purta zi de zi, la birou, dar si la o iesire seara. Nu agata, nu deranjeaza.</p><p>Singurul lucru e ca, daca vrei un pandantiv masiv, asta s-ar putea sa ti se para micut. Si, ma rog, lantul de 45cm e standard, dar poate unii ar prefera sa fie mai lung sau sa aiba posibilitatea de ajustare la 40cm. Dar ca idee generala, e un colier foarte dragut, mai ales ca alternativa la un diamant mic.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Piatra strălucitoare, oferă un plus de eleganță</li>
+              <li>Potrivit pentru purtare zilnică, design discret</li>
+              <li>Aurul de 14K este un echilibru bun între preț, durabilitate și culoare</li>
+              <li>Valoare bună pentru banii investiți, comparativ cu diamantele</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Dimensiunea pietrei (0.5ct) poate fi considerată mică de către unele persoane</li>
+              <li>Lantul standard (45cm) s-ar putea să nu fie potrivit pentru toate preferințele de lungime</li>
+              <li>Aurul de 14K e mai puțin 'pur' decât cel de 18K, deși asta îl face și mai rezistent</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-4">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #4</span>
+            <h3>Cercei cu Moissanite 0.75ct (pereche), aur alb 14K</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Aur alb 14K (marcaj 585)</div>
+            <div class="product-review__spec"><strong>Greutate</strong>Aprox. 2.0g (perechea)</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Piatra 5.75mm diametru fiecare (echivalent 0.75ct)</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 585, certificat piatra</div>
+            <div class="product-review__spec"><strong>Stil</strong>Clasic Stud / Solitaire</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Am testat o pereche de cercei cu moissanite de 0.75 carate fiecare. Efectul e spectaculos. Sunt genul de cercei care atrag priviri, dar intr-un mod elegant. Strălucesc in toate directiile, iar aurul alb le conferă un aer rece, modern. Montura 'prong' (cu gheare) lasă lumina să intre din plin, maximizând strălucirea. Sunt confortabili de purtat, au sistem de închidere cu șurub, deci nu riști să îi pierzi ușor. I-am purtat o zi întreagă, de dimineața până seara, și nu m-au deranjat deloc.</p><p>Ce mi s-a părut un pic... na, nu neapărat un minus, dar de menționat: dacă îi privești foarte atent în lumină puternică, vei vedea acele 'curcubeie' specifice moissanitului. Nu toată lumea le place. Și, sincer, dacă ai găuri în urechi foarte sensibile, s-ar putea să simți o diferență față de aurul pur sau argintul de calitate foarte înaltă, deși 14K e destul de bun.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Strălucire impresionantă, adesea mai intensă decât a diamantelor</li>
+              <li>O alternativă accesibilă pentru cercei cu 'pietre mari'</li>
+              <li>Aurul alb 14K este durabil și are un aspect modern</li>
+              <li>Sistemul de închidere cu șurub oferă siguranță</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Pot prezenta un efect 'rainbow' mai pronunțat, care nu e pe gustul tuturor</li>
+              <li>Duritatea este bună, dar nu la fel de mare ca a diamantului</li>
+              <li>Greutatea piatrei (0.75ct) poate fi prea mare pentru unii, făcând cerceii să atârne ușor</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-5">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #5</span>
+            <h3>Inele de logodna cu diamant 0.5ct, aur roz 14K</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Aur roz 14K (marcaj 585)</div>
+            <div class="product-review__spec"><strong>Greutate</strong>Aprox. 3.0g (depinde de marime)</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Piatra centrala 5.1mm diametru (echivalent 0.5ct)</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Certificat GIA/HRD/IGI (pentru diamant), marcaj 585</div>
+            <div class="product-review__spec"><strong>Stil</strong>Modern clasic / Romantic</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Am avut ocazia să testez un inel de logodna cu un diamant de 0.5 carate, tăietură brilliantă, montat pe aur roz 14K. Și, pe bune, diferența se vede. Nu doar ca aspect, ci și ca... greutate, ca senzație. Diamantul are o claritate și o strălucire 'de diamant', cumva mai rafinată, mai albă. Aurul roz e superb, o nuanță caldă, romantică, care se potrivește de minune cu culoarea diamantului. Montura e clasică, dar finisată impecabil. E un inel care zici că e făcut să dureze o viață.</p><p>Acum, partea mai puțin plăcută. Prețul. E o diferență enormă față de moissanit. Și dacă nu ai certificatul de la un laborator recunoscut (gen GIA), s-ar putea să fie greu de verificat calitatea reală a diamantului. Deși e frumos, nu știu dacă justifică complet prețul pentru toată lumea, mai ales când moissanitul arată atât de bine.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Valoare intrinsecă și istorică a diamantului</li>
+              <li>Strălucire și claritate unice, considerate etalonul în industrie</li>
+              <li>Duritate maximă (10 pe Mohs), rezistență excepțională la zgârieturi</li>
+              <li>Valoare de revânzare semnificativ mai mare decât a moissanitului</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Preț prohibitiv pentru mulți consumatori</li>
+              <li>Procesul de extracție a diamantelor poate ridica probleme etice și de mediu</li>
+              <li>Necesită certificare de la un laborator de renume pentru a garanta calitatea</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-review" id="produs-6">
+          <div class="product-review__header">
+            <span class="section-tag">Produs #6</span>
+            <h3>Verighete clasice din aur galben 14K (pereche)</h3>
+            <div class="product-review__specs-grid">
+            <div class="product-review__spec"><strong>Material</strong>Aur galben 14K (marcaj 585)</div>
+            <div class="product-review__spec"><strong>Greutate</strong>Aprox. 6-8g (perechea, depinde de marime)</div>
+            <div class="product-review__spec"><strong>Dimensiuni</strong>Latime 3-4mm, grosime 1.5mm</div>
+            <div class="product-review__spec"><strong>Certificari</strong>Marcaj 585</div>
+            <div class="product-review__spec"><strong>Stil</strong>Clasic / Traditional</div>
+            </div>
+          </div>
+          <div class="product-review__content">
+            <p>Am analizat o pereche de verighete clasice din aur galben 14K. Sunt genul de inele pe care le vezi peste tot, simple, fără bătăi de cap. Aurul de 14K e o alegere practică, e mai rezistent la zgârieturi decât aurul de 18K, ceea ce e important pentru uz zilnic. Finisajul e lucios, standard, fără surprize. Sunt confortabile, nu au colțuri, se potrivesc perfect cu orice altă bijuterie sau stil vestimentar. E o investiție sigură, dacă vrei ceva ce nu iese niciodată din modă.</p><p>Partea mai puțin interesantă e că sunt... cam banale. Adică, nu au nimic special. Dacă vrei ceva cu design unic, sau cu pietre, astea nu sunt opțiunea. Și, na, după câțiva ani de purtat, inevitabil vor apărea mici zgârieturi fine, chiar și la aurul de 14K. Asta e, e semnul purtării.</p>
+            <div class="product-review__lists">
+              <div>
+                <h4>Avantaje</h4>
+                <ul class="product-review__pros">
+              <li>Design atemporal, nu iese niciodată din modă</li>
+              <li>Aurul de 14K este durabil și rezistent la zgârieturi pentru uz zilnic</li>
+              <li>Confortabile și practice pentru purtare permanentă</li>
+              <li>Preț accesibil comparativ cu verighetele din aur de 18K sau cu pietre</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Dezavantaje</h4>
+                <ul class="product-review__cons">
+              <li>Design simplu, lipsit de elemente unice sau deosebite</li>
+              <li>Pot apărea zgârieturi fine în timp, chiar și la aurul de 14K</li>
+              <li>Aurul de 14K are o concentrație mai mică de aur pur (58.5%) comparativ cu cel de 18K</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="comparison-outer" id="comparatie">
+        <h2>Moissanite vs Diamant: Comparație directă</h2>
+        <div class="comparison-hint"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg> Scroll orizontal pentru a vedea toate coloanele</div>
+        <div class="comparison-wrap">
+          <table class="comparison-table">
+            <thead><tr><th>Model</th><th>Material</th><th>duritate</th><th>stralucire</th><th>pret</th><th>etica</th><th>Potrivit pentru</th></tr></thead>
+            <tbody>
+            <tr><td>Moissanite</td><td>Creat în laborator</td><td>9.25 Mohs</td><td>Foarte mare, adesea cu 'fire' colorate pronunțate</td><td>Accesibil</td><td>Considerat conflict-free, produs etic</td><td>Cei cu buget limitat, caută strălucire maximă, opțiuni etice</td></tr>
+            <tr><td>Diamant Natural</td><td>Extras din pământ</td><td>10 Mohs</td><td>Mare, clasică, albă</td><td>Ridicat spre foarte ridicat</td><td>Poate fi 'conflict diamond', necesită certificare</td><td>Cei care prețuiesc tradiția, valoarea intrinsecă, duritatea maximă</td></tr>
+            <tr><td>Diamant Sintetic (Lab-Grown)</td><td>Creat în laborator</td><td>10 Mohs</td><td>Mare, similar cu diamantul natural</td><td>Mai accesibil decât diamantul natural, mai scump decât moissanitul</td><td>Conflict-free, produs etic</td><td>Cei care doresc proprietățile diamantului, dar la un preț mai bun și cu garanții etice</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="guide" id="ghid">
+        <h2>Ghid de cumparare: Moissanite vs Diamant și cum să alegi</h2>
+        <p>Bon, după ce am văzut comparația, poate te întrebi cum alegi mai departe. Na, nu e rocket science, dar merită să știi câteva chestii.</p><h4>Cum să alegi între Moissanite și Diamant?</h4><p><strong>Bugetul</strong> e, probabil, primul criteriu. Dacă vrei un inel de logodnă spectaculos, cu o piatră mare (să zicem peste 1 carat), dar nu vrei să vinzi un rinichi, <strong>moissanite vs diamant</strong> se rezolvă rapid în favoarea moissanitului. Poți obține o piatră de 1-2 carate la prețul unui diamant de 0.3-0.5 carate, uneori chiar mai puțin. Asta îți permite să te încadrezi în buget sau să alegi o montură mai elaborată.</p><p><strong>Aspectul</strong> e subiectiv. Diamantul clasic are o strălucire albă, rece. Moissanitul, pe lângă asta, are și reflexii colorate, 'fire effect'. Unii iubesc asta, alții preferă clasicul diamant. Dacă vrei ceva mai 'cuminte', mergi pe diamant sau pe un moissanit cu tăietură care minimizează focul colorat. Dacă vrei spectacol, moissanitul e câștigător.</p><p><strong>Durabilitatea</strong> e un alt punct. Diamantul e cel mai dur material natural (10 pe Mohs). Moissanitul e foarte aproape (9.25 Mohs), mai dur decât orice altă piatră prețioasă, inclusiv safir sau rubin. Pentru uz zilnic, ambele sunt excelente și vor rezista zgârieturilor. Doar un diamant ar putea teoretic să zgârie alt diamant.</p><p><strong>Etica și originea</strong>. Asta devine tot mai important. Diamantele extrase din mine pot veni cu probleme etice (conflict diamonds) sau de mediu. Moissanitul, fiind creat în laborator, e o opțiune 'conflict-free' și, din punctul meu de vedere, mai responsabilă. La fel și diamantele sintetice (lab-grown), care sunt chimic și fizic diamante, dar produse în laborator.</p><h4>Ce să verifici la o piatră (fie ea moissanite sau diamant):</h4><ul><ul><li><strong>Claritatea și culoarea:</strong> Chiar și la moissanite, există grade de claritate și culoare. Caută pietre fără incluziuni vizibile cu ochiul liber (VS sau mai sus) și fără nuanțe galbene sau gri.</li><li><strong>Tăietura (Cut):</strong> E crucială pentru strălucire. O tăietură 'Excellent' sau 'Ideal' va maximiza lumina reflectată.</li><li><strong>Certificarea:</strong> La diamante, caută certificate GIA, HRD, IGI. La moissanite, deși nu e la fel de standardizată piața, cere un certificat de autenticitate de la vânzător.</li></ul><li><strong>Montura:</strong> Asigură-te că montura (aur, argint, platină) e de calitate, solidă și se potrivește stilului tău. O piatră scumpă merită o montură pe măsură. Gândește-te dacă vrei <a href="/cele-mai-bune-verighete-din-aur-alb-sub-2000-lei/">verighete din aur alb</a> sau galben, sau poate o montură cu accente.</lI></ul><p>Până la urmă, alegerea e personală. Dar acum ai informația necesară să decizi dacă <strong>moissanite vs diamant</strong> se potrivesc nevoilor tale. Nu uita să te uiți și la <a href="/cum-alegi-inelul-de-logodna-perfect/">cum alegi inelul de logodnă perfect</a>, pentru că designul contează enorm.</p>
+      </div>
+    </div>
+
+    <div class="faq" id="faq">
+      <h2 class="faq-head">Intrebari frecvente</h2>
+      <details class="faq-q">
+  <summary>cat costa un inel de logodna cu moissanite vs diamant</summary>
+  <div class="ans"><p>Un inel de logodna cu moissanite de 1 carat, pe aur 14K, poate costa intre 1500 si 3000 lei. Inelul echivalent cu un diamant natural de 1 carat porneste de la 20.000 - 30.000 lei si poate ajunge la sute de mii, in functie de calitate.</p></div>
+</details>
+<details class="faq-q">
+  <summary>care e diferenta principala intre moissanite si diamant</summary>
+  <div class="ans"><p>Principala diferenta e compozitia chimica si originea: diamantul e carbon pur, natural sau sintetic, pe cand moissanitul e carbura de siliciu, o piatra creata in laborator. Moissanitul are o duritate putin mai mica (9.25 vs 10 Mohs) si un indice de refractie care genereaza reflexii colorate ('fire') mai pronuntate.</p></div>
+</details>
+<details class="faq-q">
+  <summary>merita sa cumpar moissanite in loc de diamant?</summary>
+  <div class="ans"><p>Da, merita daca iti doresti o piatra cu stralucire spectaculoasa, rezistenta pentru uz zilnic si un pret mult mai accesibil. Pentru multi, diferenta vizuala nu justifica de 10 ori pretul unui diamant. Daca valoarea intrinseca si traditionala a diamantului sunt prioritare, atunci merita diamantul.</p></div>
+</details>
+<details class="faq-q">
+  <summary>cum ingrijesc bijuteriile cu moissanite</summary>
+  <div class="ans"><p>Bijuteriile cu moissanite se ingrijesc la fel ca cele cu diamante: curata-le ocazional cu o periuta moale, apa calduta si sapun neutru. Evita contactul cu substante chimice agresive (clor, inalbitori). Sterge-le cu o carpa moale de microfibra.</p></div>
+</details>
+<details class="faq-q">
+  <summary>moissanitul se zgarie usor?</summary>
+  <div class="ans"><p>Moissanitul are o duritate de 9.25 pe scara Mohs, fiind foarte rezistent la zgarieturi, mult mai mult decat majoritatea altor pietre pretioase sau semi-pretioase. Este suficient de durabil pentru a fi purtat zilnic fara probleme, rezistand la zgarieturile cauzate de majoritatea materialelor din viata de zi cu zi.</p></div>
+</details>
+    </div>
+
+    <div class="author">
+      <div class="author-av">{authorInitials}</div>
+      <div>
+        <div class="author-role">{authorRole}</div>
+        <div class="author-name">{authorName}</div>
+        <p class="author-bio">{authorBio}</p>
+      </div>
+    </div>
+
+    <SimilarArticles articles={similarArticles} currentSlug={slug} />
+
+    <PrevNextNav
+      currentSlug={slug}
+      currentCategory={categorySlug}
+      articles={allArticles}
+    />
+  </article>
+
+  <script>
+    // Comparison table scroll hint
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.comparison-outer').forEach(outer => {
+        const wrap = outer.querySelector('.comparison-wrap');
+        if (!wrap) return;
+        const check = () => {
+          if (wrap.scrollWidth > wrap.clientWidth + 2) {
+            outer.classList.add('can-scroll');
+          } else {
+            outer.classList.remove('can-scroll');
+          }
+        };
+        check();
+        window.addEventListener('resize', check);
+      });
+
+      // TOC active tracking
+      const tocLinks = document.querySelectorAll('.toc a');
+      const sections = [];
+      tocLinks.forEach(link => {
+        const id = link.getAttribute('href')?.replace('#', '');
+        const el = id && document.getElementById(id);
+        if (el) sections.push({ el, link });
+      });
+      if (sections.length > 0) {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            const match = sections.find(s => s.el === entry.target);
+            if (match) {
+              if (entry.isIntersecting) {
+                tocLinks.forEach(l => l.classList.remove('on'));
+                match.link.classList.add('on');
+              }
+            }
+          });
+        }, { rootMargin: '-20% 0px -60% 0px' });
+        sections.forEach(s => observer.observe(s.el));
+      }
+    });
+  </script>
+</Layout>
